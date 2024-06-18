@@ -26,7 +26,6 @@ class ActualityStoreRequest extends FormRequest
             // 'media_type' => ['required', Rule::in(['video', 'image'])], 
             'titre' => ['required', 'string', 'unique:actualities,title'],
             'contenu' => ['required', 'string'],
-            'pdf' => ['nullable', 'file', 'mimes:pdf', 'max:10240']
         ];
     }
 }

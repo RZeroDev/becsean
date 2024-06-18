@@ -47,61 +47,15 @@ class ActualityController extends Controller
         $imagePath = null;
         $pdfPath = null;
         $imageHelper = new ImageHelper();
-        if ($request->hasFile('pdf')) {
-            $pdfPath = $imageHelper->enregistrerImage($request->pdf, 'pdf/actualities');
-        }
-        if ($request->hasFile('image')) {
             $imagePath = $imageHelper->enregistrerImage($request->image, 'images/actualities');
             $actuality = Actuality::create([
                 'title' => $request->titre,
                 'image' => $imagePath,
                 'description' => $request->contenu,
                 'status' => true,
-                'pdf' => $pdfPath,
                 'slug' => Str::slug($request->titre),
             ]);
-        } else {
-            $actuality = Actuality::create([
-                'title' => $request->titre,
-                'video' => $request->url,
-                'description' => $request->contenu,
-                'status' => true,
-                'pdf' => $pdfPath,
-                'slug' => Str::slug($request->titre),
-            ]);
-        }
-        if ($request->hasFile('image_secondaire') && is_array($request->file('image_secondaire'))) {
-            foreach ($request->file('image_secondaire') as $key => $image) {
-                if ($image->isValid()) {
-                    $imageSecondaire = $imageHelper->enregistrerImage($image, 'images/actualitys/secondaire');
-                    Image::create([
-                        'url' => $imageSecondaire,
-                        'actuality_id' => $actuality->id,
-                    ]);
-                }
-            }
-        }
-        // $actuality = new Actuality();
-        // $actuality->title = $request->titre;
-        // $actuality->image = $imagePath;
-        // $actuality->description = $request->contenu;
-        // $actuality->status = true;
-        // $actuality->slug = Str::slug($request->titre);
-        // $actuality->save();
-
-        $url = route('index');
-        $link = 'https://askano.cod9a.com';
-
-        $facebook = new FacebookController();
-        $actuality->facebook_post_id = $facebook->publishOnFacebook($actuality, $link);
-
-        $twitter = new TwitterController();
-        $actuality->twitter_post_id = $twitter->publishOnTwitter($actuality, $imagePath);
-
-        // $linkedin = new LinkedinController();
-        // $actuality->linkedin_post_id = $linkedin->publishOnLinkedin($actuality, $url, $imagePath);
-
-        $actuality->update();
+        
         $admins = User::whereHas('roles', function ($query) {
             $query->where('name', 'admin');
         })->get();
@@ -147,9 +101,6 @@ class ActualityController extends Controller
         $imagePath = null;
         $pdfPath = null;
         $imageHelper = new ImageHelper();
-        if ($request->hasFile('pdf')) {
-            $pdfPath = $imageHelper->enregistrerImage($request->pdf, 'pdf/actualities');
-        }
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
             $imagePath = $imageHelper->enregistrerImage($request->image, 'images/actualities/');
 
@@ -158,7 +109,6 @@ class ActualityController extends Controller
                 'title' => $request->titre,
                 'image' => $imagePath ? $imagePath : $actuality->image,
                 'description' => $request->contenu,
-                'pdf' => $pdfPath,
                 'slug' => Str::slug($request->titre),
             ]);
         } else {
@@ -166,7 +116,6 @@ class ActualityController extends Controller
                 'title' => $request->titre,
                 'video' => $$request->url,
                 'description' => $request->contenu,
-                'pdf' => $pdfPath,
                 'slug' => Str::slug($request->titre),
             ]);
         }
@@ -189,36 +138,6 @@ class ActualityController extends Controller
             }
         }
 
-
-
-        $url = route('index');
-        $link = 'https://askano.cod9a.com';
-
-        $linkedin = new LinkedinController();
-        if ($actuality->linkedin_post_id) {
-            $linkedin->unPublishLinkedinPost($actuality->linkedin_post_id);
-            $actuality->linkedin_post_id = $linkedin->publishOnLinkedin($actuality, $url, $imagePath);
-        }
-
-        $facebook = new FacebookController();
-        if ($actuality->facebook_post_id) {
-            $facebook->unPublishFacebookPost($actuality->facebook_post_id);
-            $actuality->facebook_post_id = $facebook->publishOnFacebook($actuality, $link);
-        }
-
-        $twitter = new TwitterController();
-        if ($actuality->twitter_post_id) {
-            $twitter->unPublishTwitterPost($actuality->twitter_post_id);
-            $actuality->twitter_post_id = $twitter->publishOnTwitter($actuality, $imagePath);
-        }
-
-        // $instagram = new FacebookController();
-        // if ($actuality->instagram_post_id) {
-        //     $instagram->unPublishInstagramPost($actuality->instagram_post_id);
-        //     $actuality->instagram_post_id = $facebook->publishOnInstagram($actuality, $link);
-        // }
-
-        $actuality->update();
         $admins = User::whereHas('roles', function ($query) {
             $query->where('name', 'admin');
         })->get();

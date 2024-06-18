@@ -16,7 +16,6 @@ return new class extends Migration
             $table->id();
             $table->string('title')->unique();
             $table->string('slug')->unique();
-            $table->string('image');
             $table->text('description');
             $table->boolean('status')->default(true);
             $table->foreignIdFor(Service::class);

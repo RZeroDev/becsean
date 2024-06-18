@@ -16,30 +16,37 @@ class ServiceTableSeeder extends Seeder
     public function run(): void
     {
         Service::create([
-            'title'=> 'Digital',
-            'slug'=> Str::slug('Digital'),
-            'description'=> "En passent par les réseaux sociaux, le web design, la réalité augementé ou encore l’amination 2D ou 3D, Pacifico sera être à la pointe de l’inovation.",
+            'title'=> 'Étude des projets agricoles',
+            'slug'=> Str::slug('Étude des projets agricoles'),
+            'description'=> "Notre service d'étude des projets agricoles se concentre sur l'identification des domaines agricoles exploitables et la sélection des cultures les mieux adaptées à ces terrains. Nous réalisons des analyses approfondies pour garantir la réussite et la durabilité de vos projets agricoles.",
             'main_image' => 'storage/front/assets/img/services/s1.png',
         ]);
 
         Service::create([
-            'title'=> 'Print',
-            'slug'=> Str::slug('Print'),
-            'description'=> "L’indentité visuel d’un projet est primorida. C’est pourquoi Pacifico communication vous offre la possibilité de créer la vôtre, sur-mesure.",
+            'title'=> 'Réalisation des projets agricoles',
+            'slug'=> Str::slug('Réalisation des projets agricoles'),
+            'description'=> "Nous vous accompagnons dans toutes les étapes de la réalisation de votre projet agricole, depuis l'acquisition du terrain jusqu'à la récolte. Notre expertise inclut la planification, l'aménagement du terrain, la plantation et la gestion des cultures.",
             'main_image' => 'storage/front/assets/img/services/s2.png',
         ]);
 
         Service::create([
-            'title'=> 'Photos & vidéos',
-            'slug'=> Str::slug('Photos & vidéos'),
-            'description'=> "Passionné de photographie et de reportage, de Paris à Madagcascar nous vous accompagnerons dans n’importe quel projet.",
+            'title'=> 'Conseil agricole et suivi technique',
+            'slug'=> Str::slug('Conseil agricole et suivi technique'),
+            'description'=> "Nous offrons des conseils agricoles spécialisés et un suivi technique continu pour optimiser vos pratiques agricoles. Nos experts vous aident à améliorer vos techniques de culture, gérer les maladies et les parasites, et adopter des méthodes durables et innovantes.",
             'main_image' => 'storage/front/assets/img/services/s3.png',
         ]);
 
         Service::create([
-            'title'=> 'Objets & textiles',
-            'slug'=> Str::slug('Objets & textiles'),
-            'description'=> "Objets ou vêtements personnalisé pour des séminaires, Team building ou l’envie d’avoir des goodies à l’éffigie de votre entreprise? Nous vous proposons une solution écoresponsable et respectueuse de l’environnement.",
+            'title'=> 'Réalisation de divers travaux',
+            'slug'=> Str::slug('Réalisation de divers travaux'),
+            'description'=> "Notre service de réalisation de divers travaux agricoles et ruraux inclut l'aménagement des terres, la construction d'infrastructures agricoles et l'entretien des équipements. Nous améliorons l'efficacité et la productivité de votre exploitation agricole.",
+            'main_image' => 'storage/front/assets/img/services/s4.png',
+        ]);
+
+        Service::create([
+            'title'=> 'Formations et négociations',
+            'slug'=> Str::slug('Formations et négociations'),
+            'description'=> "Nous proposons des formations spécialisées pour les agriculteurs et les professionnels du secteur, ainsi que des services de négociation pour faciliter les transactions et partenariats. Nos formations couvrent divers aspects de l'agriculture moderne, et nos services de négociation vous aident à obtenir les meilleurs accords.",
             'main_image' => 'storage/front/assets/img/services/s4.png',
         ]);
     }

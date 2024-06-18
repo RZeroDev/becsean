@@ -31,7 +31,7 @@
                             enctype="multipart/form-data">
                             @csrf
                             <div class="grid lg:grid-cols-12 lg:gap-6">
-                                <div class="lg:col-span-12 mb-5">
+                                <div class="lg:col-span-6 mb-5">
                                     <div class="text-start">
                                         <label for="name" class="font-semibold">Titre de l'article:</label>
                                         <div class="form-icon relative mt-2">
@@ -48,41 +48,6 @@
                                         @enderror
                                     </div>
                                 </div>
-                                {{-- <div class="lg:col-span-6 mb-5">
-                                    <div class="text-start">
-                                        <label for="media_type" class="font-semibold">Type de média:</label>
-                                        <div class="flex items-center mt-2">
-                                            <input type="radio" id="photo" name="media_type" value="image" class="form-radio h-5 w-5 text-indigo-600" checked>
-                                            <label for="photo" class="ml-2 text-gray- pl-4">Photo</label>
-                                            <input type="radio" id="video" name="media_type" value="video" class="form-radio h-5 w-5 text-indigo-600 ml-8">
-                                            <label for="video" class="ml-2 text-gray-700">Vidéo</label>
-                                        </div>
-                                        @error('media_type')
-                                        <span class="text-danger">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                    </div>
-                                </div>
-                                
-                                <div class="lg:col-span-6 mb-5" id="url_input" style="display: none;">
-                                    <div class="text-start">
-                                        <label for="url" class="font-semibold">URL de la vidéo:</label>
-                                        <div class="form-icon relative mt-2">
-                                            <i data-feather="edit-3" class="size-4 absolute top-3 start-4"></i>
-                                            <input name="url" id="url" type="text" 
-                                                value="{{ old('url') }}"
-                                                class="form-control @error('url') is-invalid @enderror ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0"
-                                                placeholder="URL de la vidéo :">
-                                        </div>
-                                        @error('url')
-                                            <span class="text-danger">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                </div> --}}
-
                                 <div class="lg:col-span-6 mb-5" id="image_input">
                                     <div class="text-start">
                                         <label for="image" class="font-semibold">Image de l'article:</label>
@@ -99,34 +64,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="lg:col-span-6 mb-5" id="image_input">
-                                    <div class="text-start">
-                                        <label for="pdf" class="font-semibold">Pdf de l'article :</label>
-                                        <div class="form-icon relative mt-2">
-                                            <i data-feather="pdf" class="size-4 absolute top-3 start-4"></i>
-                                            <input name="pdf" id="pdf" type="file"
-                                                class="form-control @error('pdf') is-invalid @enderror ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0"
-                                                placeholder="pdf :">
-                                            @error('pdf')
-                                                <span class="text-danger">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lg:col-span-12">
-                                <label class="form-label font-semibold">Images secondaires(Vous pouvez sélectionner
-                                    plusieurs images) : <span class="text-red-600">*</span></label>
-                                <input type="file" id="image_secondaire"
-                                    class="form-control @error('image_secondaire') is-invalid @enderror" accept="image/*"
-                                    name="image_secondaire[]" multiple>
-                                @error('image_secondaire')
-                                    <span class="text-danger">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                             <div class="grid grid-cols-1 py-2">
                                 <div class="mb-5">
