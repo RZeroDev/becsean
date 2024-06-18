@@ -32,7 +32,7 @@ class FrontHelper
 {
 	public static function getAppName()
     {
-        return config('name', 'Askano');
+        return config('name', 'Bescean');
     }
 
     public static function getEnvFolder()

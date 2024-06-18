@@ -2,9 +2,7 @@
 <nav id="sidebar" class="sidebar-wrapper sidebar-dark">
     <div class="sidebar-content">
         <div class="sidebar-brand">
-            <a href="{{ route('index') }}" target="_blank"><img
-                    src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/logo-white.png') }}"
-                    height="24" width="150" alt="Logo Askano"></a>
+            <a href="{{ route('index') }}" target="_blank">Becsean Sarl</a>
         </div>
 
         <ul class="sidebar-menu border-t border-white/10" data-simplebar style="height: calc(100% - 70px);">
@@ -14,57 +12,15 @@
             <li class="{{ request()->routeIs('index') ? 'active' : '' }}">
                 <a href="{{ route('index') }}" target="blank"><i class="uil uil-chart-line me-2"></i>Visiter le site</a>
             </li>
-            <li class="sidebar-dropdown {{ request()->is('services*') || request()->is('sectionStatus*') || request()->routeIs('testimonialHomes*') || request()->is('heros*') || request()->is('aboutHomes*') || request()->is('testimonials*') || request()->is('workAreas*') || request()->is('authorSections*') || request()->is('actualities*') || request()->is('partners*') || request()->is('servieHomes*')  ? 'active' : '' }}">
-                <a href="javascript:void(0)">
-                    <i class="uil uil-invoice me-2"></i>Page d'acceuil
-                </a>
-                <div class="sidebar-submenu {{ request()->is('sectionStatus*') || request()->is('services*') || request()->routeIs('testimonialHomes*') || request()->is('heros*') || request()->is('aboutHomes*') || request()->is('testimonials*') || request()->is('workAreas*') || request()->is('authorSections*') || request()->is('actualities*') || request()->is('partners*') || request()->is('servieHomes*')  ? 'block' : '' }}">
-                    <ul>
-                        <li class="{{ request()->routeIs('heros*') ? 'active' : '' }}">
-                            <a href="{{ route('heros.index') }}">Héro</a>
-                        </li>
-                        <li class="{{ request()->routeIs('services*') || request()->routeIs('servieHomes*') ? 'active' : '' }}">
-                            <a href="{{ route('services.index') }}">Services</a>
-                        </li>
-                        <li class="{{ request()->routeIs('aboutHomes*') ? 'active' : '' }}">
-                            <a href="{{ route('aboutHomes.index') }}">A propos</a>
-                        </li>
-                        <li class="{{ request()->routeIs('testimonials*') || request()->routeIs('testimonialHomes*') ? 'active' : '' }}">
-                            <a href="{{ route('testimonials.index') }}">Témoignages</a>
-                        </li>
-                        <li class="{{ request()->routeIs('workAreas*') ? 'active' : '' }}">
-                            <a href="{{ route('workAreas.index') }}">Processus de travail</a>
-                        </li>
-                        <li class="{{ request()->routeIs('authorSections*') ? 'active' : '' }}">
-                            <a href="{{ route('authorSections.index') }}">Bloc contact</a>
-                        </li>
-                        <li class="{{ request()->routeIs('actualities*') ? 'active' : '' }}">
-                            <a href="{{ route('actualities.index') }}">Actualités</a>
-                        </li>
-                        <li class="{{ request()->routeIs('partners*') ? 'active' : '' }}">
-                            <a href="{{ route('partners.index') }}">Partenaires</a>
-                        </li>
-                        <li class="{{ request()->routeIs('sectionStatus*') ? 'active' : '' }}">
-                            <a href="{{ route('sectionStatus.index') }}">Gestion des sections</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-           
             @hasanyrole('super-admin|admin|dev')
-                <li class="sidebar {{ request()->is('aboutPolitiques*') ? 'active' : '' }}">
-                    <a href="{{ route('aboutPolitiques.index') }}">
-                        <i class="uil uil-apps me-2"></i>Page à propos
-                    </a>
-                </li>
-                <li class="sidebar {{ request()->is('servicePages*') ? 'active' : '' }}">
-                    <a href="{{ route('servicePages.index') }}">
-                        <i class="uil uil-apps me-2"></i>Page services
+                <li class="sidebar {{ request()->is('services*') ? 'active' : '' }}">
+                    <a href="{{ route('services.index') }}">
+                        <i class="uil uil-apps me-2"></i>Services
                     </a>
                 </li>
                 <li class="sidebar {{ request()->is('actualitiesPages*') ? 'active' : '' }}">
                     <a href="{{ route('actualitiesPages.index') }}">
-                        <i class="uil uil-apps me-2"></i>Page actualités
+                        <i class="uil uil-apps me-2"></i>Actualités
                     </a>
                 </li>
                 <li class="sidebar-dropdown {{ request()->is('emails*') || request()->is('phones*') ? 'active' : '' }}">
@@ -101,39 +57,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="sidebar {{ request()->is('cguPages*') ? 'active' : '' }}">
-                    <a href="{{ route('cguPages.index') }}">
-                        <i class="uil uil-apps me-2"></i>Page CGU
-                    </a>
-                </li>
-                <li class="sidebar {{ request()->is('legalPages*') ? 'active' : '' }}">
-                    <a href="{{ route('legalPages.index') }}">
-                        <i class="uil uil-apps me-2"></i>Page Mention Légal
-                    </a>
-                </li>
                 <li class="{{ request()->routeIs('settings.index') ? 'active' : '' }}">
                     <a href="{{ route('settings.index') }}">
                         <i class="uil uil-chart-line me-2"></i>Informations générales
-                    </a>
-                </li>
-                <li class="sidebar-dropdown {{ request()->routeIs('analytics*')  || request()->routeIs('automatings*') ? 'active' : '' }}">
-                    <a href="javascript:void(0)">
-                        <i class="uil uil-chart-line me-2"></i>Paramètres
-                    </a>
-                    <div class="sidebar-submenu {{ request()->is('automatings*') || request()->is('analytics*')   ? 'block' : '' }}">
-                        <ul>
-                            <li class="{{ request()->routeIs('automatings.index') ? 'active' : '' }}">
-                                <a href="{{ route('automatings.index') }}">Réseaux sociaux</a>
-                            </li>
-                            <li class="{{ request()->routeIs('analytics1*')  ? 'active' : '' }}">
-                                <a href="{{ route('analytics1') }}">Google Analytics</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="{{ request()->routeIs('seos*') ? 'active' : '' }}">
-                    <a href="{{ route('seos.index') }}">
-                        <i class="uil uil-chart-line me-2"></i>Réferencement SEO
                     </a>
                 </li>
             @endhasanyrole
