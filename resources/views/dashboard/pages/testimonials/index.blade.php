@@ -15,11 +15,6 @@
 
                 <div>
                     @hasanyrole('super-admin|admin|dev')
-                        <a href="{{ route('testimonialHomes.index') }}"
-                            class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-gray-800 hover:bg-gray-950 border-gray-800 hover:border-gray-950 text-white rounded-md "
-                            type="button">
-                            Détails
-                        </a>
                         <a href="{{ route('testimonials.create') }}"
                             class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-gray-800 hover:bg-gray-950 border-gray-800 hover:border-gray-950 text-white rounded-md "
                             type="button">

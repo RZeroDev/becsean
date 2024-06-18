@@ -69,11 +69,6 @@
                         <i class="uil uil-chart-line me-2"></i>Informations générales
                     </a>
                 </li>
-                <li class="{{ request()->routeIs('seos*') ? 'active' : '' }}">
-                    <a href="{{ route('seos.index') }}">
-                        <i class="uil uil-chart-line me-2"></i>Réferencement SEO
-                    </a>
-                </li>
             @endhasanyrole
 
             <li

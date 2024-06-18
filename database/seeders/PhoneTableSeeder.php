@@ -16,8 +16,8 @@ class PhoneTableSeeder extends Seeder
     {
         DB::table('phones')->insert([
             [
-                'name' => '+33 6 61 59 02 05',
-                'slug' => Str::slug('+33 6 61 59 02 05'),
+                'name' => '+229 60 00 00 00',
+                'slug' => Str::slug('+229 60 00 00 00'),
             ],            
         ]);
     }

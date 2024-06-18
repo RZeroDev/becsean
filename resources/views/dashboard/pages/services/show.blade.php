@@ -96,9 +96,6 @@
                                 <div class="mb-8">
                                     <div class="flex items-center justify-between">
                                         <div class="flex items-center">
-                                            <img src="{{ asset(FrontHelper::getEnvFolder() . $underService->image) }}"
-                                                class="h-11 w-11 rounded-full shadow" alt="">
-
                                             <div class="ms-3 flex-1">
                                                 <a href="#"
                                                     class="text-lg font-semibold hover:text-indigo-600 duration-500">{{ $underService->title }}</a>
@@ -143,7 +140,7 @@
                                         @csrf
                                         <input type="hidden" name="service" value="{{ $service->id }}">
                                         <div class="grid lg:grid-cols-12 grid-cols-1 mt-6 gap-5">
-                                            <div class="lg:col-span-6">
+                                            <div class="lg:col-span-12">
                                                 <label class="form-label font-semibold">Libellé : <span
                                                         class="text-red-600">*</span></label>
                                                 <input type="text"
@@ -156,21 +153,6 @@
                                                     </span>
                                                 @enderror
                                             </div>
-
-                                            <div class="lg:col-span-6">
-                                                <label class="form-label font-semibold">Image : <span
-                                                        class="text-red-600">*</span></label>
-                                                <input type="file"
-                                                    class="form-control @error('image') is-invalid @enderror"
-                                                    accept="image/*" name="image" required="">
-                                                @error('image')
-                                                    <span class="text-danger">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-
-
                                             <div class="lg:col-span-12">
                                                 <label class="form-label font-semibold">Description : <span
                                                         class="text-red-600">*</span></label>

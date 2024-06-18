@@ -16,31 +16,26 @@ class ActualityTableSeeder extends Seeder
     public function run(): void
     {
         Actuality::create([
-            'title'=> 'Nouveau partenariat avec une entreprise de renom',
-            'slug'=> Str::slug('Nouveau partenariat avec une entreprise de renom'),
-            'description'=> "Nous sommes ravis d'annoncer notre collaboration avec Twof Technologies. Ensemble, nous allons repousser les limites de la communication digitale !",
+            'title'=> ' Du Terrain à la Récolte : Les Étapes Clés de la Réalisation d’un Projet Agricole',
+            'slug'=> Str::slug(' Du Terrain à la Récolte : Les Étapes Clés de la Réalisation d’un Projet Agricole'),
+            'description'=> "Un guide complet sur les étapes nécessaires pour transformer un terrain vierge en une exploitation agricole productive. De l'acquisition foncière à la mise en place des infrastructures et à la gestion des récoltes, explorez chaque phase critique pour garantir le succès de votre projet agricole.",
             'image' => 'storage/front/assets/img/blogs/a1.jpg',
         ]);
 
         Actuality::create([
-            'title'=> ' Lancement d\'une campagne de marketing viral',
-            'slug'=> Str::slug(' Lancement d\'une campagne de marketing viral'),
-            'description'=> "Notre dernière campagne de marketing viral est en ligne ! Découvrez comment nous captivons les audiences et générons un engagement massif pour nos clients.",
+            'title'=> ' Maximiser le Potentiel de Vos Projets Agricoles : Étude et Sélection des Cultures',
+            'slug'=> Str::slug(' Maximiser le Potentiel de Vos Projets Agricoles : Étude et Sélection des Cultures'),
+            'description'=> "Découvrez l'importance d'une étude approfondie pour identifier les domaines agricoles exploitables et sélectionner les cultures les mieux adaptées. Apprenez comment l'évaluation de la faisabilité, les analyses pédologiques et climatologiques, et la sélection des cultures adaptées peuvent transformer votre terrain en un projet agricole prospère.",
             'image' => 'storage/front/assets/img/blogs/a2.jpg',
         ]);
 
         Actuality::create([
-            'title'=> 'Conférence sur les tendances du marketing digital',
-            'slug'=> Str::slug('Conférence sur les tendances du marketing digital'),
-            'description'=> "Rejoignez-nous lors de notre prochaine conférence pour découvrir les dernières tendances du marketing digital. Une occasion unique d'apprendre et de réseauter !",
+            'title'=> ' Conseils et Suivi Technique : Optimiser Vos Pratiques Agricoles',
+            'slug'=> Str::slug(' Conseils et Suivi Technique : Optimiser Vos Pratiques Agricoles'),
+            'description'=> "Découvrez comment des conseils spécialisés et un suivi technique continu peuvent optimiser vos pratiques agricoles. Apprenez à améliorer vos techniques culturales, à gérer les ravageurs et à utiliser les ressources de manière efficace grâce à des conseils en fertilisation et gestion de l'eau, ainsi qu'à des formations continues.",
             'image' => 'storage/front/assets/img/blogs/a3.jpg',
         ]);
 
-        Actuality::create([
-            'title'=> 'Tout savoir sur Askano en une vidéo',
-            'slug'=> Str::slug('Tout savoir sur Askano en une vidéo'),
-            'description'=> "Concrètement, Askano cherche à avoir un impact positif sur la société tout en demeurant économiquement viable. Il s’agit pour cela de mettre en place des pratiques vers ces objectifs.",
-            'video' => 'https://www.youtube.com/embed/IQzW43SuVF8',
-        ]);
+       
     }
 }

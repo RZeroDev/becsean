@@ -22,7 +22,7 @@
                     	@method('put')
                     	<input type="hidden" name="service" value="{{ $underService->service_id }}">
                         <div class="grid lg:grid-cols-12 grid-cols-1 mt-6 gap-5">
-                            <div class="lg:col-span-6">
+                            <div class="lg:col-span-12">
                                 <label class="form-label font-semibold">Libellé : <span class="text-red-600">*</span></label>
                                 <input type="text" class="form-control @error('title') is-invalid @enderror" placeholder="Libellé du sous service" name="title" required value="{{ old('title', $underService->title) }}">
                                 @error('title')
@@ -31,17 +31,6 @@
                                     </span>
                                 @enderror
                             </div>
-
-                            <div class="lg:col-span-6">
-                                <label class="form-label font-semibold">Image principale : <span class="text-red-600">*</span></label>
-                                <input type="file" class="form-control @error('image') is-invalid @enderror" accept="image/*" name="image" required="">
-                                @error('image')
-                                    <span class="text-danger">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-
 
                             <div class="lg:col-span-12">
                                 <label class="form-label font-semibold">Description : <span class="text-red-600">*</span></label>

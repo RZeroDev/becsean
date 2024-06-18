@@ -15,10 +15,10 @@ class SettingTableSeeder extends Seeder
     {
         DB::table('settings')->insert([
             [
-                'company_name' => 'Askano',
-                'company_phone' => '+33 6 61 59 02 05',
-                'company_email' => 'contact@askano.fr',
-                'company_headquarters' => "6 rue Musset 75016, Paris",
+                'company_name' => 'Becsean Sarl',
+                'company_phone' => '+229 60 00 00 00',
+                'company_email' => 'contact@becseansarl.com',
+                'company_headquarters' => "Benin - Porto-Novo",
                 'company_facebook' => '',
                 'company_twitter' => '',
                 'company_instagram' => '',

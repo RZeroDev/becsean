@@ -16,8 +16,8 @@ class EmailTableSeeder extends Seeder
     {
         DB::table('emails')->insert([
             [
-                'name' => 'contact@askano.fr',
-                'slug' => Str::slug('contact@askano.fr'),
+                'name' => 'contact@becseansarl.fr',
+                'slug' => Str::slug('contact@becseansarl.fr'),
             ], 
         ]);
     }

@@ -38,7 +38,7 @@
                         </span>
 
                         <span class="ms-4">
-                            <span class="text-slate-400 font-semibold block">Partenaires</span>
+                            <span class="text-slate-400 font-semibold block">Utilisateurs</span>
                             <span class="flex items-center justify-between mt-1">
                                 <span class="text-xl font-semibold"><span class="counter-value"
                                         data-target="{{ $nbrPartner }}">{{ $nbrPartner }}</span></span>
@@ -59,7 +59,7 @@
                         </span>
 
                         <span class="ms-4">
-                            <span class="text-slate-400 font-semibold block">Partenaires</span>
+                            <span class="text-slate-400 font-semibold block">Services</span>
                             <span class="flex items-center justify-between mt-1">
                                 <span class="text-xl font-semibold"><span class="counter-value"
                                         data-target="{{ $nbrUser }}">{{ $nbrUser }}</span></span>
@@ -80,7 +80,7 @@
                         </span>
 
                         <span class="ms-4">
-                            <span class="text-slate-400 font-semibold block">Témoignages</span>
+                            <span class="text-slate-400 font-semibold block">Sous services</span>
                             <span class="flex items-center justify-between mt-1">
                                 <span class="text-xl font-semibold"><span class="counter-value"
                                         data-target="{{ $nbrTestimonial }}">{{ $nbrTestimonial }}</span></span>
@@ -123,7 +123,7 @@
                         </span>
 
                         <span class="ms-4">
-                            <span class="text-slate-400 font-semibold block">Services</span>
+                            <span class="text-slate-400 font-semibold block">Témoignages</span>
                             <span class="flex items-center justify-between mt-1">
                                 <span class="text-xl font-semibold"><span class="counter-value"
                                         data-target="{{ $nbrService }}">{{ $nbrService }}</span></span>
@@ -155,85 +155,6 @@
             </div>
 
             <div class="grid lg:grid-cols-8 grid-cols-1 mt-6 gap-6">
-                <div class="lg:col-span-8">
-                    <div class="grid grid-cols-1 mt-6">
-                        <div class="flex items-center justify-between mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-300">Liste des partenaire</h2>
-                            <a href="{{ route('partners.index') }}"
-                                class="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-gray-800 hover:bg-gray-950 border-gray-800 hover:border-gray-950 text-white rounded-md "
-                                type="button">
-                                Voir Tout
-                            </a>
-
-                        </div>
-                        <div
-                            class="relative overflow-x-auto block w-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                            <table class="w-full text-start">
-                                <thead class="text-base">
-                                    <tr>
-                                        <th class="text-start p-4 min-w-[128px]">N°.</th>
-                                        <th class="text-start p-4 min-w-[128px]">Logo</th>
-                                        <th class="text-start p-4 min-w-[192px]">Nom complet</th>
-                                        @hasanyrole('super-admin|admin|dev')
-                                            <th class="text-center p-4 min-w-[200px]">Action</th>
-                                        @endhasanyrole
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @forelse ($partners as $index=>$partner)
-                                        <tr>
-                                            <th class="text-start border-t border-gray-100 dark:border-gray-800 p-4">
-                                                #{{ ++$index }}</th>
-                                            <td class="text-start border-t border-gray-100 dark:border-gray-800 p-4">
-                                                <a href="#" class="hover:text-indigo-600">
-                                                    <div class="flex items-center">
-                                                        <img src="{{ asset(FrontHelper::getEnvFolder() . $partner->logo) }}"
-                                                            class="h-10 w-10 rounded-full shadow dark:shadow-gray-700"
-                                                            alt="">
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            <td class="text-center border-t border-gray-100 dark:border-gray-800 p-4">
-                                                <span class="text-slate-400">{{ $partner->name }}</span>
-                                            </td>
-                                            @hasanyrole('super-admin|admin|dev')
-                                                <td class="text-end border-t border-gray-100 dark:border-gray-800 p-4">
-                                                    <div class="flex items-center space-x-4">
-                                                        <a href="{{ route('partners.edit', $partner->slug) }}"
-                                                            class="py-2 px-5 inline-block align-middle duration-500 text-base text-center bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-md">
-                                                            <i class="fi fi-rr-edit"></i>
-                                                        </a>
-                                                        <form id="deleteForm{{ $partner->id }}"
-                                                            action="{{ route('partners.destroy', $partner->slug) }}"
-                                                            method="POST">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <a href="#"
-                                                                onclick="deletePartner(event, {{ $partner->id }})"
-                                                                class="py-2 px-5 inline-block align-middle duration-500 text-base text-center bg-red-600 hover:bg-red-700 border-red-600 hover:border-red-700 text-white rounded-md">
-                                                                <i class="fi fi-rr-trash-xmark"></i>
-                                                            </a>
-                                                        </form>
-
-                                                    </div>
-                                                </td>
-                                            @endhasanyrole
-                                        </tr>
-                                    @empty
-                                        <tr>
-                                            <td class="text-center border-t border-gray-100 dark:border-gray-800 p-4">
-                                                <span class="text-slate-400">Aucun partenaire enregistré</span>
-                                            </td>
-                                        </tr>
-                                    @endforelse
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-
-
                 <div class="lg:col-span-8">
                     <div class="grid grid-cols-1 mt-6">
                         <div class="flex items-center justify-between mb-4">
