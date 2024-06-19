@@ -4,10 +4,10 @@
             <div class="col-lg-8">
                 <ul class="item-flex">
                     <li>
-                        <i class="fas fa-clock"></i> Opening Hours : Sunday- Friday, 08:00 am - 05:00pm
+                        <i class="fas fa-clock"></i>Heures d'ouverture : Lundi- Samedi, 08:00 - 19:00
                     </li>
                     <li>
-                        <a href="tel:+4733378901"><i class="fas fa-phone-alt"></i> +4733378901</a>
+                        <a href="tel:{{ frontHelper::getSettings()->company_phone }}"><i class="fas fa-phone-alt"></i> {{ frontHelper::getSettings()->company_phone }}</a>
                     </li>
                 </ul>
             </div>
@@ -15,23 +15,23 @@
                 <div class="social">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="{{frontHelper::getSettings()->company_facebook}}">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{frontHelper::getSettings()->company_twitter}}">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{ frontHelper::getSettings()->company_youtube }}">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
+                            <a href="{{ frontHelper::getSettings()->company_instagram }}">
+                                <i class="fab fa-instagram-in"></i>
                             </a>
                         </li>
                     </ul>

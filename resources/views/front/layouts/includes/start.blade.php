@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 
-<!-- Mirrored from validthemes.net/site-template/agrica/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jun 2024 19:19:55 GMT -->
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Agrica - Organic Farm Agriculture Template">
+    <meta name="description" content="">
 
     <!-- ========== Page Title ========== -->
-    <title>Agrica - Organic Farm Agriculture Template</title>
+    <title>Becsean-Sarl - @yield('title')</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/favicon.png')}}" type="image/x-icon">

@@ -27,58 +27,17 @@
                 </button>
                 
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html">Home Agriculture</a></li>
-                            <li><a href="index-2.html">Home Farming</a></li>
-                            <li><a href="index-3.html">Agriculture Shop</a></li>
-                            <li><a href="index-4.html">Dairy Farm</a></li>
-                        </ul>
+                    <li class="">
+                        <a href="{{route('index')}}" class=" active" >Acceuil</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="farmers.html">Team</a></li>
-                            <li><a href="farmer-details.html">Team Details</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="404.html">Error Page</a></li>
-                        </ul>
+                    <li class="">
+                        <a href="" class="" >Services</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="project.html" class="dropdown-toggle" data-toggle="dropdown" >Projects</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="project.html">Project</a></li>
-                            <li><a href="project-details.html">Project Details</a></li>
-                        </ul>
+                    <li class="">
+                        <a href="project.html" class="" >Actualités</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="services.html">Services Version One</a></li>
-                            <li><a href="services-2.html">Services Version Two</a></li>
-                            <li><a href="services-details.html">Services Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                            <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                            <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li>
-                            <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li>
-                            <li><a href="blog-single.html">Blog Single</a></li>
-                            <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Shop</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="shop.html">Shop Product</a></li>
-                            <li><a href="shop-single.html">Shop Single</a></li>
-                            <li><a href="shop-single-thumb-only.html">Shop Single Version Two</a></li>
-                        </ul>
+                    <li class="">
+                        <a href="#" class="" >A-propos</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -87,49 +46,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
-                                <i class="far fa-shopping-cart"></i>
-                                <span class="badge">3</span>
-                            </a>
-                            <ul class="dropdown-menu cart-list">
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="photo">
-                                            <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/products/1.png')}}" alt="Thumb">
-                                        </a>
-                                        <a href="#" class="remove-product">
-                                            <i class="fas fa-times"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h6><a href="#">Delica omtantur </a></h6>
-                                        <p>2x - <span class="price">$99.99</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#" class="photo">
-                                            <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/products/2.png')}}" alt="Thumb">
-                                        </a>
-                                        <a href="#" class="remove-product">
-                                            <i class="fas fa-times"></i>
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h6><a href="#">Omnes ocurreret</a></h6>
-                                        <p>1x - <span class="price">$33.33</span></p>
-                                    </div>
-                                </li>
-                                <li class="total">
-                                    <span class="pull-right"><strong>Total</strong>: $0.00</span>
-                                    <a href="#" class="btn btn-default btn-cart">Cart</a>
-                                    <a href="#" class="btn btn-default btn-cart">Checkout</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="button"><a href="#">Register</a></li>
+                        <li class="button"><a href="#">Nous contactez</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
