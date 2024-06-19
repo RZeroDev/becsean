@@ -29,6 +29,8 @@
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="">
                         <a href="{{route('index')}}" class=" active" >Acceuil</a>
+                    <li class="">
+                        <a href="{{route('index')}}" class=" active" >Acceuil</a>
                     </li>
                     <li class="">
                         <a href="{{route('services')}}" class="" >Services</a>
