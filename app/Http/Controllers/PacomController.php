@@ -54,7 +54,9 @@ class PacomController extends Controller
 
     public function singleActuality(Actuality $actuality)
     {
-        return view('front.pages.actualities.single', compact('actuality'));
+        $title = $actuality->title;
+        $page = "Actualité";
+        return view('front.pages.actualities.single', compact('actuality','title', 'page'));
     }
 
     public function services()

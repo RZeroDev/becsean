@@ -49,85 +49,6 @@
     </div>
     <!-- End Benifits -->
 
-    <!-- Start Product
-        ============================================= -->
-    {{-- <div class="product-cat-area default-padding">
-        <div class="shape-right-bottom-mini">
-            <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/shape/11.png') }}"
-                alt="Image Not Found">
-        </div>
-        <div class="container">
-            <div class="product-cat-items">
-                <div class="row align-center">
-                    <div class="col-lg-5 product-cat-info">
-                        <h2 class="mask-text" style="background-image: url(storage/front/assets/img/banner/17.jpg);">Healthy Life With
-                            Fresh Products</h2>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <div class="product-cat-lists text-light">
-                            <div class="product-list-box">
-                                <!-- Single Item -->
-                                <div class="product-list-item">
-                                    <a href="services-details.html">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/9.png') }}"
-                                            alt="Icon">
-                                        <h5>Blueberry</h5>
-                                    </a>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="product-list-item">
-                                    <a href="services-details.html">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/10.png') }}"
-                                            alt="Icon">
-                                        <h5>Strawberry</h5>
-                                    </a>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="product-list-item">
-                                    <a href="services-details.html">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/11.png') }}"
-                                            alt="Icon">
-                                        <h5>Cabbage</h5>
-                                    </a>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="product-list-item">
-                                    <a href="services-details.html">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/12.png') }}"
-                                            alt="Icon">
-                                        <h5>Maize</h5>
-                                    </a>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="product-list-item">
-                                    <a href="services-details.html">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/13.png') }}"
-                                            alt="Icon">
-                                        <h5>Orange</h5>
-                                    </a>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="product-list-item">
-                                    <a href="services-details.html">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/14.png') }}"
-                                            alt="Icon">
-                                        <h5>Apples</h5>
-                                    </a>
-                                </div>
-                                <!-- End Single Item -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- End Cat -->
 
     <!-- Start Testimonial
         ============================================= -->
@@ -190,8 +111,8 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <h5 class="sub-title">Awesome Gallery</h5>
-                        <h2 class="title">Explore Projects</h2>
+                        <h5 class="sub-title">Notre galleries</h5>
+                        <h2 class="title">Explorez notre univers</h2>
                     </div>
                 </div>
             </div>
@@ -208,10 +129,6 @@
                             <div class="gallery-style-one">
                                 <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/1.jpg') }}" alt="Image
                                     not Found">
-                                <div class="overlay">
-                                    <p>Fruit</p>
-                                    <h4><a href="project-details.html">Healthy Food</a></h4>
-                                </div>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -220,10 +137,6 @@
                             <div class="gallery-style-one">
                                 <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/2.jpg') }}" alt="Image
                                     not Found">
-                                <div class="overlay">
-                                    <p>Organic</p>
-                                    <h4><a href="project-details.html">Cow Milk</a></h4>
-                                </div>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -232,10 +145,6 @@
                             <div class="gallery-style-one">
                                 <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/3.jpg') }}" alt="Image
                                     not Found">
-                                <div class="overlay">
-                                    <p>Vegetables</p>
-                                    <h4><a href="project-details.html">Organic Vegetables</a></h4>
-                                </div>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -244,10 +153,6 @@
                             <div class="gallery-style-one">
                                 <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/4.jpg') }}" alt="Image
                                     not Found">
-                                <div class="overlay">
-                                    <p>Cereals</p>
-                                    <h4><a href="project-details.html">Fresh Mandrains</a></h4>
-                                </div>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -256,10 +161,6 @@
                             <div class="gallery-style-one">
                                 <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/5.jpg') }}" alt="Image
                                     not Found">
-                                <div class="overlay">
-                                    <p>Havest</p>
-                                    <h4><a href="project-details.html">Crispy Cucumber</a></h4>
-                                </div>
                             </div>
                         </div>
                         <!-- End Single Item -->
