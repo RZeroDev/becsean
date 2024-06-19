@@ -15,7 +15,7 @@ class ActualityTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Actuality::create([
+        Actuality::create([ 
             'title'=> ' Du Terrain à la Récolte : Les Étapes Clés de la Réalisation d’un Projet Agricole',
             'slug'=> Str::slug(' Du Terrain à la Récolte : Les Étapes Clés de la Réalisation d’un Projet Agricole'),
             'description'=> "Un guide complet sur les étapes nécessaires pour transformer un terrain vierge en une exploitation agricole productive. De l'acquisition foncière à la mise en place des infrastructures et à la gestion des récoltes, explorez chaque phase critique pour garantir le succès de votre projet agricole.",
@@ -36,6 +36,6 @@ class ActualityTableSeeder extends Seeder
             'image' => 'storage/front/assets/img/blogs/a3.jpg',
         ]);
 
-       
+
     }
 }

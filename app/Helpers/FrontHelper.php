@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Helpers;
 
@@ -52,7 +52,7 @@ class FrontHelper
 
     public static function allGalleries()
     {
-        if (Route::currentRouteName() != 'galleries') 
+        if (Route::currentRouteName() != 'galleries')
         {
             $galleries = Image::orderBy('created_at', 'desc')->where('room_id', null)->paginate(8);
         }
@@ -65,7 +65,7 @@ class FrontHelper
 
     public static function allRooms()
     {
-        if (Route::currentRouteName() != 'rooms') 
+        if (Route::currentRouteName() != 'rooms')
         {
             $rooms = Room::orderBy('created_at', 'desc')->paginate(6);
         }
@@ -84,7 +84,7 @@ class FrontHelper
 
     public static function allActualities()
     {
-        if (Route::currentRouteName() != 'news') 
+        if (Route::currentRouteName() != 'news')
         {
             $actualities = Actuality::orderBy('created_at', 'desc')->paginate(3);
         }
@@ -210,14 +210,14 @@ class FrontHelper
 
     public static function allServicesForFooter()
     {
-        
+
         $services = Service::all();
         return $services;
     }
 
     public static function allServices()
     {
-        if (Route::currentRouteName() != 'services') 
+        if (Route::currentRouteName() != 'services')
         {
             $services = Service::orderBy('created_at', 'asc')->paginate(3);
         }
@@ -256,7 +256,7 @@ class FrontHelper
         // });
         $actualities = Actuality::where('id', '!=', $currentActuality->id)->paginate(3);
         return $actualities;
-    } 
+    }
 }
 
 ?>
