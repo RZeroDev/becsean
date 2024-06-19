@@ -63,7 +63,7 @@ Route::post('/nous-contacter/send', [PacomController::class, 'sendContact'])->na
 Route::get('/nos-actualites', [PacomController::class, 'actualities'])->name('news');
 Route::get('/actualite/{actuality:slug}', [PacomController::class, 'singleActuality'])->name('actuality.single');
 
-Route::get('/nos-services', [PacomController::class, 'services'])->name('services');
+Route::get('/nos-services', [PacomController::class, 'services'])->name('services'); 
 Route::get('/service/{service:slug}', [PacomController::class, 'singleService'])->name('service.single');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
@@ -102,7 +102,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/testimonials/status/{slug}', [TestimonialController::class, 'status'])->name('testimonials.status');
     //settings
     Route::resource('settings', SettingController::class);
-    
+
     Route::resource('automatings', AutomatingController::class);
 
     Route::resource('seos', SeoController::class);

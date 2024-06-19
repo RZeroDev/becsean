@@ -17,7 +17,18 @@ class UserTableSeeder extends Seeder
         $admin = Role::whereName('admin')->first();
         $dev = Role::whereName('dev')->first();
 
-        
+        $user2 = User::create([
+            'firstname'=> "Souleymane",
+            'lastname'=> "HIGUIOH",
+            'email'=> "souleymanehiguioh@gmail.com",
+            'phone'=> "0022963118817",
+            'status' => true,
+            'password' => bcrypt('Password'),
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        $user2->assignRole('dev');
+
         $user3 = User::create([
             'firstname'=> "Hadi",
             'lastname'=> "RADJI",
@@ -41,6 +52,6 @@ class UserTableSeeder extends Seeder
             'updated_at' => now()
         ]);
         $user5->assignRole('admin');
-        
+
     }
 }

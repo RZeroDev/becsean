@@ -23,7 +23,9 @@ class PacomController extends Controller
 {
     public function about()
     {
-        return view('front.pages.about');
+        $title = "Qui sommes-nous";
+        $page = "Environ";
+        return view('front.pages.about', compact('title', 'page'));
     }
 
     public function cgu()
@@ -38,7 +40,9 @@ class PacomController extends Controller
 
     public function contact()
     {
-        return view('front.pages.contact');
+        $title = "Contactez-nous";
+        $page = "Contact";
+        return view('front.pages.contact', compact('title', 'page'));
     }
 
     public function actualities()
@@ -53,12 +57,16 @@ class PacomController extends Controller
 
     public function services()
     {
-        return view('front.pages.services.index');
+        $title = "Nos services";
+        $page = "Services";
+        return view('front.pages.services.index', compact('title', 'page'));
     }
 
     public function singleService(Service $service)
     {
-        return view('front.pages.services.single', compact('service'));
+        $title = "Détails du service";
+        $page = "Services";
+        return view('front.pages.services.single', compact('service', 'title', 'page'));
     }
 
     public function sendContact(ContactStoreRequest $request): RedirectResponse
@@ -68,9 +76,9 @@ class PacomController extends Controller
                 'fullname' => ['required', 'string'],
                 'email' => ['required', 'email'],
                 'phone' => ['required'],
-                'subject' => ['required', 'string'],
+                // 'subject' => ['required', 'string'],
                 'message' => ['required', 'string'],
-                'g-recaptcha-response' => ['required'],
+                // 'g-recaptcha-response' => ['required'],
             ];
             // $this->validate($request, $rules, ['g-recaptcha-response' => "Veuillez compléter le reCAPTCHA pour continuer."]);
             // dd('ici');
@@ -94,7 +102,7 @@ class PacomController extends Controller
             //     'recaptcha_response' => $recaptcha,
             // ]);
 
-            $data = $request->only(['fullname', 'email', 'phone', 'subject', 'message']);
+            $data = $request->only(['fullname', 'email', 'phone', 'message']);
             $contact = Contact::create($data);
 
             $admins = User::whereHas('roles', function ($query) {
