@@ -30,9 +30,6 @@
                     <li class="">
                         <a href="{{route('index')}}" class=" active" >Acceuil</a>
                     <li class="">
-                        <a href="{{route('index')}}" class=" active" >Acceuil</a>
-                    </li>
-                    <li class="">
                         <a href="{{route('services')}}" class="" >Services</a>
                     </li>
                     <li class="">
