@@ -69,8 +69,50 @@ class PacomController extends Controller
     public function singleService(Service $service)
     {
         $title = "Détails du service";
-        $page = "Services";
+        $page = "Service";
         return view('front.pages.services.single', compact('service', 'title', 'page'));
+    }
+
+    public function projects()
+    {
+        $title = "Nos projets";
+        $page = "Projets";
+        return view('front.pages.projects.index', compact('title', 'page'));
+    }
+
+    public function singleProject()
+    {
+        $title = "Détails du projet";
+        $page = "Projet";
+        return view('front.pages.projects.single', compact('title', 'page'));
+    }
+
+    public function produits()
+    {
+        $title = "Nos produits";
+        $page = "Produits";
+        return view('front.pages.produits.index', compact('title', 'page'));
+    }
+
+    public function singleProduit()
+    {
+        $title = "Détails du produit";
+        $page = "Produit";
+        return view('front.pages.produits.single', compact('title', 'page'));
+    }
+
+    public function blogs()
+    {
+        $title = "Blog";
+        $page = "Blogs";
+        return view('front.pages.blogs.index', compact('title', 'page'));
+    }
+
+    public function singleBlog()
+    {
+        $title = "Détails du blog";
+        $page = "Blog";
+        return view('front.pages.blogs.single', compact('title', 'page'));
     }
 
     public function sendContact(ContactStoreRequest $request): RedirectResponse

@@ -50,4 +50,4 @@
     </div>
     <!-- End Blog -->
 
-    @endsection
+@endsection

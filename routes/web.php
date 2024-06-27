@@ -63,8 +63,17 @@ Route::post('/nous-contacter/send', [PacomController::class, 'sendContact'])->na
 Route::get('/nos-actualites', [PacomController::class, 'actualities'])->name('news');
 Route::get('/actualite/{actuality:slug}', [PacomController::class, 'singleActuality'])->name('actuality.single');
 
-Route::get('/nos-services', [PacomController::class, 'services'])->name('services'); 
+Route::get('/nos-services', [PacomController::class, 'services'])->name('services');
 Route::get('/service/{service:slug}', [PacomController::class, 'singleService'])->name('service.single');
+
+Route::get('/nos-projets', [PacomController::class, 'projects'])->name('projects');
+Route::get('/project', [PacomController::class, 'singleproject'])->name('project.single');
+
+Route::get('/nos-produits', [PacomController::class, 'produits'])->name('produits');
+Route::get('/produit', [PacomController::class, 'singleProduit'])->name('produit.single');
+
+Route::get('/nos-blogs', [PacomController::class, 'blogs'])->name('blogs');
+Route::get('/blog', [PacomController::class, 'singleblog'])->name('blog.single');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 

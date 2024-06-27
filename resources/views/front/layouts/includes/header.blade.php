@@ -29,11 +29,21 @@
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="">
                         <a href="{{route('index')}}" class=" active" >Acceuil</a>
+                    </li>
                     <li class="">
                         <a href="{{route('services')}}" class="" >Services</a>
                     </li>
                     <li class="">
+                        <a href="{{route('produits')}}" class="" >Produits</a>
+                    </li>
+                    <li class="">
+                        <a href="{{route('projects')}}" class="" >Projets</a>
+                    </li>
+                    <li class="">
                         <a href="{{ route('news') }}" class="" >Actualités</a>
+                    </li>
+                    <li class="">
+                        <a href="{{ route('blogs') }}" class="" >Blogs</a>
                     </li>
                     <li class="">
                         <a href="{{ route('about') }}" class="" >A-propos</a>
