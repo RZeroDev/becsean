@@ -32,16 +32,10 @@
                             <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/8.png') }}"
                                 alt="Image Not Found">
                         </div>
-                        <h2 class="title">Distributors of Organic Produce</h2>
-                        <p>
-                            Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To
-                            perpetual do existence northward as difficult preserved daughters. Continued at up to zealously.
-                        </p>
-                        <ul class="list-standard">
-                            <li>Modern Agriculture Equipment</li>
-                            <li>Awesome Harvest of Wheat</li>
-                            <li>Fresh Fruits & Vegetables</li>
-                        </ul>
+                        <h2 class="title">Découvrez Nos Solutions Agricoles Innovantes</h2>
+                       <p>
+                        Visionnez notre vidéo pour comprendre comment nos services peuvent transformer votre projet agricole. De l'étude initiale à la réalisation et au suivi technique, nous offrons une expertise complète pour maximiser vos rendements et promouvoir des pratiques durables.
+                       </p>
                     </div>
                 </div>
             </div>
@@ -178,56 +172,7 @@
 
     <!-- Start Choose Us Area
         ============================================= -->
-    <div class="choose-us-style-one-area default-padding-bottom">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-xl-5 col-lg-5">
-                    <div class="choose-us-thumb">
-                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/9.png') }}"
-                            alt="Image Not Found">
-                    </div>
-                </div>
-                <div class="col-xl-6 offset-xl-1 col-lg-7">
-                    <div class="achivement-items">
-                        <ul class="list-details">
-                            <li>
-                                <h4>Pure & Organic</h4>
-                                <p>
-                                    Continued at up to zealously necessary breakfast. Surrounded sir motionless she end
-                                    literature. Gay direction neglected but supported yet her.
-                                </p>
-                            </li>
-                            <li>
-                                <h4>Always Fresh</h4>
-                                <p>
-                                    Continued at up to zealously necessary breakfast. Surrounded sir motionless she end
-                                    literature. Gay direction neglected but supported yet her.
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="achivement-content">
-                            <div class="item">
-                                <div class="progressbar">
-                                    <div class="circle" data-percent="83">
-                                        <strong></strong>
-                                    </div>
-                                </div>
-                                <h4>Organic Solutions</h4>
-                            </div>
-                            <div class="item">
-                                <div class="progressbar">
-                                    <div class="circle" data-percent="60">
-                                        <strong></strong>
-                                    </div>
-                                </div>
-                                <h4>Quality Agriculture</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   @include('front.layouts.includes.chooses')
     <!-- End Choose Us -->
 
     <!-- Start Contact Us
@@ -240,18 +185,18 @@
         <div class="container">
             <div class="row align-center">
 
-                <div class="col-tact-stye-one col-xl-6 col-lg-7">
+                <div class="col-tact-stye-one col-xl-6 col-lg-7" id="contact">
                     <div class="contact-form-style-one mb-md-50">
                         <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/10.png') }}"
                             alt="Image Not Found">
-                        <h5 class="sub-title">Have Questions?</h5>
-                        <h2 class="heading">Send us a massage</h2>
-                        <form action="https://validthemes.net/site-template/agrica/assets/mail/contact.php" method="POST"
-                            class="contact-form contact-form">
+                        <h5 class="sub-title">Vous avez des questions?</h5>
+                        <h2 class="heading">Envoyez nous un message</h2>
+                        <form action="{{ route('contact.send') }}" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name"
+                                        <input class="form-control" required name="fullname" placeholder="Nom & Prénoms"
                                             type="text">
                                         <span class="alert-error"></span>
                                     </div>
@@ -260,14 +205,14 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*"
+                                        <input class="form-control" required  name="email" placeholder="Address email"
                                             type="email">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                        <input class="form-control" required  name="phone" placeholder="Téléphone"
                                             type="text">
                                         <span class="alert-error"></span>
                                     </div>
@@ -276,20 +221,14 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                        <textarea class="form-control" required name="message" placeholder="Parler nous de votre project"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
-                                        <i class="fa fa-paper-plane"></i> Get in Touch
-                                    </button>
+                                    <button type="submit"><i class="fa fa-paper-plane"></i> Prendre contact</button>
                                 </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-lg-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
                             </div>
                         </form>
                     </div>
@@ -298,9 +237,9 @@
                 <div class="col-tact-stye-one col-xl-5 offset-xl-1 col-lg-5">
                     <div class="contact-style-one-info text-light">
                         <h2>
-                            Contact
+                           Nos
                             <span>
-                                Information
+                                Contact
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                                     <path
                                         d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0"
@@ -309,28 +248,27 @@
                             </span>
                         </h2>
                         <p>
-                            Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why
-                            she shewing.
+                            Vous pouvez nous joindre aux addresses suivantes
                         </p>
                         <ul>
                             <li>
                                 <div class="content">
-                                    <h5 class="title">Hotline</h5>
-                                    <a href="#">+4733378901</a>
+                                    <h5 class="title">Téléphone</h5>
+                                    <a href="#">{{ FrontHelper::getSettings()->company_phone }}</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="info">
-                                    <h5 class="title">Our Location</h5>
+                                    <h5 class="title">Lacalisation</h5>
                                     <p>
-                                        55 Main Street, The Grand Avenue 2nd Block, <br> New York City
+                                        {{ FrontHelper::getSettings()->company_headquarters }}
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <div class="info">
                                     <h5 class="title">Official Email</h5>
-                                    <a href="mailto:info@agrul.com.com">info@agrul.com</a>
+                                    <a href="mailto:{{ FrontHelper::getSettings()->company_email}}</">{{ FrontHelper::getSettings()->company_email }}</</a>
                                 </div>
                             </li>
                         </ul>

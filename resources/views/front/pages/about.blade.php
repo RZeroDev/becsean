@@ -10,7 +10,7 @@
     @include('front.layouts.includes.about')
     <!-- End About -->
 
-    <!-- Start Timeline
+    {{-- <!-- Start Timeline
     ============================================= -->
     <div class="timeline-area default-padding-bottom" style="background-image: url({{FrontHelper::getEnvFolder().asset('storage/front/assets/img/shape/21.png')}});">
         <div class="container">
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-    <!-- End Timeline -->
+    <!-- End Timeline --> --}}
 
     <!-- Start Choose Us
     ============================================= -->

@@ -215,6 +215,13 @@ class FrontHelper
         return $services;
     }
 
+    public static function allActuForFooter()
+    {
+
+        $actu = Actuality::paginate(3);
+        return $actu;
+    }
+
     public static function allServices()
     {
         if (Route::currentRouteName() != 'services')

@@ -24,7 +24,7 @@
                                 <h4><a href="{{ route('service.single',$service->slug) }}">{{ $service->title }}</a></h4>
                             </div>
                             <p>
-                                {{$service->description}}
+                                {{Str::limit($service->description, 240)}}
                             </p>
                         </div>
                         <a href="services-details.html" class="btn-angle"><i class="fas fa-arrow-right"></i></a>

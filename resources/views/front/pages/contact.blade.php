@@ -17,9 +17,9 @@
                 <div class="col-tact-stye-one col-xl-7 col-lg-7">
                     <div class="contact-form-style-one mb-md-50">
                         <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/illustration/10.png')}}" alt="Image Not Found">
-                        <h5 class="sub-title">Avoir Des Questions?</h5>
+                        <h5 class="sub-title">Vous Avez Des Questions?</h5>
                         <h2 class="heading">Envoyez-nous un massage</h2>
-                        <form action="{{ route('contact.send') }}" method="POST" class="contact-form contact-form">
+                        <form action="{{ route('contact.send') }}" method="POST" class="">
                             @csrf
                             <div class="row">
                                 <div class="col-lg-12">
@@ -74,28 +74,25 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0" style="animation-play-state: running;"></path></svg>
                             </span>
                         </h2>
-                        <p>
-                            Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.
-                        </p>
                         <ul>
                             <li>
                                 <div class="content">
                                     <h5 class="title">Ligne d'assistance</h5>
-                                    <a href="#">+4733378901</a>
+                                    <a href="#">{{ FrontHelper::getSettings()->company_phone }}</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="info">
                                     <h5 class="title">Notre emplacement</h5>
                                     <p>
-                                        55 Main Street, The Grand Avenue 2nd Block, <br> New York City
+                                        {{ FrontHelper::getSettings()->company_headquarters }}
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <div class="info">
                                     <h5 class="title">E-mail officiel</h5>
-                                    <a href="mailto:info@agrul.com.com">info@agrul.com</a>
+                                    <a href="mailto:{{ FrontHelper::getSettings()->company_email }}.com">{{ FrontHelper::getSettings()->company_email }}</a>
                                 </div>
                             </li>
                         </ul>
