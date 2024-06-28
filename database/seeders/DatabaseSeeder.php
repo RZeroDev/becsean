@@ -26,22 +26,6 @@ class DatabaseSeeder extends Seeder
             PhoneTableSeeder::class,
             SettingTableSeeder::class,
             PartnerTableSeeder::class,
-            AutomatingTableSeeder::class,
-            SeoTableSeeder::class,
-            HeroTableSeeder::class,
-            AboutHomeTableSeeder::class,
-            ServiceHomeTableSeeder::class,
-            TestimonialHomeTableSeeder::class,
-            AboutPolitiqueTableSeeder::class,
-            WorkAreaTableSeeder::class,
-            AuthorSectionTableSeeder::class,
-            DescriptionFooterTableSeeder::class,
-            // ProcessWorkTableSeeder::class,
-            ServicePageTableSeeder::class,
-            ActualityPageTableSeeder::class,
-            CguTableSeeder::class,
-            legalPageTableSeeder::class,
-            SectionStatusTableSeeder::class,
        ]);
     }
 }

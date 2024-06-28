@@ -47,6 +47,8 @@ Breadcrumbs::macro('resource', function (string $name, string $title) {
 
 Breadcrumbs::resource('partners', 'Partenaires');
 Breadcrumbs::resource('services', 'Services');
+Breadcrumbs::resource('projects', 'Projets');
+Breadcrumbs::resource('products', 'Produits');
 Breadcrumbs::resource('underServices', 'Sous Services');
 Breadcrumbs::resource('testimonials', 'Témoignages');
 Breadcrumbs::resource('actualities', 'Actualités');

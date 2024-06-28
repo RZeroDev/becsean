@@ -23,6 +23,8 @@ use App\Http\Controllers\LinkedinController;
 use App\Http\Controllers\SeoController;
 use App\Http\Controllers\HeroController;
 use App\Http\Controllers\LegalPageController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SectionStatusController;
 use App\Http\Controllers\ServicePageController;
 use App\Http\Controllers\ServieHomeController;
@@ -101,6 +103,16 @@ Route::middleware('auth')->group(function () {
     //actualities
     Route::resource('actualities', ActualityController::class)->parameters([
         'actualities' => 'actuality:slug',
+    ]);
+
+     //products
+     Route::resource('products', ProductController::class)->parameters([
+        'products' => 'product:slug',
+    ]);
+
+     //projects
+     Route::resource('projects', ProjectController::class)->parameters([
+        'projects' => 'project:slug',
     ]);
     Route::get('/actualities/status/{slug}', [ActualityController::class, 'status'])->name('actualities.status');
 

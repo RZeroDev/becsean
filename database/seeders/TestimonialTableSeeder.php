@@ -19,7 +19,7 @@ class TestimonialTableSeeder extends Seeder
             'slug'=>'lorem',
             'job' => "Cultivateur de fruits",
             'description' => "La réalisation de mon projet agricole a été un véritable succès grâce à leur accompagnement complet. De l'acquisition du terrain à la mise en place des infrastructures, ils ont été présents à chaque étape. Leur approche personnalisée et leur professionnalisme m'ont vraiment impressionnée.",
-            'image' => 'storage/front/assets/img/icon/1.png',
+            'image' => 'storage/front/assets/img/icon/2.png',
         ]);
 
         Testimonial::create([

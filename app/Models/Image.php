@@ -13,6 +13,8 @@ class Image extends Model
         'url',
         'service_id',
         'actuality_id',
+        'project_id',
+        'product_id'
     ];
 
     public function service()
@@ -23,5 +25,13 @@ class Image extends Model
     public function actuality()
     {
         return $this->belongsTo(Actuality::class);
+    }
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 }
