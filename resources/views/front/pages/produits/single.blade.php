@@ -16,8 +16,13 @@
                     <div class="col-lg-6">
                         <div class="product-thumb">
                             <div id="timeline-carousel" class="carousel slide" data-bs-ride="carousel">
-
-                                <div class="carousel-inner item-box">
+                                <div class="carousel-item active product-item">
+                                    <a href="{{ asset(FrontHelper::getEnvFolder() . $product->main_image) }}" class="item popup-gallery">
+                                        <img src="{{ asset(FrontHelper::getEnvFolder() . $product->main_image) }}" alt="Thumb">
+                                    </a>
+                                    {{-- <span class="onsale theme">-16%</span> --}}
+                                </div>
+                                {{-- <div class="carousel-inner item-box">
                                     <div class="carousel-item active product-item">
                                         <a href="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/1.png') }}" class="item popup-gallery">
                                             <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/1.png') }}" alt="Thumb">
@@ -71,7 +76,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
 
                                 <!-- End Carousel Content -->
@@ -82,7 +87,7 @@
 
                     <div class="col-lg-6">
                         <div class="single-product-contents">
-                            <div class="summary-top-box">
+                            {{-- <div class="summary-top-box">
                                 <div class="product-tags">
                                     <a href="#">Crop</a>
                                     <a href="#">Organic</a>
@@ -97,21 +102,21 @@
                                     </div>
                                     <span>(8 Review)</span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <h2 class="product-title">
-                                Fresh Red Seedless
+                                {{ $product->title }}
                             </h2>
-                            <div class="price">
+                            {{-- <div class="price">
                                 <span><del>$8.00</del></span>
                                 <span>$5.00</span>
                             </div>
                             <div class="product-stock validthemes-in-stock">
                                 <span>In Stock</span>
-                            </div>
+                            </div> --}}
                             <p>
-                                The Aspire 5 is a compact laptop in a thin case with a metal cover, a high-quality Full HD IPS display and a rich set of interfaces. Thanks to its powerful components, the laptop can handle resource-intensive tasks perfectly and is also suitable for most games. non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder
+                                {{ $product->description }}
                             </p>
-                            <div class="product-purchase-list">
+                            {{-- <div class="product-purchase-list">
                                 <input type="number" id="quantity" step="1" name="quantity" min="0" placeholder="0">
                                 <a href="#" class="btn secondary btn-theme btn-sm animation">
                                     <i class="fas fa-shopping-cart"></i>
@@ -127,8 +132,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="product-estimate-delivary">
+                            </div> --}}
+                            {{-- <div class="product-estimate-delivary">
                                 <i class="fas fa-box-open"></i>
                                 <strong> 2-day Delivery</strong>
                                 <span>Speedy and reliable parcel delivery!</span>
@@ -143,14 +148,14 @@
                                     <a href="#">Speaker</a>,
                                     <a href="#">Headphone</a>
                                 </span>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Product Bottom Info  -->
-            <div class="single-product-bottom-info">
+            {{-- <div class="single-product-bottom-info">
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Tab Nav -->
@@ -310,7 +315,7 @@
                         <!-- End Tab Content -->
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- End Product Bottom Info  -->
 
             <!-- Related Product  -->
@@ -321,203 +326,48 @@
                         <div class="vt-products text-center related-product-carousel swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Single product -->
-                                <div class="swiper-slide">
-                                    <div class="product">
-                                        <div class="product-contents">
-                                            <div class="product-image">
-                                                <a href="{{ route('produit.single') }}">
-                                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/1.png') }}" alt="Product">
-                                                </a>
-                                                <div class="shop-action">
-                                                    <ul>
-                                                        <li class="cart">
-                                                            <a href="#"><span>Add to cart</span></a>
-                                                        </li>
-                                                        <li class="wishlist">
-                                                            <a href="#"><span>Add to wishlist</span></a>
-                                                        </li>
-                                                        <li class="quick-view">
-                                                            <a href="#"><span>Quick view</span></a>
-                                                        </li>
-                                                    </ul>
+                                @foreach (FrontHelper::allProduct() as $product)
+                                    <!-- Single product -->
+                                    <div class="swiper-slide">
+                                        <div class="product">
+                                            <div class="product-contents">
+                                                <div class="product-image">
+                                                    <a href="#">
+                                                        <img src="{{ asset(FrontHelper::getEnvFolder() . $product->main_image) }}" alt="Product">
+                                                    </a>
+                                                    {{-- <div class="shop-action">
+                                                        <ul>
+                                                            <li class="cart">
+                                                                <a href="#"><span>Add to cart</span></a>
+                                                            </li>
+                                                            <li class="wishlist">
+                                                                <a href="#"><span>Add to wishlist</span></a>
+                                                            </li>
+                                                            <li class="quick-view">
+                                                                <a href="#"><span>Quick view</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div> --}}
                                                 </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-tags">
-                                                    <a href="#">Crop</a>
-                                                    <a href="#">Organic</a>
+                                                <div class="product-caption">
+                                                    {{-- <div class="product-tags">
+                                                        <a href="#">Crop</a>
+                                                        <a href="#">Organic</a>
+                                                    </div> --}}
+                                                    <h4 class="product-title">
+                                                        <a href="#">{{ $product->title }}</a>
+                                                    </h4>
+                                                    {{-- <div class="price">
+                                                        <span>$12.00</span>
+                                                    </div> --}}
+                                                    <a href="{{ route('produit.single', $product->slug) }}" class="cart-btn"> Voir plus</a>
                                                 </div>
-                                                <h4 class="product-title">
-                                                    <a href="{{ route('produit.single') }}">Strawberry</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span>$12.00</span>
-                                                </div>
-                                                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Single product -->
-                                <!-- Single product -->
-                                <div class="swiper-slide">
-                                    <div class="product">
-                                        <div class="product-contents">
-                                            <div class="product-image">
-                                                <span class="onsale">Sale!</span>
-                                                <a href="{{ route('produit.single') }}">
-                                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/2.png') }}" alt="Product">
-                                                </a>
-                                                <div class="shop-action">
-                                                    <ul>
-                                                        <li class="cart">
-                                                            <a href="#"><span>Add to cart</span></a>
-                                                        </li>
-                                                        <li class="wishlist">
-                                                            <a href="#"><span>Add to wishlist</span></a>
-                                                        </li>
-                                                        <li class="quick-view">
-                                                            <a href="#"><span>Quick view</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-tags">
-                                                    <a href="#">Vegetables</a>
-                                                    <a href="#">Winter</a>
-                                                </div>
-                                                <h4 class="product-title">
-                                                    <a href="{{ route('produit.single') }}">Organic Carrot</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span><del>$8.00</del></span>
-                                                    <span>$5.00</span>
-                                                </div>
-                                                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single product -->
-                                <!-- Single product -->
-                                <div class="swiper-slide">
-                                    <div class="product">
-                                        <div class="product-contents">
-                                            <div class="product-image">
-                                                <a href="{{ route('produit.single') }}">
-                                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/3.png') }}" alt="Product">
-                                                </a>
-                                                <div class="shop-action">
-                                                    <ul>
-                                                        <li class="cart">
-                                                            <a href="#"><span>Add to cart</span></a>
-                                                        </li>
-                                                        <li class="wishlist">
-                                                            <a href="#"><span>Add to wishlist</span></a>
-                                                        </li>
-                                                        <li class="quick-view">
-                                                            <a href="#"><span>Quick view</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-tags">
-                                                    <a href="#">Fruits</a>
-                                                    <a href="#">Juicy</a>
-                                                </div>
-                                                <h4 class="product-title">
-                                                    <a href="{{ route('produit.single') }}">Fresh Red Seedless</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span>$14.00</span>
-                                                </div>
-                                                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single product -->
-                                <!-- Single product -->
-                                <div class="swiper-slide">
-                                    <div class="product">
-                                        <div class="product-contents">
-                                            <div class="product-image">
-                                                <a href="{{ route('produit.single') }}">
-                                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/8.png') }}" alt="Product">
-                                                </a>
-                                                <div class="shop-action">
-                                                    <ul>
-                                                        <li class="cart">
-                                                            <a href="#"><span>Add to cart</span></a>
-                                                        </li>
-                                                        <li class="wishlist">
-                                                            <a href="#"><span>Add to wishlist</span></a>
-                                                        </li>
-                                                        <li class="quick-view">
-                                                            <a href="#"><span>Quick view</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-tags">
-                                                    <a href="#">Vegetables</a>
-                                                    <a href="#">Fruit</a>
-                                                </div>
-                                                <h4 class="product-title">
-                                                    <a href="{{ route('produit.single') }}">Green Avocado</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span>$6.00</span>
-                                                </div>
-                                                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single product -->
-                                <!-- Single product -->
-                                <div class="swiper-slide">
-                                    <div class="product">
-                                        <div class="product-contents">
-                                            <div class="product-image">
-                                                <a href="{{ route('produit.single') }}">
-                                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/products/4.png') }}" alt="Product">
-                                                </a>
-                                                <div class="shop-action">
-                                                    <ul>
-                                                        <li class="cart">
-                                                            <a href="#"><span>Add to cart</span></a>
-                                                        </li>
-                                                        <li class="wishlist">
-                                                            <a href="#"><span>Add to wishlist</span></a>
-                                                        </li>
-                                                        <li class="quick-view">
-                                                            <a href="#"><span>Quick view</span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="product-caption">
-                                                <div class="product-tags">
-                                                    <a href="#">Fruits</a>
-                                                    <a href="#">Juicy</a>
-                                                </div>
-                                                <h4 class="product-title">
-                                                    <a href="{{ route('produit.single') }}">Organic Sweet Corn</a>
-                                                </h4>
-                                                <div class="price">
-                                                    <span>$8.00</span>
-                                                </div>
-                                                <a href="#" class="cart-btn"><i class="fas fa-shopping-bag"></i> Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single product -->
+                                    <!-- Single product -->
+                                @endforeach
+
 
                             </div>
 

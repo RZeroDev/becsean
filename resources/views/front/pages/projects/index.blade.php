@@ -14,18 +14,21 @@
                 <div class="col-md-12 gallery-content">
                     <div class="magnific-mix-gallery gallery-masonary">
                         <div id="gallery-masonary" class="gallery-items colums-3">
-                            <!-- Single Item -->
-                            <div class="gallery-item">
-                                <div class="gallery-style-one">
-                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/1.jpg') }}" alt="Image not Found">
-                                    <div class="overlay">
-                                        <p>Fruit</p>
-                                        <h4><a href="{{ route('project.single') }}">Healthy Food</a></h4>
+                            @foreach (FrontHelper::allProject() as $project)
+                                <!-- Single Item -->
+                                <div class="gallery-item">
+                                    <div class="gallery-style-one">
+                                        <img src="{{ asset(FrontHelper::getEnvFolder() . $project->main_image) }}" alt="Image not Found">
+                                        <div class="overlay">
+                                            {{-- <p>Fruit</p> --}}
+                                            <h4><a href="{{ route('project.single', $project->slug) }}">{{ $project->title }}</a></h4>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- End Single Item -->
-                            <!-- Single Item -->
+                                <!-- End Single Item -->
+                            @endforeach
+
+                            {{-- <!-- Single Item -->
                             <div class="gallery-item width">
                                 <div class="gallery-style-one">
                                     <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/6.jpg') }}" alt="Image not Found">
@@ -68,7 +71,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Single Item -->
+                            <!-- End Single Item --> --}}
                         </div>
                     </div>
 

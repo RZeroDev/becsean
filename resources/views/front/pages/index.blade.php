@@ -67,9 +67,9 @@
                                     <div class="info">
                                         <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/shape/quote-big.png') }}"
                                             alt="Image Not Found">
-                                        <p>
-                                            “{{$item->description}}”
-                                        </p>
+                                            <p style="font-size: 22px;">
+                                                “{{$item->description}}”
+                                            </p>                                            
                                         <div class="provider">
                                             <div class="content">
                                                 <h4>{{$item->fullname}}</h4>

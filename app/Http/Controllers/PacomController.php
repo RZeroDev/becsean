@@ -7,6 +7,8 @@ use App\Models\Service;
 use App\Models\User;
 use App\Models\Actuality;
 use App\Models\Contact;
+use App\Models\Product;
+use App\Models\Project;
 use App\Mail\receiveContactMail;
 use App\Mail\sendContactMail;
 use Illuminate\Support\Facades\Http;
@@ -80,11 +82,11 @@ class PacomController extends Controller
         return view('front.pages.projects.index', compact('title', 'page'));
     }
 
-    public function singleProject()
+    public function singleProject(Project $project)
     {
-        $title = "Détails du projet";
+        $title = $project->title;
         $page = "Projet";
-        return view('front.pages.projects.single', compact('title', 'page'));
+        return view('front.pages.projects.single', compact('project', 'title', 'page'));
     }
 
     public function produits()
@@ -94,12 +96,20 @@ class PacomController extends Controller
         return view('front.pages.produits.index', compact('title', 'page'));
     }
 
-    public function singleProduit()
+    public function singleProduit(Product $product)
     {
-        $title = "Détails du produit";
+        $title = $product->title;
         $page = "Produit";
-        return view('front.pages.produits.single', compact('title', 'page'));
+        return view('front.pages.produits.single', compact('product', 'title', 'page'));
     }
+
+    // public function singleProduit(Product $product)
+    // {
+    //     dd('ee');
+    //     $title = "Détails du produit";
+    //     $page = $product->title;
+    //     return view('front.pages.produits.single', compact('title', 'page', 'product'));
+    // }
 
     public function blogs()
     {

@@ -15,7 +15,7 @@ class ServiceTableSeeder extends Seeder
      */
     public function run(): void
     {
-        Service::create([
+        Service::create([ 
             'title'=> 'Étude des projets agricoles',
             'slug'=> Str::slug('Étude des projets agricoles'),
             'description'=> "Notre service d'étude des projets agricoles se concentre sur l'identification des domaines agricoles exploitables et la sélection des cultures les mieux adaptées à ces terrains. Nous réalisons des analyses approfondies pour garantir la réussite et la durabilité de vos projets agricoles.",
