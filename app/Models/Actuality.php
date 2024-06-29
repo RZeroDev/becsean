@@ -21,6 +21,7 @@ class Actuality extends Model
         'instagram_post_id',
         'twitter_post_id',
         'linkedin_post_id',
+        'actualities_categorie_id' 
     ];
 
     public function images()
