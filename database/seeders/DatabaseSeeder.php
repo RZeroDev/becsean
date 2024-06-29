@@ -25,6 +25,8 @@ class DatabaseSeeder extends Seeder
             ImageTableSeeder::class,
             TestimonialTableSeeder::class,
             ActualityTableSeeder::class,
+            ProjectSeeder::class,
+            ProductSeeder::class,
             EmailTableSeeder::class,
             PhoneTableSeeder::class,
             SettingTableSeeder::class,
