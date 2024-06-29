@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\ActualitiesCategorie;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -23,6 +24,7 @@ return new class extends Migration
             $table->string('linkedin_post_id')->nullable();
             $table->string('twitter_post_id')->nullable();
             $table->text('description');
+            $table->foreignIdFor(ActualitiesCategorie::class);
             $table->string('status')->default(true);
             $table->timestamps();
         });

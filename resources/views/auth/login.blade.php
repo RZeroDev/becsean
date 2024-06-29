@@ -57,9 +57,7 @@
                     <div
                         class="relative md:flex flex-col md:min-h-screen justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 md:px-10 py-10 px-4 z-1">
                         <div class="text-center">
-                            <a href="{{ route('index') }}"><img
-                                    src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/logo-color.png') }}"
-                                    class="mx-auto" alt=""></a>
+                            <h2 class="w-150">Becsean</h2>
                         </div>
                         <div class="title-heading text-center md:my-auto my-20">
                             <form action="{{ route('login') }}" method="POST" class="text-start">
@@ -107,9 +105,8 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script> {{ FrontHelper::getAppName() }} Tous droits réservés. Développé par <a target="_blank"
-                                    href="https://twoftechnologies.fr/">
-                                    <span class="text-warning">TwoF</span>
-                                    <span class="text-info">Technologies</span>
+                                    href="mailto:hadicodemaster@gmail.com">
+                                    <span class="text-info">Hadicodemaster@gmail.com</span>
                                 </a>.
                             </p>
                         </div>

@@ -43,7 +43,7 @@
 
                                 <div class="lg:col-span-6 mb-5">
                                     <div class="text-start">
-                                        <label for="name" class="font-semibold">Numéro de téléphone principale:</label>
+                                        <label for="name" class="font-semibold">Numéro de téléphone principale(WhatsApp):</label>
                                         <div class="form-icon relative mt-2">
                                             <i data-feather="edit-3" class="size-4 absolute top-3 start-4"></i>
                                             <input name="company_phone" id="company_phone" type="text" required

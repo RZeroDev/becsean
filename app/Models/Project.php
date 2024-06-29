@@ -5,23 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Actuality extends Model
+class Project extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'title',
-        'slug',
-        'image',
-        'pdf',
-        'video',
         'status',
+        'slug',
         'description',
-        'facebook_post_id',
-        'instagram_post_id',
-        'twitter_post_id',
-        'linkedin_post_id',
-        'actualities_categorie_id' 
+        'main_image',
     ];
 
     public function images()

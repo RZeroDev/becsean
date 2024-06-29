@@ -20,9 +20,24 @@
                         <i class="uil uil-apps me-2"></i>Services
                     </a>
                 </li>
+                <li class="sidebar {{ request()->is('products*') ? 'active' : '' }}">
+                    <a href="{{ route('products.index') }}">
+                        <i class="uil uil-apps me-2"></i>Produits
+                    </a>
+                </li>
+                <li class="sidebar {{ request()->is('projects*') ? 'active' : '' }}">
+                    <a href="{{ route('projects.index') }}">
+                        <i class="uil uil-apps me-2"></i>Projets
+                    </a>
+                </li>
                 <li class="sidebar {{ request()->is('actualities*') ? 'active' : '' }}">
                     <a href="{{ route('actualities.index') }}">
                         <i class="uil uil-apps me-2"></i>Actualités
+                    </a>
+                </li>
+                <li class="sidebar {{ request()->is('partners*') ? 'active' : '' }}">
+                    <a href="{{ route('partners.index') }}">
+                        <i class="uil uil-apps me-2"></i>Partenaires
                     </a>
                 </li>
                 <li class="sidebar-dropdown {{ request()->is('emails*') || request()->is('phones*') ? 'active' : '' }}">

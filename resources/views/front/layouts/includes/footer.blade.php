@@ -3,40 +3,40 @@
         <div class="f-items default-padding">
             <div class="row">
 
-                <!-- Single Itme -->
+                <!-- Single Item -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item about">
                         <img class="logo" src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/logo-light.png')}}" alt="Logo">
                     </div>
                 </div>
-                <!-- End Single Itme -->
+                <!-- End Single Item -->
 
-                <!-- Single Itme -->
+                <!-- Single Item -->
                 <div class="col-lg-2 col-md-6 item">
                     <div class="footer-item link">
                         <h4 class="widget-title">Lien utils</h4>
                         <ul>
                             <li>
-                                <a href="{{ route('index') }}">Acceuil</a>
+                                <a href="{{ route('index') }}" class="{{ Request::routeIs('index') ? 'active' : '' }}">Acceuil</a>
                             </li>
                             <li>
-                                <a href="{{ route('services') }}">Nos services</a>
+                                <a href="{{ route('services') }}" class="{{ Request::routeIs('services') ? 'active' : '' }}">Nos services</a>
                             </li>
                             <li>
-                                <a href="{{ route('news') }}">Actualités</a>
+                                <a href="{{ route('news') }}" class="{{ Request::routeIs('news') ? 'active' : '' }}">Actualités</a>
                             </li>
                             <li>
-                                <a href="{{ route('about') }}">A propos</a>
+                                <a href="{{ route('about') }}" class="{{ Request::routeIs('about') ? 'active' : '' }}">A propos</a>
                             </li>
                             <li>
-                                <a href="{{route('contact')}}">Contact</a>
+                                <a href="{{ route('contact') }}" class="{{ Request::routeIs('contact') ? 'active' : '' }}">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!-- End Single Itme -->
+                <!-- End Single Item -->
 
-                <!-- Single Itme -->
+                <!-- Single Item -->
                 <div class="col-lg-3 col-md-6 item">
                     <div class="footer-item recent-post">
                         <h4 class="widget-title">Articles récents</h4>
@@ -44,7 +44,7 @@
                             @foreach (FrontHelper::allActuForFooter() as $item)
                                  <li>
                                 <div class="thumb">
-                                    <a href="{{ route('actuality.single',$item->slug) }}">
+                                    <a href="{{ route('actuality.single', $item->slug) }}">
                                         <img src="{{ asset($item->image)}}" alt="Thumb">
                                     </a>
                                 </div>
@@ -52,17 +52,16 @@
                                     <div class="meta-title">
                                         <span class="post-date">{{ $item->created_at->format('d M Y') }}</span>
                                     </div>
-                                    <h5><a href="{{ route('actuality.single',$item->slug) }}">{{ Str::limit($item->title, 18, '...') }} </a></h5>
+                                    <h5><a href="{{ route('actuality.single', $item->slug) }}">{{ Str::limit($item->title, 18, '...') }}</a></h5>
                                 </div>
                             </li>
                             @endforeach
-                           
                         </ul>
                     </div>
                 </div>
-                <!-- End Single Itme -->
+                <!-- End Single Item -->
 
-                <!-- Single Itme -->
+                <!-- Single Item -->
                 <div class="col-lg-3 col-md-6 item">
                     <div class="footer-item contact">
                         <h4 class="widget-title">Contact</h4>
@@ -97,7 +96,7 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Single Itme -->
+                <!-- Single Item -->
 
             </div>
         </div>
@@ -115,3 +114,38 @@
         <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/7.png')}}" alt="Image Not Found">
     </div>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/{{ FrontHelper::getSettings()->company_whatsapp_number }}" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+</a>
+
+<!-- CSS for Floating Button -->
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.footer-item .link ul li a.active {
+    color: #25d366; /* Change this to your desired active color */
+    font-weight: bold;
+}
+</style>
+
+<!-- Font Awesome for WhatsApp Icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
