@@ -69,10 +69,10 @@ Route::get('/nos-services', [PacomController::class, 'services'])->name('service
 Route::get('/service/{service:slug}', [PacomController::class, 'singleService'])->name('service.single');
 
 Route::get('/nos-projets', [PacomController::class, 'projects'])->name('projects');
-Route::get('/project', [PacomController::class, 'singleproject'])->name('project.single');
+Route::get('/project/{project:slug}', [PacomController::class, 'singleproject'])->name('project.single');
 
 Route::get('/nos-produits', [PacomController::class, 'produits'])->name('produits');
-Route::get('/produit', [PacomController::class, 'singleProduit'])->name('produit.single');
+Route::get('/produit/{product:slug}', [PacomController::class, 'singleProduit'])->name('produit.single');
 
 Route::get('/nos-blogs', [PacomController::class, 'blogs'])->name('blogs');
 Route::get('/blog', [PacomController::class, 'singleblog'])->name('blog.single');
