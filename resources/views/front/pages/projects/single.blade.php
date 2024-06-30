@@ -90,7 +90,7 @@
                                 </div>
                             </div> --}}
 
-                            <div class="project-static-gallery">
+                            {{-- <div class="project-static-gallery">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
                                         <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/9.jpg') }}" alt="Thumb">
@@ -99,7 +99,7 @@
                                         <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/10.jpg') }}" alt="Thumb">
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
