@@ -12,6 +12,7 @@ use App\Models\Project;
 use App\Models\ProjectCategorie;
 use App\Models\ProductCategorie;
 use App\Models\ActualitiesCategorie;
+use App\Models\Partner;
 use App\Mail\receiveContactMail;
 use App\Mail\sendContactMail;
 use Illuminate\Support\Facades\Http;
