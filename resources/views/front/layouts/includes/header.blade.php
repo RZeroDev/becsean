@@ -40,7 +40,7 @@
                         <a href="{{ route('produits') }}" class="dropdown-toggle" data-toggle="dropdown" >Produits</a>
                         <ul class="dropdown-menu">
                             @foreach(FrontHelper::allProductCategorie() as $productCategorie)
-                                <li><a href="{{ route('produits', $productCategorie->id) }}">{{ $productCategorie->name }}</a></li>
+                                <li><a href="{{ route('produits', $productCategorie) }}">{{ $productCategorie->name }}</a></li>
                             @endforeach
                         </ul>
                     </li>
