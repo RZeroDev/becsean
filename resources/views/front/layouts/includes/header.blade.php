@@ -36,7 +36,7 @@
                     {{-- <li class="">
                         <a href="{{route('produits')}}" class="" >Produits</a>
                     </li> --}}
-                    <li class="dropdown"> 
+                    <li class="dropdown">
                         <a href="{{ route('produits') }}" class="dropdown-toggle" data-toggle="dropdown" >Produits</a>
                         <ul class="dropdown-menu">
                             @foreach(FrontHelper::allProductCategorie() as $productCategorie)
@@ -55,8 +55,16 @@
                     {{-- <li class="">
                         <a href="{{route('projects')}}" class="" >Projets</a>
                     </li> --}}
-                    <li class="">
+                    {{-- <li class="">
                         <a href="{{ route('news') }}" class="" >Actualités</a>
+                    </li> --}}
+                    <li class="dropdown">
+                        <a href="{{ route('news') }}" class="dropdown-toggle" data-toggle="dropdown" >Actualités</a>
+                        <ul class="dropdown-menu">
+                            @foreach(FrontHelper::allActualitiegorie() as $actualitiegorie)
+                                <li><a href="{{ route('news', $actualitiegorie->id) }}">{{ $actualitiegorie->name }}</a></li>
+                            @endforeach
+                        </ul>
                     </li>
                     {{-- <li class="">
                         <a href="{{ route('blogs') }}" class="" >Blogs</a>

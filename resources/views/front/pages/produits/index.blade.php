@@ -14,16 +14,12 @@
 
                 <div class="row item-flex center">
 
-                    <div class="col-lg-5 text-right">
+                    <div class="col-lg-12 text-left">
                         <p>
-                            Showing 1–10 of 47 results
+                            @if($param)
+                                {{ $productCategorie->name }}
+                            @endif
                         </p>
-                        <select name="cars" id="cars">
-                            <option value="volvo">Short by latest</option>
-                            <option value="saab">Short by Recent</option>
-                            <option value="mercedes">Short by Popular</option>
-                            <option value="audi">Short by Relevant</option>
-                          </select>
                     </div>
                 </div>
             </div>
@@ -62,15 +58,13 @@
                     </div>
                     <!-- End Tab Content -->
                     <!-- Pgination -->
-                    <nav class="woocommerce-pagination">
-                        <ul class="page-numbers">
-                            <li><a class="previous page-numbers" href="#"><i class="fas fa-angle-left"></i></a></li>
-
-                            <li><span aria-current="page" class="page-numbers current">1</span></li>
-                            <li><a class="page-numbers" href="#">2</a></li>
-                            <li><a class="next page-numbers" href="#"><i class="fas fa-angle-right"></i></a></li>
-                        </ul>
-                    </nav>
+                    <div class="row">
+                        <div class="col-md-12 pagi-area text-center">
+                            <nav aria-label="navigation">
+                                {{ FrontHelper::allProductCat()->links() }}
+                            </nav>
+                        </div>
+                    </div>
                 </div>
             </div>
             @else
@@ -205,15 +199,13 @@
 
 
                         <!-- Pgination -->
-                        <nav class="woocommerce-pagination">
-                            <ul class="page-numbers">
-                                <li><a class="previous page-numbers" href="#"><i class="fas fa-angle-left"></i></a></li>
-
-                                <li><span aria-current="page" class="page-numbers current">1</span></li>
-                                <li><a class="page-numbers" href="#">2</a></li>
-                                <li><a class="next page-numbers" href="#"><i class="fas fa-angle-right"></i></a></li>
-                            </ul>
-                        </nav>
+                        <div class="row">
+                            <div class="col-md-12 pagi-area text-center">
+                                <nav aria-label="navigation">
+                                    {{ FrontHelper::allProduct()->links() }}
+                                </nav>
+                            </div>
+                        </div>
                     </div>
                 </div>
             @endif

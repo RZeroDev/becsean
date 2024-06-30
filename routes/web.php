@@ -62,7 +62,7 @@ Route::get('/nous-contacter', [PacomController::class, 'contact'])->name('contac
 Route::post('/nous-contacter/send', [PacomController::class, 'sendContact'])->name('contact.send');
 
 
-Route::get('/nos-actualites', [PacomController::class, 'actualities'])->name('news');
+Route::get('/nos-actualites/{newCategorie?}', [PacomController::class, 'actualities'])->name('news');
 Route::get('/actualite/{actuality:slug}', [PacomController::class, 'singleActuality'])->name('actuality.single');
 
 Route::get('/nos-services', [PacomController::class, 'services'])->name('services');

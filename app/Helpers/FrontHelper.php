@@ -27,6 +27,7 @@ use App\Models\Project;
 use App\Models\Product;
 use App\Models\ProductCategorie;
 use App\Models\ProjectCategorie;
+use App\Models\ActualitiesCategorie;
 // use App\Helpers\FrontHelper;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
@@ -92,12 +93,21 @@ class FrontHelper
     }
 
     public static function allProduct() {
-        $product = Product::all();
+        if (Route::currentRouteName() != 'produits') {
+            $product = Product::orderBy('created_at', 'desc')->paginate(3);
+        } else {
+            $product = Product::orderBy('created_at', 'desc')->paginate(6);
+        }
         return $product;
     }
 
     public static function allProductCat($categorieId) {
-        $products = Product::where('product_categorie_id', $categorieId)->get();
+        if (Route::currentRouteName() != 'produits') {
+            $products = Product::where('product_categorie_id', $categorieId)->orderBy('created_at', 'desc')->paginate(3);
+        } else {
+            $products = Product::where('product_categorie_id', $categorieId)->orderBy('created_at', 'desc')->paginate(6);
+        }
+        // $products = Product::where('product_categorie_id', $categorieId)->get();
         return $products;
     }
 
@@ -116,6 +126,11 @@ class FrontHelper
         return $projects;
     }
 
+    public static function allActualitiegorie() {
+        $ActualitiesCategorie = ActualitiesCategorie::all();
+        return $ActualitiesCategorie;
+    }
+
     public static function allActualities()
     {
         if (Route::currentRouteName() != 'news')
@@ -125,6 +140,19 @@ class FrontHelper
         else
         {
             $actualities = Actuality::orderBy('created_at', 'desc')->paginate(6);
+        }
+        return $actualities;
+    }
+
+    public static function allActualitiesCat($categorieId)
+    {
+        if (Route::currentRouteName() != 'news')
+        {
+            $actualities = Actuality::where('actualities_categorie_id', $categorieId)->orderBy('created_at', 'desc')->paginate(3);
+        }
+        else
+        {
+            $actualities = Actuality::where('actualities_categorie_id', $categorieId)->orderBy('created_at', 'desc')->paginate(6);
         }
         return $actualities;
     }

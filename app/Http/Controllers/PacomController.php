@@ -11,6 +11,7 @@ use App\Models\Product;
 use App\Models\Project;
 use App\Models\ProjectCategorie;
 use App\Models\ProductCategorie;
+use App\Models\ActualitiesCategorie;
 use App\Mail\receiveContactMail;
 use App\Mail\sendContactMail;
 use Illuminate\Support\Facades\Http;
@@ -49,11 +50,21 @@ class PacomController extends Controller
         return view('front.pages.contact', compact('title', 'page'));
     }
 
-    public function actualities()
+    public function actualities(ActualitiesCategorie $newCategorie)
     {
-        $title = "Nos actualité";
-        $page = "Actualité";
-        return view('front.pages.actualities.index', compact('title', 'page'));
+        if ($newCategorie->id != null) {
+            $title = $newCategorie->name;
+            $page = "Actualité";
+            $param = true;
+            return view('front.pages.actualities.index', compact('title', 'page', 'param', 'newCategorie'));
+        } else {
+            $title = "Nos actualité";
+            $page = "Actualité";
+            $param = false;
+            return view('front.pages.actualities.index', compact('title', 'page', 'param'));
+        }
+
+
     }
 
     public function singleActuality(Actuality $actuality)
@@ -80,7 +91,7 @@ class PacomController extends Controller
     public function projects(ProjectCategorie $projectCategorie)
     {
         if ($projectCategorie->id != null) {
-            $title = "Nos projets";
+            $title = $projectCategorie->name;
             $page = "Projets";
             $param = true;
             return view('front.pages.projects.index', compact('title', 'page', 'param', 'projectCategorie'));
@@ -102,9 +113,9 @@ class PacomController extends Controller
     }
 
     public function produits(ProductCategorie $productCategorie)
-    { 
+    {
         if ($productCategorie->id != null) {
-            $title = "Nos produits";
+            $title = $productCategorie->name;
             $page = "Produits";
             $param = true;
             return view('front.pages.produits.index', compact('title', 'page', 'param', 'productCategorie'));
