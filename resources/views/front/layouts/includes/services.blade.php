@@ -6,7 +6,7 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="site-heading text-center">
                     <h5 class="sub-title">Ce que nous faisons</h5>
-                    <h2 class="title">Decrouvez les services <br> que nous proposons</h2>
+                    <h2 class="title">Décrouvez les services <br> que nous proposons</h2>
                 </div>
             </div>
         </div>
