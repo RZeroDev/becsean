@@ -25,12 +25,12 @@ class DatabaseSeeder extends Seeder
             ImageTableSeeder::class,
             TestimonialTableSeeder::class,
             ActualityTableSeeder::class,
+            ProjectSeeder::class,
+            ProductSeeder::class,
             EmailTableSeeder::class,
             PhoneTableSeeder::class,
             SettingTableSeeder::class,
             PartnerTableSeeder::class,
-            ProduitTableSeeder::class,
-            ProjectTableSeeder::class,
        ]);
     }
 }
