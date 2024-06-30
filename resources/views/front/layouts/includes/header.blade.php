@@ -33,18 +33,34 @@
                     <li class="">
                         <a href="{{route('services')}}" class="" >Services</a>
                     </li>
-                    <li class="">
+                    {{-- <li class="">
                         <a href="{{route('produits')}}" class="" >Produits</a>
+                    </li> --}}
+                    <li class="dropdown">
+                        <a href="{{ route('produits') }}" class="dropdown-toggle" data-toggle="dropdown" >Produits</a>
+                        <ul class="dropdown-menu">
+                            @foreach(FrontHelper::allProductCategorie() as $productCategorie)
+                                <li><a href="{{ route('produits', $productCategorie->id) }}">{{ $productCategorie->name }}</a></li>
+                            @endforeach
+                        </ul>
                     </li>
-                    <li class="">
+                    <li class="dropdown">
+                        <a href="{{ route('projects') }}" class="dropdown-toggle" data-toggle="dropdown" >Projets</a>
+                        <ul class="dropdown-menu">
+                            @foreach(FrontHelper::allProjectCategorie() as $projectCategorie)
+                                <li><a href="{{ route('projects', $projectCategorie->id) }}">{{ $projectCategorie->name }}</a></li>
+                            @endforeach
+                        </ul>
+                    </li>
+                    {{-- <li class="">
                         <a href="{{route('projects')}}" class="" >Projets</a>
-                    </li>
+                    </li> --}}
                     <li class="">
                         <a href="{{ route('news') }}" class="" >Actualités</a>
                     </li>
-                    <li class="">
+                    {{-- <li class="">
                         <a href="{{ route('blogs') }}" class="" >Blogs</a>
-                    </li>
+                    </li> --}}
                     <li class="">
                         <a href="{{ route('about') }}" class="" >A-propos</a>
                     </li>

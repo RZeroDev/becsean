@@ -23,6 +23,10 @@ use App\Models\Cgu;
 use App\Models\legalPage;
 use App\Models\SectionStatus;
 use App\Models\ServicePage;
+use App\Models\Project;
+use App\Models\Product;
+use App\Models\ProductCategorie;
+use App\Models\ProjectCategorie;
 // use App\Helpers\FrontHelper;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
@@ -80,6 +84,36 @@ class FrontHelper
     {
         $setting = Setting::orderBy('created_at', 'desc')->first();
         return $setting;
+    }
+
+    public static function allProductCategorie() {
+        $productCategorie = ProductCategorie::all();
+        return $productCategorie;
+    }
+
+    public static function allProduct() {
+        $product = Product::all();
+        return $product;
+    }
+
+    public static function allProductCat($categorieId) {
+        $products = Product::where('product_categorie_id', $categorieId)->get();
+        return $products;
+    }
+
+    public static function allProjectCategorie() {
+        $projectCategorie = ProjectCategorie::all();
+        return $projectCategorie;
+    }
+
+    public static function allProject() {
+        $project = Project::all();
+        return $project;
+    }
+
+    public static function allProjectCat($categorieId) {
+        $projects = Project::where('project_categorie_id', $categorieId)->get();
+        return $projects;
     }
 
     public static function allActualities()

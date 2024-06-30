@@ -322,7 +322,7 @@
             <div class="related-products carousel-shadow">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>Related Products</h3>
+                        <h3>Nouveau Produits</h3>
                         <div class="vt-products text-center related-product-carousel swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">

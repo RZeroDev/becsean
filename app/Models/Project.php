@@ -15,6 +15,7 @@ class Project extends Model
         'slug',
         'description',
         'main_image',
+        'project_categorie_id',
     ];
 
     public function images()

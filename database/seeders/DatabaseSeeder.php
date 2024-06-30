@@ -29,11 +29,8 @@ class DatabaseSeeder extends Seeder
             PhoneTableSeeder::class,
             SettingTableSeeder::class,
             PartnerTableSeeder::class,
-<<<<<<< HEAD
             ProduitTableSeeder::class,
             ProjectTableSeeder::class,
-=======
->>>>>>> 8ee1dcc60c86b619d0cf9e0ebc4cc82c4a211f90
        ]);
     }
 }

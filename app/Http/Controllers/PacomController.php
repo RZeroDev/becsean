@@ -9,6 +9,8 @@ use App\Models\Actuality;
 use App\Models\Contact;
 use App\Models\Product;
 use App\Models\Project;
+use App\Models\ProjectCategorie;
+use App\Models\ProductCategorie;
 use App\Mail\receiveContactMail;
 use App\Mail\sendContactMail;
 use Illuminate\Support\Facades\Http;
@@ -75,11 +77,21 @@ class PacomController extends Controller
         return view('front.pages.services.single', compact('service', 'title', 'page'));
     }
 
-    public function projects()
+    public function projects(ProjectCategorie $projectCategorie)
     {
-        $title = "Nos projets";
-        $page = "Projets";
-        return view('front.pages.projects.index', compact('title', 'page'));
+        if ($projectCategorie->id != null) {
+            $title = "Nos projets";
+            $page = "Projets";
+            $param = true;
+            return view('front.pages.projects.index', compact('title', 'page', 'param', 'projectCategorie'));
+        } else {
+            $title = "Nos projets";
+            $page = "Projets";
+            $param = false;
+            return view('front.pages.projects.index', compact('title', 'page', 'param'));
+        }
+
+
     }
 
     public function singleProject(Project $project)
@@ -89,11 +101,21 @@ class PacomController extends Controller
         return view('front.pages.projects.single', compact('project', 'title', 'page'));
     }
 
-    public function produits()
-    {
-        $title = "Nos produits";
-        $page = "Produits";
-        return view('front.pages.produits.index', compact('title', 'page'));
+    public function produits(ProductCategorie $productCategorie)
+    { 
+        if ($productCategorie->id != null) {
+            $title = "Nos produits";
+            $page = "Produits";
+            $param = true;
+            return view('front.pages.produits.index', compact('title', 'page', 'param', 'productCategorie'));
+        } else {
+            $title = "Nos produits";
+            $page = "Produits";
+            $param = false;
+            return view('front.pages.produits.index', compact('title', 'page', 'param'));
+        }
+
+
     }
 
     public function singleProduit(Product $product)
