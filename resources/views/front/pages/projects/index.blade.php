@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-md-12 gallery-content">
                         <div class="magnific-mix-gallery gallery-masonary">
-                            <div id="gallery-masonary" class="gallery-items colums-3">
+                            <div id="gallery-masonary" class="gallery-items colums-2">
                                 @foreach (FrontHelper::allProjectCat($projectCategorie->id) as $project)
                                     <!-- Single Item -->
                                     <div class="gallery-item">
@@ -41,7 +41,7 @@
                 <div class="row">
                     <div class="col-md-12 gallery-content">
                         <div class="magnific-mix-gallery gallery-masonary">
-                            <div id="gallery-masonary" class="gallery-items colums-3">
+                            <div id="gallery-masonary" class="gallery-items colums-2">
                                 @foreach (FrontHelper::allProject() as $project)
                                     <!-- Single Item -->
                                     <div class="gallery-item">

@@ -29,7 +29,7 @@ class ProjectSeeder extends Seeder
                 'main_image' => 'storage/front/assets/img/blog/5.jpg',
                 'description' => 'Élever du bétail de manière biologique pour produire des produits laitiers et carnés plus sains.',
                 'status' => true,
-                'project_categorie_id' => 2
+                'project_categorie_id' => 1
             ],
             [
                 'title' => 'Intégration de l’agroforesterie',
@@ -45,7 +45,7 @@ class ProjectSeeder extends Seeder
                 'main_image' => 'storage/front/assets/img/blog/4.jpg',
                 'description' => 'Promouvoir des pratiques aquacoles durables pour garantir la santé à long terme des écosystèmes aquatiques.',
                 'status' => true,
-                'project_categorie_id' => 3
+                'project_categorie_id' => 1
             ],
         ];
 
