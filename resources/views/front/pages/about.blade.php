@@ -10,58 +10,6 @@
     @include('front.layouts.includes.about')
     <!-- End About -->
 
-    {{-- <!-- Start Timeline
-    ============================================= -->
-    <div class="timeline-area default-padding-bottom" style="background-image: url({{FrontHelper::getEnvFolder().asset('storage/front/assets/img/shape/21.png')}});">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading">
-                        <h2 class="title">L’agriculture existe <br> depuis 1866</h2>
-                        <div class="row">
-                            <div class="col-xl-10 offset-xl-2">
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque laborum ad asperiores dolorem. Adipisci error eaque dolorem, itaque aliquam animi fuga dolor ipsam! Velit ratione hic corporis veritatis odit.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="timeline-items">
-                        <!-- Single Item -->
-                        <div class="timeline-item">
-                            <h2>1906</h2>
-                            <h4>Ferme ouverte</h4>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="timeline-item">
-                            <h2>1920</h2>
-                            <h4>Rénovation de la ferme</h4>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="timeline-item">
-                            <h2>1925</h2>
-                            <h4>Formation des producteurs de céréales</h4>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="timeline-item">
-                            <h2>1930</h2>
-                            <h4>Début de l’agriculture</h4>
-                        </div>
-                        <!-- End Single Item -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Timeline --> --}}
-
     <!-- Start Choose Us
     ============================================= -->
     <div class="choose-us-style-three-area default-padding bg-dark text-light">
@@ -99,5 +47,44 @@
         </div>
     </div>
     <!-- End Choose Us -->
+
+        <!-- Start Team
+    ============================================= -->
+    <div class="team-style-one-area default-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-4">
+                    <h4 class="sub-title">Nos partenaires</h4>
+                    <h2 class="title">Meet our professional farm experts</h2>
+                    {{-- <a class="btn btn-theme secondary mt-10 btn-md radius animation" href="farmers.html">Meet all Farmers</a> --}}
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="team-style-one-carousel swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            @foreach (FrontHelper::allPartners() as $partner)
+                                <!-- Single Item -->
+                                <div class="swiper-slide wisth-50">
+                                    <div class="farmer-style-one-item">
+                                        <div class="thumb">
+                                            <img src="{{ asset(FrontHelper::getEnvFolder() . $partner->logo) }}" alt="Image Not Found">
+                                        </div>
+                                        <div class="info text-center">
+                                            <span>Partenaire</span>
+                                            <h4>{{ $partner->name }}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- End Single Item -->
+                            @endforeach
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
 
 @endsection
