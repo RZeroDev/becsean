@@ -31,7 +31,7 @@
 
                         <!-- Strt Product Grid Vies -->
                         <div class="tab-pane fade show active" id="grid-tab" role="tabpanel" aria-labelledby="grid-tab-control">
-                            <ul class="vt-products columns-4">
+                            <ul class="vt-products columns-2">
                                 @foreach (FrontHelper::allProductCat($productCategorie->id) as $product)
                                 <!-- Single product -->
                                 <li class="product">
