@@ -42,10 +42,28 @@
                             </div>
 
 
-                            <div class="lg:col-span-12">
+                            <div class="lg:col-span-6">
                                 <label class="form-label font-semibold">Images secondaires(Vous pouvez sélectionner plusieurs images) : <span class="text-red-600">*</span></label>
                                 <input type="file" class="form-control @error('image_secondaire') is-invalid @enderror" accept="image/*" name="image_secondaire[]" multiple>
                                 @error('image_secondaire')
+                                    <span class="text-danger">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+
+                            <div class="lg:col-span-6 mt-1">
+                                <label class="form-label font-semibold">Catégorie : <span class="text-red-600">*</span></label>
+                                <select class="form-control @error('category') is-invalid @enderror" name="product_categorie" required>
+                                    <option value="">Sélectionnez une catégorie</option>
+                                    @foreach($category as $categories)
+                                    <option value="{{$categories->id}}" {{ old('product_categorie',$product->productcategories->id ??'') == $categories->id ? 'selected' : '' }}>
+                                        {{$categories->name}}
+                                    </option>
+                                    <!-- Ajoutez plus d'options selon vos besoins -->
+                                    @endforeach
+                                </select>
+                                @error('product_categorie')
                                     <span class="text-danger">
                                         <strong>{{ $message }}</strong>
                                     </span>

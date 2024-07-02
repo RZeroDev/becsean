@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Helpers\FrontHelper;
-use App\Helpers\ImageHelper;
-use App\Http\Requests\ProductStoreRequest;
-use App\Http\Requests\ProductUpdateRequest;
 use App\Models\Image;
 use App\Models\Product;
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use App\Helpers\FrontHelper;
+use App\Helpers\ImageHelper;
+use Illuminate\Http\Request;
+use App\Models\ProductCategorie;
+use App\Http\Requests\ProductStoreRequest;
+use App\Http\Requests\ProductUpdateRequest;
 
 class ProductController extends Controller
 {
@@ -26,8 +27,9 @@ class ProductController extends Controller
      * Show the form for creating a new resource.
      */
     public function create()
-    {
-        return view('dashboard.pages.products.create');
+    {  
+        $category=ProductCategorie::orderBy('name','asc')->get();
+        return view('dashboard.pages.products.create',compact('category'));
     }
 
     /**
@@ -43,6 +45,7 @@ class ProductController extends Controller
             'main_image' => FrontHelper::getEnvFolder() . $imagePath,
             'description' => $request->description,
             'slug' => Str::slug($request->title),
+            'product_categorie_id'=>$request->product_categorie,
         ]);
         if ($request->hasFile('image_secondaire') && is_array($request->file('image_secondaire'))) {
             foreach ($request->file('image_secondaire') as $key => $image) {
@@ -72,8 +75,8 @@ class ProductController extends Controller
      * Show the form for editing the specified resource.
      */
     public function edit(Product $product)
-    {
-        return view('dashboard.pages.products.edit', compact('product'));
+    {   $category=ProductCategorie::orderBy('name','asc')->get();
+        return view('dashboard.pages.products.edit', compact('product','category'));
     }
 
     /**
@@ -84,7 +87,7 @@ class ProductController extends Controller
         $imagePath = null;
         $productPath = null;
         $imageHelper = new ImageHelper();
-        
+
         if ($request->hasFile('main_image') && $request->file('main_image')->isValid()) {
             $productPath = $imageHelper->enregistrerImage($request->main_image, 'images/products');
             if($productPath)
@@ -98,7 +101,7 @@ class ProductController extends Controller
                     $image->delete();
                 }
             }
-            
+
             foreach ($request->file('image_secondaire') as $key => $image) {
                 if ($image->isValid()) {
                     $imageSecondaire = $imageHelper->enregistrerImage($image, 'images/products/secondaire');
@@ -115,6 +118,7 @@ class ProductController extends Controller
             'main_image' => $productPath ? FrontHelper::getEnvFolder() . $productPath : $product->main_image,
             'description' => $request->description,
             'slug' => Str::slug($request->title),
+            'product_categorie_id'=>$request->product_categorie,
         ]);
 
         toastr()->success('Action effectuée avec succès !');
@@ -139,7 +143,7 @@ class ProductController extends Controller
             $imageHelper->removeImage($product->main_image);
 
         $product->delete();
-        
+
         toastr()->success('Action effectuée avec succès !');
         return redirect()->route('products.index');
     }

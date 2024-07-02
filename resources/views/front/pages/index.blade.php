@@ -272,6 +272,7 @@
                                 </div>
                             </li>
                         </ul>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.1626558530893!2d2.66622237499713!3d6.990114193010891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTknMjQuNCJOIDLCsDQwJzA3LjciRQ!5e0!3m2!1sen!2sbj!4v1719932980017!5m2!1sen!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
