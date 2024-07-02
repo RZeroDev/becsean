@@ -80,6 +80,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="lg:col-span-12">
+    <label class="form-label font-semibold">Catégorie : <span class="text-red-600">*</span></label>
+    <select class="form-control @error('cate') is-invalid @enderror" name="cate" required="">
+        @foreach($categorie as $cat)
+            <option value="{{ $cat->id }}" {{ old('cate', $actuality->actualities_categorie_id) == $cat->id ? 'selected' : '' }}>
+                {{ $cat->name }}
+            </option>
+        @endforeach
+    </select>
+    @error('cate')
+        <span class="text-danger">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+</div>
+
                             <div class="grid grid-cols-1 py-2">
                                 <div class="mb-5">
                                     <div class="text-start">

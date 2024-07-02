@@ -9,6 +9,7 @@ use App\Http\Requests\ProjectUpdatRequest;
 use App\Models\Image;
 use Illuminate\Support\Str;
 use App\Models\Project;
+use App\Models\ProjectCategorie;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -27,7 +28,8 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('dashboard.pages.projects.create');
+        $categorie=ProjectCategorie::all();
+        return view('dashboard.pages.projects.create',compact('categorie'));
     }
 
     /**
@@ -43,6 +45,7 @@ class ProjectController extends Controller
             'main_image' => FrontHelper::getEnvFolder() . $imagePath,
             'description' => $request->description,
             'slug' => Str::slug($request->title),
+            'project_categorie_id'=>$request->cate,
         ]);
         if ($request->hasFile('image_secondaire') && is_array($request->file('image_secondaire'))) {
             foreach ($request->file('image_secondaire') as $key => $image) {
@@ -73,7 +76,9 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        return view('dashboard.pages.projects.edit', compact('project'));
+        $categorie=ProjectCategorie::all();
+
+        return view('dashboard.pages.projects.edit', compact('project','categorie'));
     }
 
     /**
@@ -115,6 +120,8 @@ class ProjectController extends Controller
             'main_image' => $projectPath ? FrontHelper::getEnvFolder() . $projectPath : $project->main_image,
             'description' => $request->description,
             'slug' => Str::slug($request->title),
+            'project_categorie_id'=>$request->cate,
+
         ]);
 
         toastr()->success('Action effectuée avec succès !');

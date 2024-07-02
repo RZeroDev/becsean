@@ -41,8 +41,23 @@
                                 @enderror
                             </div>
 
+                            <div class="lg:col-span-6">
+    <label class="form-label font-semibold">Catégorie : <span class="text-red-600">*</span></label>
+    <select class="form-control @error('cate') is-invalid @enderror" name="cate" required="">
+        @foreach($categorie as $cat)
+            <option value="{{ $cat->id }}" {{ old('cate', $project->project_categorie_id) == $cat->id ? 'selected' : '' }}>
+                {{ $cat->name }}
+            </option>
+        @endforeach
+    </select>
+    @error('cate')
+        <span class="text-danger">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+</div>
 
-                            <div class="lg:col-span-12">
+                            <div class="lg:col-span-6">
                                 <label class="form-label font-semibold">Images secondaires(Vous pouvez sélectionner plusieurs images) : <span class="text-red-600">*</span></label>
                                 <input type="file" class="form-control @error('image_secondaire') is-invalid @enderror" accept="image/*" name="image_secondaire[]" multiple>
                                 @error('image_secondaire')

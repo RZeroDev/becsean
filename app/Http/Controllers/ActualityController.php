@@ -6,6 +6,7 @@ use App\Helpers\ImageHelper;
 use App\Http\Requests\ActualityStoreRequest;
 use App\Http\Requests\ActualityUpdateRequest;
 use App\Mail\NotificationForAdmin;
+use App\Models\ActualitiesCategorie;
 use App\Models\Actuality;
 use App\Models\Image;
 use App\Models\User;
@@ -31,7 +32,9 @@ class ActualityController extends Controller
      */
     public function create()
     {
-        return view('dashboard.pages.actualities.create');
+        $categorie=ActualitiesCategorie::all();
+
+        return view('dashboard.pages.actualities.create',compact('categorie'));
     }
 
     /**
@@ -54,6 +57,7 @@ class ActualityController extends Controller
                 'description' => $request->contenu,
                 'status' => true,
                 'slug' => Str::slug($request->titre),
+                'actualities_categorie_id'=>$request->cate,
             ]);
         
         $admins = User::whereHas('roles', function ($query) {
@@ -83,8 +87,10 @@ class ActualityController extends Controller
      */
     public function edit($slug)
     {
+        $categorie=ActualitiesCategorie::all();
+
         $actuality = Actuality::where('slug', $slug)->firstOrFail();
-        return view('dashboard.pages.actualities.edit', compact('actuality'));
+        return view('dashboard.pages.actualities.edit', compact('actuality','categorie'));
     }
 
     /**
@@ -110,13 +116,17 @@ class ActualityController extends Controller
                 'image' => $imagePath ? $imagePath : $actuality->image,
                 'description' => $request->contenu,
                 'slug' => Str::slug($request->titre),
+                'actualities_categorie_id'=>$request->cate,
+
             ]);
         } else {
             $actuality->update([
                 'title' => $request->titre,
-                'video' => $$request->url,
+                'video' => $request->url,
                 'description' => $request->contenu,
                 'slug' => Str::slug($request->titre),
+                'actualities_categorie_id'=>$request->cate,
+
             ]);
         }
         if ($request->hasFile('image_secondaire') && is_array($request->file('image_secondaire'))) {
