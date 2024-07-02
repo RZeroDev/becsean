@@ -44,7 +44,7 @@ Breadcrumbs::macro('resource', function (string $name, string $title) {
         $trail->push('Modifier', route("{$name}.edit", $title));
     });
 });
-
+Breadcrumbs::resource('galeries', 'Galeries');
 Breadcrumbs::resource('partners', 'Partenaires');
 Breadcrumbs::resource('services', 'Services');
 Breadcrumbs::resource('projects', 'Projets');

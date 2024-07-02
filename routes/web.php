@@ -22,6 +22,7 @@ use App\Http\Controllers\PhoneController;
 use App\Http\Controllers\LinkedinController;
 use App\Http\Controllers\SeoController;
 use App\Http\Controllers\HeroController;
+use App\Http\Controllers\ImageController;
 use App\Http\Controllers\LegalPageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProjectController;
@@ -88,7 +89,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('services', ServiceController::class)->parameters([
         'services' => 'service:slug',
     ]);
-
+    Route::resource('galeries', ImageController::class)->parameters([
+        'galeries' => 'galerie:id',
+    ]);
     Route::resource('underServices', UnderServiceController::class)->parameters([
         'underServices' => 'underService:slug',
     ]);
