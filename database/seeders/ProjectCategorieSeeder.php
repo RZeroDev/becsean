@@ -17,7 +17,7 @@ class ProjectCategorieSeeder extends Seeder
             'name'=>"Projets en cours",
         ]);
         ProjectCategorie::create([
-            'name'=>"Projets en achevés",
+            'name'=>"Projets achevés",
         ]);
         ProjectCategorie::create([
             'name'=>"Opportunités de collaboration",

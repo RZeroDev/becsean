@@ -12,7 +12,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="{{ route('index') }}">
-                        <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/logo-mix.png')}}" class="logo" alt="Logo">
+                        <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/logobecsean.jpg')}}" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -21,7 +21,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
 
-                <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/logo.png')}}" alt="Logo">
+                <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/becsean.png')}}" alt="Logo">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-times"></i>
                 </button>

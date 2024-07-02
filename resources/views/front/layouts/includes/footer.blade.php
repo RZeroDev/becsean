@@ -6,7 +6,7 @@
                 <!-- Single Item -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item about">
-                        <img class="logo" src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/logo-light.png')}}" alt="Logo">
+                        <img class="img-fluid" src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/becsean.png')}}" width="" alt="Logo">
                     </div>
                 </div>
                 <!-- End Single Item -->

@@ -27,7 +27,7 @@
                                 {{Str::limit($service->description, 240)}}
                             </p>
                         </div>
-                        <a href="services-details.html" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('service.single',$service->slug) }}" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             @endforeach

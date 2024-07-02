@@ -128,7 +128,7 @@
                                     <div
                                         class="relative p-8 border-2 border-indigo-600 rounded-[30px] before:content-[''] before:absolute before:w-28 before:border-[6px] before:border-white dark:before:border-slate-900 before:-bottom-1 before:start-16 before:z-2 after:content-[''] after:absolute after:border-2 after:border-indigo-600 after:rounded-none after:rounded-e-[50px] after:w-20 after:h-20 after:-bottom-[80px] after:start-[60px] after:z-3 after:border-s-0 after:border-b-0">
                                         <span class="font-semibold leading-normal">
-                                            {!! FrontHelper::getHero()->description !!}
+                                            {{-- {!! FrontHelper::getHero()->description !!} --}}
                                         </span>
 
                                         <div

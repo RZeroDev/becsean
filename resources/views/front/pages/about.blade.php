@@ -55,7 +55,7 @@
             <div class="row align-center">
                 <div class="col-lg-4">
                     <h4 class="sub-title">Nos partenaires</h4>
-                    <h2 class="title">Meet our professional farm experts</h2>
+                    <h2 class="title">Décrouvez nos partenaires</h2>
                     {{-- <a class="btn btn-theme secondary mt-10 btn-md radius animation" href="farmers.html">Meet all Farmers</a> --}}
                 </div>
                 <div class="col-lg-7 offset-lg-1">
