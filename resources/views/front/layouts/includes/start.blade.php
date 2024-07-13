@@ -13,20 +13,20 @@
     <title>Becsean-Sarl - @yield('title')</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('storage/front/assets/img/favicon.png')}}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/magnific-popup.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/flaticon-set.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/swiper-bundle.min.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/animate.min.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/validnavs.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/helper.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/unit-test.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/shop.css')}}" rel="stylesheet">
-    <link href="{{FrontHelper::getEnvFolder().asset('storage/front/assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/magnific-popup.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/flaticon-set.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/validnavs.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/helper.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/unit-test.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/shop.css')}}" rel="stylesheet">
+    <link href="{{asset('storage/front/assets/css/style.css')}}" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
 
