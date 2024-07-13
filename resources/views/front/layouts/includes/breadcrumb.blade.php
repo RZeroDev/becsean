@@ -1,4 +1,4 @@
-<div class="breadcrumb-area text-center shadow dark-hard bg-cover text-light" style="background-image: url({{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/banner/15.jpg')}});">
+<div class="breadcrumb-area text-center shadow dark-hard bg-cover text-light" style="background-image: url({{ asset('storage/front/assets/img/banner/15.jpg')}});">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">

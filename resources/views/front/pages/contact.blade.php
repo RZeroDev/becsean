@@ -9,14 +9,14 @@
     ============================================= -->
     <div class="contact-area contact-page overflow-hidden bg-gray default-padding">
         <div class="sahpe-right-bottom">
-            <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/16.png')}}" alt="Image Not Found">
+            <img src="{{ asset('storage/front/assets/img/shape/16.png')}}" alt="Image Not Found">
         </div>
         <div class="container">
             <div class="row align-center">
 
                 <div class="col-tact-stye-one col-xl-7 col-lg-7">
                     <div class="contact-form-style-one mb-md-50">
-                        <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/illustration/10.png')}}" alt="Image Not Found">
+                        <img src="{{ asset('storage/front/assets/img/illustration/10.png')}}" alt="Image Not Found">
                         <h5 class="sub-title">Vous Avez Des Questions?</h5>
                         <h2 class="heading">Envoyez-nous un massage</h2>
                         <form action="{{ route('contact.send') }}" method="POST" class="">

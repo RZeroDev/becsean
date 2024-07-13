@@ -1,4 +1,4 @@
-<footer class="bg-dark text-light" style="background-image: url({{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/8.png')}});">
+<footer class="bg-dark text-light" style="background-image: url({{ asset('storage/front/assets/img/shape/8.png')}});">
     <div class="container">
         <div class="f-items default-padding">
             <div class="row">
@@ -6,7 +6,7 @@
                 <!-- Single Item -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item about">
-                        <img class="img-fluid" src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/becsean.png')}}" width="" alt="Logo">
+                        <img class="img-fluid" src="{{ asset('storage/front/assets/becsean.png')}}" width="" alt="Logo">
                     </div>
                 </div>
                 <!-- End Single Item -->
@@ -111,7 +111,7 @@
         <!-- End Footer Bottom -->
     </div>
     <div class="shape-right-bottom">
-        <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/7.png')}}" alt="Image Not Found">
+        <img src="{{ asset('storage/front/assets/img/shape/7.png')}}" alt="Image Not Found">
     </div>
 </footer>
 

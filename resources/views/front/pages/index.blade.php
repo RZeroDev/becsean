@@ -29,7 +29,7 @@
                 <div class="col-xl-6 col-lg-7">
                     <div class="benifit-items text-light">
                         <div class="shape">
-                            <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/8.png') }}"
+                            <img src="{{ asset('storage/front/assets/img/illustration/8.png') }}"
                                 alt="Image Not Found">
                         </div>
                         <h2 class="title">Découvrez Nos Solutions Agricoles Innovantes</h2>
@@ -61,11 +61,11 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-style-one">
                                     <div class="thumb">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . $item->image) }}" alt="Imge
+                                        <img src="{{ asset($item->image) }}" alt="Imge
                                             Not Found">
                                     </div>
                                     <div class="info">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/shape/quote-big.png') }}"
+                                        <img src="{{ asset('storage/front/assets/img/shape/quote-big.png') }}"
                                             alt="Image Not Found">
                                             <p style="font-size: 22px;">
                                                 “{{$item->description}}”
@@ -121,7 +121,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/1.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/1.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/2.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/2.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/3.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/3.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/4.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/4.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/5.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/5.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -179,7 +179,7 @@
         ============================================= -->
     <div class="contact-area overflow-hidden bg-gray default-padding">
         <div class="sahpe-right-bottom">
-            <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/shape/16.png') }}"
+            <img src="{{ asset('storage/front/assets/img/shape/16.png') }}"
                 alt="Image Not Found">
         </div>
         <div class="container">
@@ -187,7 +187,7 @@
 
                 <div class="col-tact-stye-one col-xl-6 col-lg-7" id="contact">
                     <div class="contact-form-style-one mb-md-50">
-                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/10.png') }}"
+                        <img src="{{ asset('storage/front/assets/img/illustration/10.png') }}"
                             alt="Image Not Found">
                         <h5 class="sub-title">Vous avez des questions?</h5>
                         <h2 class="heading">Envoyez nous un message</h2>
@@ -302,7 +302,7 @@
                                 <div class="swiper-slide wisth-50">
                                     <div class="farmer-style-one-item">
                                         <div class="thumb">
-                                            <img src="{{ asset(FrontHelper::getEnvFolder() . $partner->logo) }}" alt="Image Not Found">
+                                            <img src="{{ asset($partner->logo) }}" alt="Image Not Found">
                                         </div>
                                         <div class="info text-center">
                                             <span>Partenaire</span>

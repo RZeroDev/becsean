@@ -14,7 +14,7 @@
 
                     <div class="col-xl-8 col-lg-7 pl-45 pl-md-15 pl-xs-15 services-single-content order-lg-last">
                         <div class="thumb">
-                            <img src="{{ asset(FrontHelper::getEnvFolder() . $service->main_image) }}" height="250" alt="Thumb">
+                            <img src="{{ asset($service->main_image) }}" height="250" alt="Thumb">
                         </div>
                         <h2>{{ $service->title }}</h2>
                         <p>

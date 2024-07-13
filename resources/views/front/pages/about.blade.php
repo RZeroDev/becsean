@@ -14,9 +14,9 @@
     ============================================= -->
     <div class="choose-us-style-three-area default-padding bg-dark text-light">
         <div class="illustration-bottom">
-            <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/illustration/17.png')}}" alt="Image Not Found">
+            <img src="{{asset('storage/front/assets/img/illustration/17.png')}}" alt="Image Not Found">
         </div>
-        <div class="shape" style="background-image: url({{FrontHelper::getEnvFolder().asset('storage/front/assets/img/about/3.jpg')}});"></div>
+        <div class="shape" style="background-image: url({{asset('storage/front/assets/img/about/3.jpg')}});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6 pl-60 pl-md-15 pl-xs-15">

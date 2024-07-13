@@ -8,7 +8,7 @@
             <div class="swiper-slide banner-style-one">
                 <div class="banner-thumb bg-cover shadow dark" style="background: url(storage/front/assets/img/banner/3.jpg);"></div>
                 <div class="shape">
-                    <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
+                    <img src="{{ asset('storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
                 </div>
                 <div class="container">
                     <div class="row align-center">
@@ -42,7 +42,7 @@
             <div class="swiper-slide banner-style-one">
                 <div class="banner-thumb bg-cover shadow dark" style="background: url(storage/front/assets/img/banner/4.jpg);"></div>
                 <div class="shape">
-                    <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
+                    <img src="{{ asset('storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
                 </div>
                 <div class="container">
                     <div class="row align-center">

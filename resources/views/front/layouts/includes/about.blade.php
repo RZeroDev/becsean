@@ -3,10 +3,10 @@
         <div class="row align-center">
             <div class="col-xl-6 col-lg-5">
                 <div class="about-style-one-thumb">
-                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/about/1.jpg') }}"
+                    <img src="{{ asset('storage/front/assets/img/about/1.jpg') }}"
                         alt="Image Not Found">
                     <div class="animation-shape">
-                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/1.png') }}"
+                        <img src="{{ asset('storage/front/assets/img/illustration/1.png') }}"
                             alt="Image Not Found">
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <ul class="top-feature">
                         <li>
                             <div class="icon">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/3.png') }}"
+                                <img src="{{ asset('storage/front/assets/img/icon/3.png') }}"
                                     alt="Image Not Found">
                             </div>
                             <div class="info">
@@ -44,7 +44,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/icon/2.png') }}"
+                                <img src="{{ asset('storage/front/assets/img/icon/2.png') }}"
                                     alt="Image Not Found">
                             </div>
                             <div class="info">
