@@ -61,6 +61,24 @@
 
                                 <div class="lg:col-span-6 mb-5">
                                     <div class="text-start">
+                                        <label for="name" class="font-semibold">Numéro de téléphone secondaire:</label>
+                                        <div class="form-icon relative mt-2">
+                                            <i data-feather="edit-3" class="size-4 absolute top-3 start-4"></i>
+                                            <input name="company_phone1" id="company_phone1" type="text" required
+                                                value="{{ old('company_phone1',$setting->company_phone1) }}"
+                                                class="form-control @error('company_phone1') is-invalid @enderror ps-11 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0"
+                                                placeholder="Numléro de téléphone principale:">
+                                        </div>
+                                        @error('company_phone1')
+                                            <span class="text-danger">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="lg:col-span-6 mb-5">
+                                    <div class="text-start">
                                         <label for="name" class="font-semibold">Email de téléphone principale:</label>
                                         <div class="form-icon relative mt-2">
                                             <i data-feather="edit-3" class="size-4 absolute top-3 start-4"></i>

@@ -14,7 +14,7 @@
             <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1">
                 <div class="about-style-one-info">
 
-                    <h2 class="title">A propos de <br>Becsean Sarl</h2>
+                    <h2 class="title">A propos de <br>BECSEAN Sarl</h2>
                     <p>
                         Nous sommes une entreprise dédiée à fournir des solutions agricoles complètes et personnalisées.
                         De l'étude initiale des projets à la réalisation et au suivi technique, nous accompagnons les

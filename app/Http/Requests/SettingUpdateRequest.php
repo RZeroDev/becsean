@@ -24,6 +24,7 @@ class SettingUpdateRequest extends FormRequest
         return [
             'company_name'=>['required','string'],
             'company_phone'=>['required','string'],
+            'company_phone1'=>['required','string'],
             'company_email'=>['required','string'],
             'company_facebook'=>['nullable','url'],
             'analytics'=>['nullable','string'],

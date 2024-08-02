@@ -71,7 +71,7 @@
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="content">
-                                    <strong>Address:</strong>
+                                    <strong>Adress:</strong>
                                     {{ FrontHelper::getSettings()->company_headquarters }}
                                 </div>
                             </li>
@@ -89,7 +89,7 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="content">
-                                    <strong>Phone:</strong>
+                                    <strong>Téléphones:</strong>
                                     <a href="tel:{{ FrontHelper::getSettings()->company_phone }}">{{ FrontHelper::getSettings()->company_phone }}</a>
                                 </div>
                             </li>

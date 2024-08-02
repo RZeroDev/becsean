@@ -32,7 +32,7 @@
                             <img src="{{ asset('storage/front/assets/img/illustration/8.png') }}"
                                 alt="Image Not Found">
                         </div>
-                        <h2 class="title">Découvrez Nos Solutions Agricoles Innovantes</h2>
+                        <h2 class="title">Découvrez nos solutions agricoles innovantes</h2>
                        <p>
                         Visionnez notre vidéo pour comprendre comment nos services peuvent transformer votre projet agricole. De l'étude initiale à la réalisation et au suivi technique, nous offrons une expertise complète pour maximiser vos rendements et promouvoir des pratiques durables.
                        </p>
@@ -239,7 +239,7 @@
                         <h2>
                            Nos
                             <span>
-                                Contact
+                                contacts
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                                     <path
                                         d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0"

@@ -84,6 +84,7 @@ class SettingController extends Controller
         $setting->update([
             'company_name' => $request->company_name,
             'company_phone' => $request->company_phone,
+            'company_phone1' => $request->company_phone1,
             'company_email' => $request->company_email,
             'company_facebook' => $request->company_facebook,
             'company_instagram' => $request->company_instagram,

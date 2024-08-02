@@ -17,6 +17,7 @@ class SettingTableSeeder extends Seeder
             [
                 'company_name' => 'Becsean Sarl',
                 'company_phone' => '+22995094158',
+                'company_phone1' => '+2299000000',
                 'company_email' => 'becseansarl@gmail.com',
                 'company_headquarters' => "Benin - Pobè, Maison SOTON",
                 'company_facebook' => '',

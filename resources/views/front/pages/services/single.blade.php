@@ -27,7 +27,7 @@
                                     <div class="accordion-style-two">
                                         <h2 class="accordion-header" id="headingOne{{ $item->id }}">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{ $item->id }}" aria-controls="collapseOne{{ $item->id }}">
-                                               {{  ++$index. ' ' .$item->title }}
+                                               {{  ++$index. ' - ' .$item->title }}
                                             </button>
                                         </h2>
                                         <div id="collapseOne{{ $item->id }}" class="accordion-collapse collapse {{ $index == 1 ? 'show' : '' }}" aria-labelledby="headingOne{{ $item->id }}" data-bs-parent="#faqAccordion{{ $item->id }}">
@@ -62,6 +62,7 @@
                                     Appelez le siège social et nous vous mettrons en contact avec un membre de l’équipe.
                                 </p>
                                 <h2>{{ FrontHelper::getSettings()->company_phone }}</h2>
+                                <h2>{{ FrontHelper::getSettings()->company_phone1 }}</h2>
                                 <h4><a href="mailto:{{ FrontHelper::getSettings()->company_email }}">{{ FrontHelper::getSettings()->company_email }}</a></h4>
                                 <a class="btn mt-30 circle btn-theme animation btn-md" href="{{ route('contact') }}">Contactez-Nous</a>
                             </div>

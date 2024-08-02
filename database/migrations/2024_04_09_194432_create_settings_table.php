@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('company_name')->unique();
             $table->string('company_phone')->unique();
+            $table->string('company_phone1')->unique();
             $table->string('company_email')->unique();
             $table->string('company_facebook')->nullable();
             $table->string('company_instagram')->nullable();
