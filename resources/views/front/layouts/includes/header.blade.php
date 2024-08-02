@@ -28,7 +28,7 @@
 
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="">
-                        <a href="{{route('index')}}" class=" active" >Acceuil</a>
+                        <a href="{{route('index')}}" class=" active" >Accueil</a>
                     </li>
                     <li class="">
                         <a href="{{route('services')}}" class="" >Services</a>
@@ -79,7 +79,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="button"><a href="{{route('contact')}}">Nous contactez</a></li>
+                        <li class="button"><a href="{{route('contact')}}">Nous contacter</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->

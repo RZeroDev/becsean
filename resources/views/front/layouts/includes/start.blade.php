@@ -7,13 +7,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="becsean sarl">
 
     <!-- ========== Page Title ========== -->
     <title>Becsean-Sarl - @yield('title')</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="{{asset('storage/front/assets/img/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('storage/front/assets/becsean.png')}}" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="{{asset('storage/front/assets/css/bootstrap.min.css')}}" rel="stylesheet">

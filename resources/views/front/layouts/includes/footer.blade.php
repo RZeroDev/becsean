@@ -14,10 +14,10 @@
                 <!-- Single Item -->
                 <div class="col-lg-2 col-md-6 item">
                     <div class="footer-item link">
-                        <h4 class="widget-title">Lien utils</h4>
+                        <h4 class="widget-title">Lien rapides</h4>
                         <ul>
                             <li>
-                                <a href="{{ route('index') }}" class="{{ Request::routeIs('index') ? 'active' : '' }}">Acceuil</a>
+                                <a href="{{ route('index') }}" class="{{ Request::routeIs('index') ? 'active' : '' }}">Accueil</a>
                             </li>
                             <li>
                                 <a href="{{ route('services') }}" class="{{ Request::routeIs('services') ? 'active' : '' }}">Nos services</a>
