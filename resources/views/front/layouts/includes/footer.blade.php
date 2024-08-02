@@ -14,7 +14,7 @@
                 <!-- Single Item -->
                 <div class="col-lg-2 col-md-6 item">
                     <div class="footer-item link">
-                        <h4 class="widget-title">Lien rapides</h4>
+                        <h4 class="widget-title">Liens rapides</h4>
                         <ul>
                             <li>
                                 <a href="{{ route('index') }}" class="{{ Request::routeIs('index') ? 'active' : '' }}">Accueil</a>
@@ -71,7 +71,7 @@
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="content">
-                                    <strong>Adress:</strong>
+                                    <strong>Adresse:</strong>
                                     {{ FrontHelper::getSettings()->company_headquarters }}
                                 </div>
                             </li>
