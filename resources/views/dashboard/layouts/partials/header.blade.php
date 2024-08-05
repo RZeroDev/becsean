@@ -5,15 +5,6 @@
                 <div class="top-header">
                     <div class="header-bar flex justify-between">
                         <div class="flex items-center space-x-1">
-                            <!-- Logo -->
-                            <a href="#" class="xl:hidden block me-2">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/images/logo-icon-32.png')}}" class="md:hidden block" alt="Logo Askano" width="200px">
-                                <span class="md:block hidden">
-                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/images/logo-dark.png')}}" class="inline-block dark:hidden" alt="">
-                                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/images/logo-light.png')}}" class="hidden dark:inline-block" alt="">
-                                </span>
-                            </a>
-                            <!-- Logo -->
 
                             <!-- show or close sidebar -->
                             <a id="close-sidebar" class="h-8 w-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-[20px] text-center bg-gray-50 dark:bg-slate-800 hover:bg-gray-100 dark:hover:bg-slate-700 border border-gray-100 dark:border-gray-800 text-slate-900 dark:text-white rounded-full" href="javascript:void(0)">
