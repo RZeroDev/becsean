@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <h5 class="sub-title">Notre galleries</h5>
+                        <h5 class="sub-title">Notre gallerie</h5>
                         <h2 class="title">Explorez notre univers</h2>
                     </div>
                 </div>
