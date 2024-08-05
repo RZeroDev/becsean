@@ -95,3 +95,9 @@
     </nav>
     <!-- End Navigation -->
 </header>
+<script>
+    document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
+    element.textContent = element.textContent.charAt(0).toUpperCase() + element.textContent.slice(1).toLowerCase();
+});
+
+</script>
