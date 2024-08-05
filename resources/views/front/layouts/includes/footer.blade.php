@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="content">
                                     <strong>Téléphones:</strong>
-                                    <a href="tel:{{ FrontHelper::getSettings()->company_phone1 }}">{{ FrontHelper::getSettings()->company_phone }}</a>
+                                    <a href="tel:{{ FrontHelper::getSettings()->company_phone1 }}">{{ FrontHelper::getSettings()->company_phone1 }}</a>
                                     <br>
                                     <a href="tel:{{ FrontHelper::getSettings()->company_phone }}">{{ FrontHelper::getSettings()->company_phone }}</a>
                                 </div>
