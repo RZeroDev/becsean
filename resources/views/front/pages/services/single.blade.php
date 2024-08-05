@@ -18,28 +18,30 @@
                         </div>
                         <h2>{{ $service->title }}</h2>
                         <p>
-                            {{ $service->description }}
+                            {!! $service->description !!}
                         </p>
                         <div class="common-faq mt-40">
-                            <h2 class="mb-25">Sous services</h2>
-                            <div class="accordion accordion-style-two-items" id="faqAccordion">
-                                @foreach ($service->underservices as $index=> $item)
-                                    <div class="accordion-style-two">
-                                        <h2 class="accordion-header" id="headingOne{{ $item->id }}">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{ $item->id }}" aria-controls="collapseOne{{ $item->id }}">
-                                               {{  ++$index. ' - ' .$item->title }}
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne{{ $item->id }}" class="accordion-collapse collapse {{ $index == 1 ? 'show' : '' }}" aria-labelledby="headingOne{{ $item->id }}" data-bs-parent="#faqAccordion{{ $item->id }}">
-                                            <div class="accordion-body">
-                                                <p>
-                                                   {{ $item->description }}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
+                           @if ($service->underservices)
+                           <h2 class="mb-25">Sous services</h2>
+                           <div class="accordion accordion-style-two-items" id="faqAccordion">
+                               @foreach ($service->underservices as $index=> $item)
+                                   <div class="accordion-style-two">
+                                       <h2 class="accordion-header" id="headingOne{{ $item->id }}">
+                                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne{{ $item->id }}" aria-controls="collapseOne{{ $item->id }}">
+                                              {{  ++$index. ' - ' .$item->title }}
+                                           </button>
+                                       </h2>
+                                       <div id="collapseOne{{ $item->id }}" class="accordion-collapse collapse {{ $index == 1 ? 'show' : '' }}" aria-labelledby="headingOne{{ $item->id }}" data-bs-parent="#faqAccordion{{ $item->id }}">
+                                           <div class="accordion-body">
+                                               <p>
+                                                  {{ $item->description }}
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               @endforeach
+                           </div>
+                           @endif
                         </div>
                     </div>
 

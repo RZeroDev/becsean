@@ -46,7 +46,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="{{ route('projects') }}" class="dropdown-toggle" data-toggle="dropdown" >Projets</a>
-                        <ul class="">
+                        <ul class="dropdown-menu">
                             @foreach(FrontHelper::allProjectCategorie() as $projectCategorie)
                                 <li><a href="{{ route('projects', $projectCategorie->id) }}">{{ $projectCategorie->name }}</a></li>
                             @endforeach
