@@ -29,7 +29,12 @@
     <link href="{{asset('storage/front/assets/css/style.css')}}" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
-
+    <script>
+        document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
+        element.textContent = element.textContent.charAt(0).toUpperCase() + element.textContent.slice(1).toLowerCase();
+    });
+    
+    </script>
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
