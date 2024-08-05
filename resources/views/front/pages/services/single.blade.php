@@ -21,7 +21,7 @@
                             {!! $service->description !!}
                         </p>
                         <div class="common-faq mt-40">
-                           @if ($service->underservices != null)
+                            @if ($service->underservices && $service->underservices->isNotEmpty())
                            <h2 class="mb-25">Sous services</h2>
                            <div class="accordion accordion-style-two-items" id="faqAccordion">
                                @foreach ($service->underservices as $index=> $item)
