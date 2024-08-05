@@ -802,7 +802,6 @@ p {
 }
 
 .sub-title {
-	text-transform: capitalize;
 	color: var(--color-secondary);
 	font-weight: 600;
 	display: inline-block;
