@@ -1899,7 +1899,6 @@ p {
 button {
 	display: inline-block;
 	font-weight: 600;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 7px;
@@ -2353,7 +2352,6 @@ button i {
 	background: linear-gradient(90deg, #8A6552 0%, #472d20 100%);
 	color: var(--white);
 	font-size: 12px;
-	text-transform: capitalize;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -4132,7 +4130,6 @@ a.btn-round-animation.dark {
 .banner-style-three h2 {
 	font-size: 80px;
 	line-height: 1.1;
-	text-transform: capitalize;
 }
 
 .banner-style-three .content {
@@ -4688,7 +4685,6 @@ h2.mask-text.large {
 	margin-bottom: 30px;
 	margin-top: -5px;
 	position: relative;
-	text-transform: capitalize;
 	z-index: 1;
 	display: inline-block;
 	padding-bottom: 15px;
@@ -5124,7 +5120,6 @@ ul.list-standard {
 	font-weight: 900;
 	margin: 0;
 	line-height: 1.1;
-	text-transform: capitalize;
 	font-family: var(--font-secondary);
 	display: inline-block;
 }
@@ -5984,7 +5979,6 @@ ul.list-simple.text-light li p {
 
 .list-grid h4 {
 	margin: 0;
-	text-transform: capitalize;
 	font-size: 30px;
 }
 
@@ -6298,7 +6292,6 @@ ul.list-item li::after {
 }
 
 .skill-items .progress-box h5 {
-	text-transform: capitalize;
 	font-weight: 600;
 	margin-bottom: 5px;
 	text-align: left;
@@ -6646,7 +6639,6 @@ ul.list-item li::after {
 .contact-form-style-one button {
 	display: inline-block;
 	font-weight: 700;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 6px;
@@ -7358,7 +7350,6 @@ img.loader {
 .product-speciality-info h2 {
 	font-size: 60px;
 	font-weight: 300;
-	text-transform: capitalize;
 	margin-bottom: 20px;
 }
 
