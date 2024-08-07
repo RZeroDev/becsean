@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <h5 class="sub-title">Notre gallerie</h5>
+                        <h5 class="sub-title">Notre galerie</h5>
                         <h2 class="title">Explorez notre univers</h2>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" required  name="email" placeholder="Address email"
+                                        <input class="form-control" required  name="email" placeholder="Adresse email"
                                             type="email">
                                         <span class="alert-error"></span>
                                     </div>
@@ -221,7 +221,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" required name="message" placeholder="Parler nous de votre project"></textarea>
+                                        <textarea class="form-control" required name="message" placeholder="Parlez nous de votre projet"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                             </span>
                         </h2>
                         <p>
-                            Vous pouvez nous joindre aux addresses suivantes
+                            Vous pouvez nous joindre aux adresse suivantes
                         </p>
                         <ul>
                             <li>
