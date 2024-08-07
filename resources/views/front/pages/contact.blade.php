@@ -46,7 +46,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Parlez-nous du projet *"></textarea>
+                                        <textarea class="form-control" id="comments" name="comments" placeholder="Parler nous du projet *"></textarea>
                                     </div>
                                 </div>
                             </div>
