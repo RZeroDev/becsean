@@ -221,7 +221,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" required name="message" placeholder="Parlez nous de votre projet"></textarea>
+                                        <textarea class="form-control" required name="message" placeholder="Parler nous de votre projet"></textarea>
                                     </div>
                                 </div>
                             </div>
