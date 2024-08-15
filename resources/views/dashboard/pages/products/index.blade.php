@@ -38,6 +38,7 @@
                                 <th class="text-start p-4 min-w-[128px]">N°.</th>
                                 <th class="text-start p-4 min-w-[128px]">Image</th>
                                 <th class="text-start p-4 min-w-[192px]">Libellé</th>
+                                <th class="text-start p-4 min-w-[192px]">Catégorie</th>
                                 @hasanyrole('super-admin|admin|dev')
                                     <th class="text-center p-4 min-w-[200px]">Action</th>
                                 @endhasanyrole
@@ -59,6 +60,10 @@
                                     </td>
                                     <td class=" border-t border-gray-100 dark:border-gray-800 p-4">
                                         <span class="text-slate-400">{{ $service->title }}</span>
+                                    </td>
+
+                                    <td class=" border-t border-gray-100 dark:border-gray-800 p-4">
+                                        <span class="text-slate-400">{{ $service->productcategories->name }}</span>
                                     </td>
                                     @hasanyrole('super-admin|admin|dev')
                                         <td class="text-end border-t border-gray-100 dark:border-gray-800 p-4">

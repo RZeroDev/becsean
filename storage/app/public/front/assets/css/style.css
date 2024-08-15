@@ -19,7 +19,7 @@ Sidebar heading:  22px 'Outfit', sans-serif
 
 >>> TABLE OF CONTENTS:
 =======================
-        
+
     01. Template default css
         - Animations
         - General
@@ -116,7 +116,7 @@ Sidebar heading:  22px 'Outfit', sans-serif
 
 
 
-/* ============================================================== 
+/* ==============================================================
      # Reset Browsers
 =================================================================== */
 
@@ -205,6 +205,21 @@ a:hover {
 	opacity: 1;
 }
 
+.swiper-slide.wisth-50 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.farmer-style-one-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 .secondary a:hover {
 	color: var(--color-secondary);
 }
@@ -287,7 +302,7 @@ strong {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Template Default Styles
 =================================================================== */
 
@@ -352,7 +367,7 @@ p {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Helper CSS
 =================================================================== */
 
@@ -787,7 +802,6 @@ p {
 }
 
 .sub-title {
-	text-transform: capitalize;
 	color: var(--color-secondary);
 	font-weight: 600;
 	display: inline-block;
@@ -894,7 +908,6 @@ p {
 }
 
 .sub-heading {
-	text-transform: uppercase;
 	color: var(--color-primary);
 	font-weight: 600;
 	background: var(--bg-gradient-reverse);
@@ -927,8 +940,8 @@ p {
 	color: var(--white);
 }
 
-/* ============================================================== 
-    # Video Play Button 
+/* ==============================================================
+    # Video Play Button
 =================================================================== */
 .video-play-button i {
 	display: inline-block;
@@ -1091,7 +1104,7 @@ p {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Template Animation
 =================================================================== */
 
@@ -1572,13 +1585,12 @@ p {
 	}
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Button Styles
 =================================================================== */
 .btn {
 	display: inline-block;
 	font-weight: 600;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 7px;
@@ -1886,7 +1898,6 @@ p {
 button {
 	display: inline-block;
 	font-weight: 600;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 7px;
@@ -2261,7 +2272,6 @@ button i {
 
 .btn-simple {
 	line-height: 1;
-	text-transform: uppercase;
 	display: inline-block;
 	color: var(--color-paragraph);
 }
@@ -2340,7 +2350,6 @@ button i {
 	background: linear-gradient(90deg, #8A6552 0%, #472d20 100%);
 	color: var(--white);
 	font-size: 12px;
-	text-transform: capitalize;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2551,7 +2560,6 @@ button i {
 	transition: all 0.35s ease-in-out;
 	left: -50px;
 	position: relative;
-	text-transform: uppercase;
 	font-weight: 600;
 }
 
@@ -2649,7 +2657,6 @@ a.btn-round-animation.dark {
 	border: 2px solid var(--color-primary);
 	padding: 12px 25px;
 	border-radius: 30px;
-	text-transform: uppercase;
 	align-items: center;
 	font-size: 13px;
 }
@@ -2699,7 +2706,6 @@ a.btn-round-animation.dark {
 	font-size: 25px;
 	height: 200px;
 	width: 200px;
-	text-transform: uppercase;
 	font-weight: 700;
 }
 
@@ -2742,7 +2748,7 @@ a.btn-round-animation.dark {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Topbar Styles
 =================================================================== */
 
@@ -2802,7 +2808,6 @@ a.btn-round-animation.dark {
 
 .top-style-two .info li {
 	font-weight: 500;
-	text-transform: capitalize;
 	display: flex;
 	align-items: center;
 }
@@ -2852,7 +2857,7 @@ a.btn-round-animation.dark {
 	align-items: center;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Navbar Styles
 =================================================================== */
 @media (min-width: 1024px) {
@@ -2927,7 +2932,7 @@ a.btn-round-animation.dark {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Nice Select Styles
 =================================================================== */
 .nice-select {
@@ -3131,7 +3136,7 @@ a.btn-round-animation.dark {
 	color: var(--white);
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Banner Styles
 =================================================================== */
 .banner-area {
@@ -3867,7 +3872,7 @@ a.btn-round-animation.dark {
 	font-weight: 600;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Banner Custom Style
 =================================================================== */
 
@@ -3916,7 +3921,6 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-one .content h4 {
-	text-transform: uppercase;
 	font-weight: 500;
 }
 
@@ -3985,7 +3989,6 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-two h2 {
-	text-transform: uppercase;
 	font-size: 100px;
 	display: flex;
 	align-items: center;
@@ -4024,7 +4027,6 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-two .content .animated-btn {
-	text-transform: uppercase;
 }
 
 .banner-style-two .content .animated-btn i {
@@ -4111,7 +4113,6 @@ a.btn-round-animation.dark {
 .banner-style-three h4 {
 	font-family: var(--font-secondary);
 	font-weight: 600;
-	text-transform: uppercase;
 	position: relative;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
@@ -4120,7 +4121,6 @@ a.btn-round-animation.dark {
 .banner-style-three h2 {
 	font-size: 80px;
 	line-height: 1.1;
-	text-transform: capitalize;
 }
 
 .banner-style-three .content {
@@ -4145,7 +4145,6 @@ a.btn-round-animation.dark {
 .banner-style-four h2 {
     font-size: 120px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .banner-style-four h2 strong {
@@ -4161,7 +4160,6 @@ a.btn-round-animation.dark {
 
 .banner-style-four ul li {
     display: inline-block;
-    text-transform: uppercase;
     font-family: var(--font-secondary);
     font-weight: 900;
     margin: 0 14px;
@@ -4230,7 +4228,7 @@ a.btn-round-animation.dark {
 	border: 2px solid var(--color-heading);
 }
 
-/* ============================================================== 
+/* ==============================================================
     # About
 ===================rgba(30, 25, 25, 0.5)======================== */
 ul.top-feature {
@@ -4312,7 +4310,7 @@ ul.top-feature li:nth-child(2) p {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Services
 =================================================================== */
 
@@ -4346,12 +4344,10 @@ ul.top-feature li:nth-child(2) p {
 }
 
 .service-style-one-item .top h4 {
-	text-transform: uppercase;
 	margin: 0;
 }
 
 .service-style-one-item .top span {
-	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 18px;
 	color: var(--color-secondary);
@@ -4401,7 +4397,7 @@ ul.top-feature li:nth-child(2) p {
 	background-position: right top;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Services
 =================================================================== */
 
@@ -4521,7 +4517,6 @@ h2.mask-text.large {
 
 .service-style-two .overlay .info span {
 	color: var(--color-secondary);
-	text-transform: uppercase;
 	position: relative;
 	z-index: 1;
 	text-align: center;
@@ -4544,7 +4539,7 @@ h2.mask-text.large {
 	visibility: hidden;
 }
 
-.service-style-two-carousel.swiper .swiper-button-prev::after, 
+.service-style-two-carousel.swiper .swiper-button-prev::after,
 .service-style-two-carousel.swiper .swiper-button-next::after {
 	color: var(--white);
 	font-size: 30px;
@@ -4563,18 +4558,18 @@ h2.mask-text.large {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Services Details
 =================================================================== */
 .services-details-area .thumb img {
 	margin-bottom: 40px;
 }
 
-.services-details-area h1, 
-  .services-details-area h2, 
-  .services-details-area h3, 
-  .services-details-area h4, 
-  .services-details-area h5, 
+.services-details-area h1,
+  .services-details-area h2,
+  .services-details-area h3,
+  .services-details-area h4,
+  .services-details-area h5,
   .services-details-area h6 {
 	font-weight: 600;
 }
@@ -4676,7 +4671,6 @@ h2.mask-text.large {
 	margin-bottom: 30px;
 	margin-top: -5px;
 	position: relative;
-	text-transform: capitalize;
 	z-index: 1;
 	display: inline-block;
 	padding-bottom: 15px;
@@ -4939,7 +4933,7 @@ h2.mask-text.large {
 	text-transform: none;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Our Benifits
 =================================================================== */
 .fun-fact .medium {
@@ -5027,7 +5021,7 @@ ul.list-standard {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Video Area
 =================================================================== */
 .video-content {
@@ -5056,7 +5050,7 @@ ul.list-standard {
 	margin: 0;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Product list
 =================================================================== */
 .product-cat-area {
@@ -5112,7 +5106,6 @@ ul.list-standard {
 	font-weight: 900;
 	margin: 0;
 	line-height: 1.1;
-	text-transform: capitalize;
 	font-family: var(--font-secondary);
 	display: inline-block;
 }
@@ -5143,7 +5136,7 @@ ul.list-standard {
 	animation: UpDown 6s linear infinite;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Testimonial
 =================================================================== */
 
@@ -5237,10 +5230,9 @@ ul.list-standard {
 
 .testimonial-style-one .provider span {
 	color: var(--color-secondary);
-	text-transform: uppercase;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Testimonial Style Two
 =================================================================== */
 .testimonial-style-two-area {
@@ -5335,7 +5327,6 @@ ul.list-standard {
 
 .testimonial-style-two .provider span {
 	color: var(--color-secondary);
-	text-transform: uppercase;
 	font-size: 18px;
 }
 
@@ -5373,7 +5364,7 @@ ul.list-standard {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Gallery
 =================================================================== */
 .gallery-style-one {
@@ -5462,7 +5453,6 @@ ul.list-standard {
 
 .gallery-style-one .overlay p {
 	color: var(--color-primary);
-	text-transform: uppercase;
 	display: block;
 	margin-bottom: 2px;
 	position: relative;
@@ -5471,8 +5461,8 @@ ul.list-standard {
 }
 
 
-/* ============================================================== 
-    # Gallery 
+/* ==============================================================
+    # Gallery
 =================================================================== */
 
 .magnific-mix-gallery {
@@ -5513,17 +5503,17 @@ ul.list-standard {
 	}
 }
 
-  
+
   /* Max Wide Mobile Layout: 600px. */
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-  
+
 	  /* Portfolio */
 	.gallery-items.colums-4 .gallery-item {
 		width: 50%;
 	}
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Project Details
 =================================================================== */
 
@@ -5540,7 +5530,6 @@ ul.list-standard {
 	position: relative;
 	z-index: 1;
 	padding-right: 10px;
-	text-transform: uppercase;
 	color: var(--color-paragraph);
 }
 
@@ -5610,7 +5599,6 @@ ul.list-standard {
 p.project-inner-tag {
 	font-weight: 700;
 	line-height: 2.3;
-	text-transform: uppercase;
 }
 
 .item-grid-container img {
@@ -5680,7 +5668,7 @@ ul.project-info li:first-child {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
 	 # Why Choose Us
 =================================================================== */
 .choose-us-thumb {
@@ -5759,7 +5747,7 @@ ul.list-details li p {
 	margin: 0;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Choose us Style Two
 =================================================================== */
 .choose-us-style-two-area {
@@ -5906,7 +5894,7 @@ ul.list-simple.text-light li p {
 	left: 3px;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Choose Us Style Three
 =================================================================== */
 .choose-us-style-three-area .shape {
@@ -5972,7 +5960,6 @@ ul.list-simple.text-light li p {
 
 .list-grid h4 {
 	margin: 0;
-	text-transform: capitalize;
 	font-size: 30px;
 }
 
@@ -6008,7 +5995,7 @@ ul.list-item li::after {
 	display: inline-block;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Farmers
 =================================================================== */
 
@@ -6146,8 +6133,8 @@ ul.list-item li::after {
 }
 
 
-/* ============================================================== 
-     # Team Single  
+/* ==============================================================
+     # Team Single
 =================================================================== */
 
 .team-single-area .team-content-top .right-info h2 {
@@ -6156,7 +6143,6 @@ ul.list-item li::after {
 
 .team-single-area .team-content-top .right-info span {
 	display: block;
-	text-transform: uppercase;
 	color: var(--color-secondary);
 	font-weight: 600;
 	margin-bottom: 25px;
@@ -6286,7 +6272,6 @@ ul.list-item li::after {
 }
 
 .skill-items .progress-box h5 {
-	text-transform: capitalize;
 	font-weight: 600;
 	margin-bottom: 5px;
 	text-align: left;
@@ -6404,7 +6389,7 @@ ul.list-item li::after {
 
 
 
-/* ============================================================== 
+/* ==============================================================
     # Faq
 =================================================================== */
 
@@ -6502,7 +6487,7 @@ ul.list-item li::after {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Contact Us
 =================================================================== */
 
@@ -6618,7 +6603,7 @@ ul.list-item li::after {
 	margin-bottom: 40px;
 }
 
-.contact-form-style-one input, 
+.contact-form-style-one input,
 .contact-form-style-one textarea {
 	margin-bottom: 15px;
 	padding: 15px 20px;
@@ -6634,7 +6619,6 @@ ul.list-item li::after {
 .contact-form-style-one button {
 	display: inline-block;
 	font-weight: 700;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 6px;
@@ -6715,7 +6699,7 @@ img.loader {
 	max-width: 15%;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Feature
 =================================================================== */
 
@@ -6751,7 +6735,6 @@ img.loader {
 
 .quality-card ul li {
 	font-size: 50px;
-	text-transform: uppercase;
 	color: var(--color-heading);
 	font-weight: 700;
 }
@@ -6828,7 +6811,7 @@ img.loader {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Featuer Style Two
 =================================================================== */
 
@@ -6895,7 +6878,7 @@ img.loader {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Feature Style Three
 =================================================================== */
 
@@ -6996,7 +6979,7 @@ img.loader {
     margin-left: 30px;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Timeline
 =================================================================== */
 
@@ -7066,8 +7049,8 @@ img.loader {
 }
 
 
-/* ============================================================== 
-     # History 
+/* ==============================================================
+     # History
 =================================================================== */
 
 .history-area {
@@ -7221,7 +7204,6 @@ img.loader {
 }
 
 .history-items .animated-btn {
-	text-transform: uppercase;
 }
 
 .history-items .animated-btn i {
@@ -7238,7 +7220,7 @@ img.loader {
 
 
 
-/* ============================================================== 
+/* ==============================================================
     # Call to action
 =================================================================== */
 .call-to-action-area {
@@ -7281,7 +7263,6 @@ img.loader {
 }
 
 .callto-action a {
-	text-transform: uppercase;
 	border-bottom: 2px solid;
 	padding-bottom: 3px;
 }
@@ -7295,14 +7276,14 @@ img.loader {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Brand
 =================================================================== */
 .brand-style-one-carousel img {
 	height: 100px;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Product Speciality
 =================================================================== */
 .product-badge {
@@ -7330,7 +7311,6 @@ img.loader {
 	display: block;
 	font-size: 36px;
 	font-family: var(--font-secondary);
-	text-transform: uppercase;
 }
 
 .product-badge::after {
@@ -7346,7 +7326,6 @@ img.loader {
 .product-speciality-info h2 {
 	font-size: 60px;
 	font-weight: 300;
-	text-transform: capitalize;
 	margin-bottom: 20px;
 }
 
@@ -7356,7 +7335,7 @@ img.loader {
 	font-weight: 600;
 }
 
-/* ============================================================== 
+/* ==============================================================
     # Product Type
 =================================================================== */
 
@@ -7405,7 +7384,7 @@ img.loader {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Category Product
 =================================================================== */
 .product-cat-highlight-info {
@@ -7414,7 +7393,6 @@ img.loader {
 }
 
 .product-cat-highlight-info h2 {
-	text-transform: uppercase;
 	margin-bottom: 25px;
 }
 
@@ -7423,7 +7401,6 @@ img.loader {
 }
 
 .product-cat-highlight-info h6 {
-	text-transform: uppercase;
 	font-size: 18px;
 	background: var(--white);
 	display: inline-block;
@@ -7570,7 +7547,7 @@ ul.product-features li:last-child {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # Footer
 =================================================================== */
 footer {
@@ -7598,7 +7575,7 @@ footer {
 	padding-top: 70px;
 }
 
-.footer-item .logo, 
+.footer-item .logo,
 .footer-item .widget-title {
 	margin-bottom: 30px;
 }
@@ -7649,7 +7626,6 @@ footer {
 	display: block;
 	margin-bottom: 5px;
 	font-size: 15px;
-	text-transform: uppercase;
 	font-weight: 400;
 }
 
@@ -7693,7 +7669,6 @@ footer {
 	border: none;
 	height: 50px;
 	width: 50px;
-	text-transform: uppercase;
 	font-weight: 700;
 	padding: 0;
 	color: var(--color-heading);
@@ -7717,7 +7692,6 @@ footer {
 
 .footer-item.contact li strong {
 	display: block;
-	text-transform: uppercase;
 	color: var(--white);
 	font-size: 14px;
 }
@@ -7764,7 +7738,7 @@ footer {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
     # 404 page
 =================================================================== */
 
@@ -7821,8 +7795,8 @@ footer {
 
 
 
-/* ============================================================== 
-     # Responsive CSS  
+/* ==============================================================
+     # Responsive CSS
 =================================================================== */
 
 /* Custom Layout */
@@ -8042,34 +8016,34 @@ footer {
 	}
 
 	/* Home Dairy */
-	
+
 	.feature-style-three-item ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 50px;
 	}
-	
+
 	.feature-style-three-item li {
 		margin: 0;
 		padding: 0;
 		border: none;
 	}
-	
+
 	.thumb-style-three img {
 		width: 45%;
 		padding: 0;
 	}
-	
+
 	.thumb-style-three {
 		text-align: center;
 		margin: 120px 0;
 	}
-	
+
 	.history-area .carousel-inner {
 		padding: 0;
 		padding-top: 120px;
 	}
-	
+
 	.carousel.slide .carousel-item img {
 		margin-bottom: 50px;
 		width: 100%;
@@ -8078,7 +8052,7 @@ footer {
 		flex-direction: inherit;
 		text-align: left;
 	}
-	
+
 	.feature-style-three-item.text-end li .icon {
 		margin: 0;
 		margin-right: 30px;
@@ -8668,38 +8642,38 @@ footer {
 	.banner-style-four h2 {
 		font-size: 100px;
 	}
-	
+
 	.feature-style-three-item ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 50px;
 	}
-	
+
 	.feature-style-three-item li {
 		margin: 0;
 		padding: 0;
 		border: none;
 	}
-	
+
 	.thumb-style-three::after {
 		height: 500px;
 		width: 500px;
 	}
-	
+
 	.thumb-style-three img {
 		padding: 0 160px;
 	}
-	
+
 	.thumb-style-three {
 		text-align: center;
 		margin: 90px 0;
 	}
-	
+
 	.history-area .carousel-inner {
 		padding: 0;
 		padding-top: 120px;
 	}
-	
+
 	.carousel.slide .carousel-item img {
 		margin-bottom: 50px;
 		width: 100%;
@@ -8708,7 +8682,7 @@ footer {
 		flex-direction: inherit;
 		text-align: left;
 	}
-	
+
 	.feature-style-three-item.text-end li .icon {
 		margin: 0;
 		margin-right: 30px;
@@ -8717,7 +8691,7 @@ footer {
 	.ex-badge {
 		display: none;
 	}
-	
+
 
 }
 
@@ -9416,50 +9390,50 @@ footer {
 	.banner-style-four h2 {
 		font-size: 42px;
 	}
-	
+
 	.banner-style-four ul li {
 		font-size: 20px;
 	}
-	
+
 	.feature-style-three-item li {
 		display: block;
 		text-align: center;
 	}
-	
+
 	.feature-style-three-item li .icon {
 		margin: 0 !important;
 		margin-bottom: 25px !important;
 	}
-	
+
 	.ex-badge {
 		display: none;
 	}
-	
+
 	.thumb-style-three::after {
 		height: 320px;
 		width: 320px;
 		border-width: 50px;
 	}
-	
+
 	.thumb-style-three img {
 		width: 320px;
 		margin: 40px auto;
 		padding: 53px;
 	}
-	
+
 	.thumb-style-three {
 		text-align: center;
 	}
-	
+
 	.history-area .carousel-inner {
 		padding: 0;
 		padding-top: 120px;
 	}
-	
+
 	.carousel.slide .carousel-item img {
 		margin-bottom: 30px;
 	}
-	
+
 	.video-content {
 		padding: 120px 0;
 		padding-bottom: 100px;
@@ -9522,7 +9496,7 @@ footer {
 	}
 
 	/* Contact */
-	
+
 	.contact-form-style-one {
 		padding: 60px 40px;
 	}
@@ -9557,8 +9531,8 @@ footer {
 
 
 
-/* ============================================================== 
-     # Preloader 
+/* ==============================================================
+     # Preloader
 =================================================================== */
 
 .agrica-preloader {

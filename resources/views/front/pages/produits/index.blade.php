@@ -10,19 +10,6 @@
     ============================================= -->
     <div class="validtheme-shop-area default-padding">
         <div class="container">
-            <div class="shop-listing-contentes">
-
-                <div class="row item-flex center">
-
-                    <div class="col-lg-12 text-left">
-                        <p>
-                            @if($param)
-                            {{ $productCategorie->name }}
-                            @endif
-                        </p>
-                    </div>
-                </div>
-            </div>
             @if($param)
             <div class="row">
                 <div class="col-lg-12">
@@ -31,7 +18,7 @@
 
                         <!-- Strt Product Grid Vies -->
                         <div class="tab-pane fade show active" id="grid-tab" role="tabpanel" aria-labelledby="grid-tab-control">
-                            <ul class="vt-products columns-4">
+                            <ul class="vt-products columns-2">
                                 @foreach (FrontHelper::allProductCat($productCategorie->id) as $product)
                                 <!-- Single product -->
                                 <li class="product">

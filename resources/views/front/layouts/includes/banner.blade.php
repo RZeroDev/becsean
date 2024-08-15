@@ -8,7 +8,7 @@
             <div class="swiper-slide banner-style-one">
                 <div class="banner-thumb bg-cover shadow dark" style="background: url(storage/front/assets/img/banner/3.jpg);"></div>
                 <div class="shape">
-                    <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
+                    <img src="{{ asset('storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
                 </div>
                 <div class="container">
                     <div class="row align-center">
@@ -23,12 +23,12 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3>Transformez Vos Idées en Projets Agricoles Réussis</h3>
+                                    <h3>Transformez vos idées en projets agricoles réussis</h3>
                                     <p>
                                         Découvrez des solutions complètes et personnalisées pour maximiser le potentiel de vos terrains agricoles, de l'étude initiale à la récolte finale.
                                     </p>
                                     <div class="button">
-                                        <a class="btn btn-theme btn-md radius animation" href="{{route('contact')}}">Nous contactez</a>
+                                        <a class="btn btn-theme btn-md radius animation" href="{{route('contact')}}">Nous contacter</a>
                                     </div>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
             <div class="swiper-slide banner-style-one">
                 <div class="banner-thumb bg-cover shadow dark" style="background: url(storage/front/assets/img/banner/4.jpg);"></div>
                 <div class="shape">
-                    <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
+                    <img src="{{ asset('storage/front/assets/img/shape/2.png')}}" alt="Image Not Found">
                 </div>
                 <div class="container">
                     <div class="row align-center">
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3>Votre Partenaire pour une Agriculture Durable et Prospère</h3>
+                                    <h3>Votre partenaire pour une agriculture durable et prospère</h3>
                                     <p>
                                         Accompagnement expert à chaque étape de votre projet agricole pour garantir des rendements optimisés et une gestion efficace des ressources.
                                     </p>

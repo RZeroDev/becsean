@@ -1,4 +1,4 @@
-<footer class="bg-dark text-light" style="background-image: url({{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/8.png')}});">
+<footer class="bg-dark text-light" style="background-image: url({{ asset('storage/front/assets/img/shape/8.png')}});">
     <div class="container">
         <div class="f-items default-padding">
             <div class="row">
@@ -6,7 +6,7 @@
                 <!-- Single Item -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item about">
-                        <img class="logo" src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/logo-light.png')}}" alt="Logo">
+                        <img class="img-fluid" src="{{ asset('storage/front/assets/becsean.png')}}" width="" alt="Logo">
                     </div>
                 </div>
                 <!-- End Single Item -->
@@ -14,10 +14,10 @@
                 <!-- Single Item -->
                 <div class="col-lg-2 col-md-6 item">
                     <div class="footer-item link">
-                        <h4 class="widget-title">Lien utils</h4>
+                        <h4 class="widget-title">Liens rapides</h4>
                         <ul>
                             <li>
-                                <a href="{{ route('index') }}" class="{{ Request::routeIs('index') ? 'active' : '' }}">Acceuil</a>
+                                <a href="{{ route('index') }}" class="{{ Request::routeIs('index') ? 'active' : '' }}">Accueil</a>
                             </li>
                             <li>
                                 <a href="{{ route('services') }}" class="{{ Request::routeIs('services') ? 'active' : '' }}">Nos services</a>
@@ -71,7 +71,7 @@
                                     <i class="fas fa-home"></i>
                                 </div>
                                 <div class="content">
-                                    <strong>Address:</strong>
+                                    <strong>Adresse:</strong>
                                     {{ FrontHelper::getSettings()->company_headquarters }}
                                 </div>
                             </li>
@@ -89,7 +89,9 @@
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="content">
-                                    <strong>Phone:</strong>
+                                    <strong>Téléphones:</strong>
+                                    <a href="tel:{{ FrontHelper::getSettings()->company_phone1 }}">{{ FrontHelper::getSettings()->company_phone1 }}</a>
+                                    <br>
                                     <a href="tel:{{ FrontHelper::getSettings()->company_phone }}">{{ FrontHelper::getSettings()->company_phone }}</a>
                                 </div>
                             </li>
@@ -111,7 +113,7 @@
         <!-- End Footer Bottom -->
     </div>
     <div class="shape-right-bottom">
-        <img src="{{ asset(FrontHelper::getEnvFolder().'storage/front/assets/img/shape/7.png')}}" alt="Image Not Found">
+        <img src="{{ asset('storage/front/assets/img/shape/7.png')}}" alt="Image Not Found">
     </div>
 </footer>
 

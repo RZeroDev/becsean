@@ -16,9 +16,10 @@ class SettingTableSeeder extends Seeder
         DB::table('settings')->insert([
             [
                 'company_name' => 'Becsean Sarl',
-                'company_phone' => '+229 67 95 71 32',
-                'company_email' => 'contact@becseansarl.com',
-                'company_headquarters' => "Benin - Porto-Novo",
+                'company_phone' => '+22995094158',
+                'company_phone1' => '+2299000000',
+                'company_email' => 'becseansarl@gmail.com',
+                'company_headquarters' => "Benin - Pobè, Maison SOTON",
                 'company_facebook' => '',
                 'company_twitter' => '',
                 'company_instagram' => '',

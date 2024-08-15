@@ -18,7 +18,7 @@
                     <div class="col-lg-4 col-md-6 service-one-single">
                         <div class="service-style-one-item">
                             <div class="thumb">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . $service->main_image) }}"
+                                <img src="{{ asset($service->main_image) }}"
                                     alt="Image Not Found">
                             </div>
                             <div class="info">
@@ -26,7 +26,7 @@
                                     <h4><a href="{{ route('service.single',$service->slug) }}">{{ $service->title }}</a></h4>
                                 </div>
                                 <p>
-                                    {{Str::limit($service->description,240)}}
+                                    {!!Str::limit($service->description,240)!!}
                                 </p>
                             </div>
                             <a href="{{ route('service.single', $service->slug) }}" class="btn-angle"><i class="fas fa-arrow-right"></i></a>

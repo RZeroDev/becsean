@@ -12,7 +12,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="{{ route('index') }}">
-                        <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/logo-mix.png')}}" class="logo" alt="Logo">
+                        <img src="{{asset('storage/front/assets/img/logobecsean.jpg')}}" class="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -21,14 +21,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
 
-                <img src="{{FrontHelper::getEnvFolder().asset('storage/front/assets/img/logo.png')}}" alt="Logo">
+                <img src="{{asset('storage/front/assets/becsean.png')}}" alt="Logo">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-times"></i>
                 </button>
 
                 <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                     <li class="">
-                        <a href="{{route('index')}}" class=" active" >Acceuil</a>
+                        <a href="{{route('index')}}" class="active" >Accueil</a>
                     </li>
                     <li class="">
                         <a href="{{route('services')}}" class="" >Services</a>
@@ -79,7 +79,7 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
-                        <li class="button"><a href="{{route('contact')}}">Nous contactez</a></li>
+                        <li class="button"><a href="{{route('contact')}}">Nous contacter</a></li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->

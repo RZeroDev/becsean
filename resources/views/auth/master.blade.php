@@ -15,17 +15,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!-- favicon -->
-        <link rel="shortcut icon" href="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/logo-color.png') }}">
-        <link rel="stylesheet" href="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/css/custom.css') }}">
+        <link rel="shortcut icon" href="{{ asset('storage/front/assets/img/logo-color.png') }}">
+        <link rel="stylesheet" href="{{ asset('storage/front/assets/css/custom.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!-- favicon -->
         <!-- Css -->
         <!-- Main Css -->
-        <link href="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/libs/simplebar/simplebar.min.css')}}" rel="stylesheet">
-        <link href="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/libs/%40iconscout/unicons/css/line.css')}}" type="text/css" rel="stylesheet">
-        <link href="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/libs/%40mdi/font/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/css/tailwind.min.css')}}">
+        <link href="{{ asset('storage/dashboard/assets/libs/simplebar/simplebar.min.css')}}" rel="stylesheet">
+        <link href="{{ asset('storage/dashboard/assets/libs/%40iconscout/unicons/css/line.css')}}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('storage/dashboard/assets/libs/%40mdi/font/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('storage/dashboard/assets/css/tailwind.min.css')}}">
 
     </head>
     
@@ -49,10 +49,10 @@
         </div>
 
         <!-- JAVASCRIPTS -->
-        <script src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/libs/feather-icons/feather.min.js')}}"></script>
-        <script src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/libs/simplebar/simplebar.min.js')}}"></script>
-        <script src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/js/plugins.init.js')}}"></script>
-        <script src="{{ asset(FrontHelper::getEnvFolder() . 'storage/dashboard/assets/js/app.js')}}"></script>
+        <script src="{{ asset('storage/dashboard/assets/libs/feather-icons/feather.min.js')}}"></script>
+        <script src="{{ asset('storage/dashboard/assets/libs/simplebar/simplebar.min.js')}}"></script>
+        <script src="{{ asset('storage/dashboard/assets/js/plugins.init.js')}}"></script>
+        <script src="{{ asset('storage/dashboard/assets/js/app.js')}}"></script>
         <!-- JAVASCRIPTS -->
     </body>
 

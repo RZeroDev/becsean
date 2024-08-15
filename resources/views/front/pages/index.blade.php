@@ -29,10 +29,10 @@
                 <div class="col-xl-6 col-lg-7">
                     <div class="benifit-items text-light">
                         <div class="shape">
-                            <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/8.png') }}"
+                            <img src="{{ asset('storage/front/assets/img/illustration/8.png') }}"
                                 alt="Image Not Found">
                         </div>
-                        <h2 class="title">Découvrez Nos Solutions Agricoles Innovantes</h2>
+                        <h2 class="title">Découvrez nos solutions agricoles innovantes</h2>
                        <p>
                         Visionnez notre vidéo pour comprendre comment nos services peuvent transformer votre projet agricole. De l'étude initiale à la réalisation et au suivi technique, nous offrons une expertise complète pour maximiser vos rendements et promouvoir des pratiques durables.
                        </p>
@@ -61,11 +61,11 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-style-one">
                                     <div class="thumb">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . $item->image) }}" alt="Imge
+                                        <img src="{{ asset($item->image) }}" alt="Imge
                                             Not Found">
                                     </div>
                                     <div class="info">
-                                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/shape/quote-big.png') }}"
+                                        <img src="{{ asset('storage/front/assets/img/shape/quote-big.png') }}"
                                             alt="Image Not Found">
                                             <p style="font-size: 22px;">
                                                 “{{$item->description}}”
@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <h5 class="sub-title">Notre galleries</h5>
+                        <h5 class="sub-title">Notre galerie</h5>
                         <h2 class="title">Explorez notre univers</h2>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/1.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/1.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/2.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/2.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/3.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/3.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/4.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/4.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                         <!-- Single Item -->
                         <div class="swiper-slide">
                             <div class="gallery-style-one">
-                                <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/projects/5.jpg') }}" alt="Image
+                                <img src="{{ asset('storage/front/assets/img/projects/5.jpg') }}" alt="Image
                                     not Found">
                             </div>
                         </div>
@@ -179,7 +179,7 @@
         ============================================= -->
     <div class="contact-area overflow-hidden bg-gray default-padding">
         <div class="sahpe-right-bottom">
-            <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/shape/16.png') }}"
+            <img src="{{ asset('storage/front/assets/img/shape/16.png') }}"
                 alt="Image Not Found">
         </div>
         <div class="container">
@@ -187,7 +187,7 @@
 
                 <div class="col-tact-stye-one col-xl-6 col-lg-7" id="contact">
                     <div class="contact-form-style-one mb-md-50">
-                        <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/10.png') }}"
+                        <img src="{{ asset('storage/front/assets/img/illustration/10.png') }}"
                             alt="Image Not Found">
                         <h5 class="sub-title">Vous avez des questions?</h5>
                         <h2 class="heading">Envoyez nous un message</h2>
@@ -205,7 +205,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" required  name="email" placeholder="Address email"
+                                        <input class="form-control" required  name="email" placeholder="Adresse email"
                                             type="email">
                                         <span class="alert-error"></span>
                                     </div>
@@ -221,7 +221,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" required name="message" placeholder="Parler nous de votre project"></textarea>
+                                        <textarea class="form-control" required name="message" placeholder="Parler nous de votre projet"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@
                         <h2>
                            Nos
                             <span>
-                                Contact
+                                contacts
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
                                     <path
                                         d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0"
@@ -248,7 +248,7 @@
                             </span>
                         </h2>
                         <p>
-                            Vous pouvez nous joindre aux addresses suivantes
+                            Vous pouvez nous joindre aux adresse suivantes
                         </p>
                         <ul>
                             <li>
@@ -272,6 +272,7 @@
                                 </div>
                             </li>
                         </ul>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.1626558530893!2d2.66622237499713!3d6.990114193010891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTknMjQuNCJOIDLCsDQwJzA3LjciRQ!5e0!3m2!1sen!2sbj!4v1719932980017!5m2!1sen!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
@@ -284,4 +285,39 @@
         ============================================= -->
         @include('front.layouts.includes.blog')
     <!-- End Blog -->
+    <div class="team-style-one-area">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-4">
+                    <h4 class="sub-title">Nos partenaires</h4>
+                    <h2 class="title">Décrouvez nos partenaires</h2>
+                    {{-- <a class="btn btn-theme secondary mt-10 btn-md radius animation" href="farmers.html">Meet all Farmers</a> --}}
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="team-style-one-carousel swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            @foreach (FrontHelper::allPartners() as $partner)
+                                <!-- Single Item -->
+                                <div class="swiper-slide wisth-50">
+                                    <div class="farmer-style-one-item">
+                                        <div class="thumb">
+                                            <img src="{{ asset($partner->logo) }}" alt="Image Not Found">
+                                        </div>
+                                        <div class="info text-center">
+                                            <span>Partenaire</span>
+                                            <h4>{{ $partner->name }}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- End Single Item -->
+                            @endforeach
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

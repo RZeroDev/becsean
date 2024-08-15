@@ -33,7 +33,6 @@ class ActualityUpdateRequest extends FormRequest
                     Rule::unique('actualities', 'title')->ignore($actuality->id),
                 ],            
             'contenu' => ['required', 'string'],
-            'media_type' => ['required', Rule::in(['video', 'image'])], 
         ];
     }
 }

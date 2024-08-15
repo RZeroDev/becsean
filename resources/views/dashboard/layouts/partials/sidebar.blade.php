@@ -55,6 +55,11 @@
                         </ul>
                     </div>
                 </li>
+                <li class="sidebar {{ request()->is('galeries*') ? 'active' : '' }}">
+                    <a href="{{ route('galeries.index') }}">
+                        <i class="uil uil-apps me-2"></i>Galeries
+                    </a>
+                </li>
                 <li class=" {{ request()->is('testimonials*')   ? 'active' : '' }}">
                     <a href="{{ route('testimonials.index') }}">
                         <i class="uil uil-invoice me-2"></i>Témoignages

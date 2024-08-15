@@ -3,7 +3,7 @@
         <div class="row align-center">
             <div class="col-xl-5 col-lg-5">
                 <div class="choose-us-thumb">
-                    <img src="{{ asset(FrontHelper::getEnvFolder() . 'storage/front/assets/img/illustration/9.png') }}"
+                    <img src="{{ asset('storage/front/assets/img/illustration/9.png') }}"
                         alt="Image Not Found">
                 </div>
             </div>

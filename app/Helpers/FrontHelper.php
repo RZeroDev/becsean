@@ -88,15 +88,15 @@ class FrontHelper
     }
 
     public static function allProductCategorie() {
-        $productCategorie = ProductCategorie::all();
+        $productCategorie = ProductCategorie::orderBy('created_at','desc')->get();
         return $productCategorie;
     }
 
     public static function allProduct() {
         if (Route::currentRouteName() != 'produits') {
-            $product = Product::orderBy('created_at', 'desc')->paginate(3);
+            $product = Product::orderBy('created_at', 'desc')->orderBy('created_at','desc')->paginate(3);
         } else {
-            $product = Product::orderBy('created_at', 'desc')->paginate(6);
+            $product = Product::orderBy('created_at', 'desc')->orderBy('created_at','desc')->paginate(6);
         }
         return $product;
     }
@@ -112,17 +112,17 @@ class FrontHelper
     }
 
     public static function allProjectCategorie() {
-        $projectCategorie = ProjectCategorie::all();
+        $projectCategorie = ProjectCategorie::orderBy('created_at','desc')->get();
         return $projectCategorie;
     }
 
     public static function allProject() {
-        $project = Project::all();
+        $project = Project::orderBy('created_at','desc')->get();
         return $project;
     }
 
     public static function allProjectCat($categorieId) {
-        $projects = Project::where('project_categorie_id', $categorieId)->get();
+        $projects = Project::where('project_categorie_id', $categorieId)->orderBy('created_at','desc')->get();
         return $projects;
     }
 

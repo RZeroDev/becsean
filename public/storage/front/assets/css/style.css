@@ -802,7 +802,6 @@ p {
 }
 
 .sub-title {
-	text-transform: capitalize;
 	color: var(--color-secondary);
 	font-weight: 600;
 	display: inline-block;
@@ -909,7 +908,6 @@ p {
 }
 
 .sub-heading {
-	text-transform: uppercase;
 	color: var(--color-primary);
 	font-weight: 600;
 	background: var(--bg-gradient-reverse);
@@ -1593,7 +1591,6 @@ p {
 .btn {
 	display: inline-block;
 	font-weight: 600;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 7px;
@@ -1901,7 +1898,6 @@ p {
 button {
 	display: inline-block;
 	font-weight: 600;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 7px;
@@ -2276,7 +2272,6 @@ button i {
 
 .btn-simple {
 	line-height: 1;
-	text-transform: uppercase;
 	display: inline-block;
 	color: var(--color-paragraph);
 }
@@ -2355,7 +2350,6 @@ button i {
 	background: linear-gradient(90deg, #8A6552 0%, #472d20 100%);
 	color: var(--white);
 	font-size: 12px;
-	text-transform: capitalize;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2566,7 +2560,6 @@ button i {
 	transition: all 0.35s ease-in-out;
 	left: -50px;
 	position: relative;
-	text-transform: uppercase;
 	font-weight: 600;
 }
 
@@ -2664,7 +2657,6 @@ a.btn-round-animation.dark {
 	border: 2px solid var(--color-primary);
 	padding: 12px 25px;
 	border-radius: 30px;
-	text-transform: uppercase;
 	align-items: center;
 	font-size: 13px;
 }
@@ -2714,7 +2706,6 @@ a.btn-round-animation.dark {
 	font-size: 25px;
 	height: 200px;
 	width: 200px;
-	text-transform: uppercase;
 	font-weight: 700;
 }
 
@@ -2817,7 +2808,6 @@ a.btn-round-animation.dark {
 
 .top-style-two .info li {
 	font-weight: 500;
-	text-transform: capitalize;
 	display: flex;
 	align-items: center;
 }
@@ -3931,7 +3921,6 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-one .content h4 {
-	text-transform: uppercase;
 	font-weight: 500;
 }
 
@@ -4000,7 +3989,6 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-two h2 {
-	text-transform: uppercase;
 	font-size: 100px;
 	display: flex;
 	align-items: center;
@@ -4039,7 +4027,6 @@ a.btn-round-animation.dark {
 }
 
 .banner-style-two .content .animated-btn {
-	text-transform: uppercase;
 }
 
 .banner-style-two .content .animated-btn i {
@@ -4126,7 +4113,6 @@ a.btn-round-animation.dark {
 .banner-style-three h4 {
 	font-family: var(--font-secondary);
 	font-weight: 600;
-	text-transform: uppercase;
 	position: relative;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
@@ -4135,7 +4121,6 @@ a.btn-round-animation.dark {
 .banner-style-three h2 {
 	font-size: 80px;
 	line-height: 1.1;
-	text-transform: capitalize;
 }
 
 .banner-style-three .content {
@@ -4160,7 +4145,6 @@ a.btn-round-animation.dark {
 .banner-style-four h2 {
     font-size: 120px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .banner-style-four h2 strong {
@@ -4176,7 +4160,6 @@ a.btn-round-animation.dark {
 
 .banner-style-four ul li {
     display: inline-block;
-    text-transform: uppercase;
     font-family: var(--font-secondary);
     font-weight: 900;
     margin: 0 14px;
@@ -4361,12 +4344,10 @@ ul.top-feature li:nth-child(2) p {
 }
 
 .service-style-one-item .top h4 {
-	text-transform: uppercase;
 	margin: 0;
 }
 
 .service-style-one-item .top span {
-	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 18px;
 	color: var(--color-secondary);
@@ -4536,7 +4517,6 @@ h2.mask-text.large {
 
 .service-style-two .overlay .info span {
 	color: var(--color-secondary);
-	text-transform: uppercase;
 	position: relative;
 	z-index: 1;
 	text-align: center;
@@ -4691,7 +4671,6 @@ h2.mask-text.large {
 	margin-bottom: 30px;
 	margin-top: -5px;
 	position: relative;
-	text-transform: capitalize;
 	z-index: 1;
 	display: inline-block;
 	padding-bottom: 15px;
@@ -5127,7 +5106,6 @@ ul.list-standard {
 	font-weight: 900;
 	margin: 0;
 	line-height: 1.1;
-	text-transform: capitalize;
 	font-family: var(--font-secondary);
 	display: inline-block;
 }
@@ -5252,7 +5230,6 @@ ul.list-standard {
 
 .testimonial-style-one .provider span {
 	color: var(--color-secondary);
-	text-transform: uppercase;
 }
 
 /* ==============================================================
@@ -5350,7 +5327,6 @@ ul.list-standard {
 
 .testimonial-style-two .provider span {
 	color: var(--color-secondary);
-	text-transform: uppercase;
 	font-size: 18px;
 }
 
@@ -5477,7 +5453,6 @@ ul.list-standard {
 
 .gallery-style-one .overlay p {
 	color: var(--color-primary);
-	text-transform: uppercase;
 	display: block;
 	margin-bottom: 2px;
 	position: relative;
@@ -5555,7 +5530,6 @@ ul.list-standard {
 	position: relative;
 	z-index: 1;
 	padding-right: 10px;
-	text-transform: uppercase;
 	color: var(--color-paragraph);
 }
 
@@ -5625,7 +5599,6 @@ ul.list-standard {
 p.project-inner-tag {
 	font-weight: 700;
 	line-height: 2.3;
-	text-transform: uppercase;
 }
 
 .item-grid-container img {
@@ -5987,7 +5960,6 @@ ul.list-simple.text-light li p {
 
 .list-grid h4 {
 	margin: 0;
-	text-transform: capitalize;
 	font-size: 30px;
 }
 
@@ -6171,7 +6143,6 @@ ul.list-item li::after {
 
 .team-single-area .team-content-top .right-info span {
 	display: block;
-	text-transform: uppercase;
 	color: var(--color-secondary);
 	font-weight: 600;
 	margin-bottom: 25px;
@@ -6301,7 +6272,6 @@ ul.list-item li::after {
 }
 
 .skill-items .progress-box h5 {
-	text-transform: capitalize;
 	font-weight: 600;
 	margin-bottom: 5px;
 	text-align: left;
@@ -6649,7 +6619,6 @@ ul.list-item li::after {
 .contact-form-style-one button {
 	display: inline-block;
 	font-weight: 700;
-	text-transform: capitalize;
 	transition: all 0.35s ease-in-out;
 	overflow: hidden;
 	border-radius: 6px;
@@ -6766,7 +6735,6 @@ img.loader {
 
 .quality-card ul li {
 	font-size: 50px;
-	text-transform: uppercase;
 	color: var(--color-heading);
 	font-weight: 700;
 }
@@ -7236,7 +7204,6 @@ img.loader {
 }
 
 .history-items .animated-btn {
-	text-transform: uppercase;
 }
 
 .history-items .animated-btn i {
@@ -7296,7 +7263,6 @@ img.loader {
 }
 
 .callto-action a {
-	text-transform: uppercase;
 	border-bottom: 2px solid;
 	padding-bottom: 3px;
 }
@@ -7345,7 +7311,6 @@ img.loader {
 	display: block;
 	font-size: 36px;
 	font-family: var(--font-secondary);
-	text-transform: uppercase;
 }
 
 .product-badge::after {
@@ -7361,7 +7326,6 @@ img.loader {
 .product-speciality-info h2 {
 	font-size: 60px;
 	font-weight: 300;
-	text-transform: capitalize;
 	margin-bottom: 20px;
 }
 
@@ -7429,7 +7393,6 @@ img.loader {
 }
 
 .product-cat-highlight-info h2 {
-	text-transform: uppercase;
 	margin-bottom: 25px;
 }
 
@@ -7438,7 +7401,6 @@ img.loader {
 }
 
 .product-cat-highlight-info h6 {
-	text-transform: uppercase;
 	font-size: 18px;
 	background: var(--white);
 	display: inline-block;
@@ -7664,7 +7626,6 @@ footer {
 	display: block;
 	margin-bottom: 5px;
 	font-size: 15px;
-	text-transform: uppercase;
 	font-weight: 400;
 }
 
@@ -7708,7 +7669,6 @@ footer {
 	border: none;
 	height: 50px;
 	width: 50px;
-	text-transform: uppercase;
 	font-weight: 700;
 	padding: 0;
 	color: var(--color-heading);
@@ -7732,7 +7692,6 @@ footer {
 
 .footer-item.contact li strong {
 	display: block;
-	text-transform: uppercase;
 	color: var(--white);
 	font-size: 14px;
 }

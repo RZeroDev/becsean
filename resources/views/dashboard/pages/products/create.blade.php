@@ -41,7 +41,7 @@
                             </div>
 
 
-                            <div class="lg:col-span-12">
+                            <div class="lg:col-span-6">
                                 <label class="form-label font-semibold">Images secondaires(Vous pouvez sélectionner plusieurs images) : <span class="text-red-600">*</span></label>
                                 <input type="file" class="form-control @error('image_secondaire') is-invalid @enderror" accept="image/*" name="image_secondaire[]" multiple>
                                 @error('image_secondaire')
@@ -50,7 +50,24 @@
                                     </span>
                                 @enderror
                             </div>
-
+                              
+                            
+                            <div class="lg:col-span-6 ">
+                                <label class="form-label font-semibold">Catégorie : <span class="text-red-600">*</span></label>
+                                <select class="form-control @error('category') is-invalid @enderror" name="product_categorie" required="">
+                                    <option value="">Sélectionnez une catégorie</option>
+                                    @foreach($category as $categories)
+                                    <option value="{{$categories->id}}" {{ old('product_categorie') == $categories->id ? 'selected' : '' }}>{{$categories->name}}</option>
+                                    <!-- Ajoutez plus d'options selon vos besoins -->
+                                    @endforeach
+                                </select>
+                                @error('product_categorie')
+                                    <span class="text-danger">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            
                             <div class="lg:col-span-12">
                                 <label class="form-label font-semibold">Description : <span class="text-red-600">*</span></label>
                                 <textarea class="form-input ps-11 w-full py-5 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0 " placeholder="Veuillez décrire le produit" id="description" name="description">{{ old('description') }}</textarea>
@@ -66,17 +83,17 @@
                                     Ajouter
                                 </button>
                             </div>
-                            
-                            
+
+
                         </div>
-                        
+
                     </form>
-                    
+
                 </div>
 
             </div><!--end col-->
 
-            
+
         </div><!--end grid-->
         <!-- End Content -->
     </div>

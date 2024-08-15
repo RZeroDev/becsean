@@ -3,7 +3,7 @@
                     <div class="container-fluid">
                         <div class="grid grid-cols-1">
                             <div class="sm:text-start text-center mx-md-2">
-                                <p class="mb-0 text-slate-400">© <script>document.write(new Date().getFullYear())</script> {{ FrontHelper::getAppName() }}. Développé avec <i class="mdi mdi-heart text-red-600"></i> par <a target="_blank" href="https://twoftechnologies.fr/">
+                                <p class="mb-0 text-slate-400">© <script>document.write(new Date().getFullYear())</script> {{ FrontHelper::getAppName() }}. Développé avec <i class="mdi mdi-heart text-red-600"></i> par <a target="_blank" href="mailto:hadicodemaster@gmail.com">
                                     <span class="text-warning">Hadicodemaster</span>
                                     <span class="text-info"></span>
                                 </a>.</p>

@@ -22,4 +22,7 @@ class Project extends Model
     {
         return $this->hasMany(Image::class);
     }
+    public function projectcategorie(){
+        return $this->belongsTo(ProjectCategorie::class,'project_categorie_id');
+    } 
 }
