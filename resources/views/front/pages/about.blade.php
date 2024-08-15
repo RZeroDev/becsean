@@ -10,6 +10,21 @@
     @include('front.layouts.includes.about')
     <!-- End About -->
 
+    <div class="team-style-one-area">
+        <div class="container">
+            <div class="row align-center">
+                <center>
+                    <div class="text-center col-lg-8">
+                        <h4 class="sub-title">Notre Histoire</h4>
+                        <h2 class="title"> Découvrez notre parcours et nos origines</h2>
+                        <p  style="text-align: justify;">
+                            Depuis notre création, nous avons œuvré pour devenir un partenaire de confiance pour les agriculteurs, les exploitants forestiers, et les entrepreneurs du secteur agro-alimentaire. Avec une équipe d'experts passionnés, nous avons progressivement étendu notre portée, offrant des services diversifiés qui englobent l'exploitation agricole, la formation, le négoce, et bien plus encore. Depuis notre création, nous avons aidé de nombreuses exploitations agricoles à optimiser leur production et à atteindre de nouveaux marchés grâce à nos conseils, formations et services de suivi. Et aujourd’hui, nous sommes fiers de contribuer à la croissance et à la modernisation du secteur agricole en Afrique.
+                        </p>
+                </div>
+                </center>
+            </div>
+        </div>
+    </div>
 
         <!-- Start Team
     ============================================= -->
