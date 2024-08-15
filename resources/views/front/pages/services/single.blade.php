@@ -34,7 +34,7 @@
                                        <div id="collapseOne{{ $item->id }}" class="accordion-collapse collapse {{ $index == 1 ? 'show' : '' }}" aria-labelledby="headingOne{{ $item->id }}" data-bs-parent="#faqAccordion{{ $item->id }}">
                                            <div class="accordion-body">
                                                <p>
-                                                  {{ $item->description }}
+                                                  {!!  $item->description !!}
                                                </p>
                                            </div>
                                        </div>

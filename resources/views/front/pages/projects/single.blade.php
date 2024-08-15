@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="right-info">
                                         <p>
-                                            {{ $project->description }}
+                                            {!!  $project->description !!}
                                         </p>
                                     </div>
                                 </div>

@@ -114,7 +114,7 @@
                                 <span>In Stock</span>
                             </div> --}}
                             <p>
-                                {{ $product->description }}
+                                {!!  $product->description !!}
                             </p>
                             {{-- <div class="product-purchase-list">
                                 <input type="number" id="quantity" step="1" name="quantity" min="0" placeholder="0">
