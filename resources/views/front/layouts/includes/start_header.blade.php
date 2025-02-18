@@ -7,7 +7,7 @@
                         <i class="fas fa-clock"></i>Heures d'ouverture : Lundi- Samedi, 08:00 - 19:00
                     </li>
                     <li>
-                        <a href="tel:{{ frontHelper::getSettings()->company_phone }}"><i class="fas fa-phone-alt"></i> {{ frontHelper::getSettings()->company_phone }}</a>
+                        <a href="tel:{{ frontHelper::getSettings()->company_phone1 }}"><i class="fas fa-phone-alt"></i> {{ frontHelper::getSettings()->company_phone1 }}</a>
                     </li>
                 </ul>
             </div>

@@ -801,6 +801,25 @@ p {
 	color: var(--white);
 }
 
+.gallery-style-one-carousel .swiper-slide {
+    width: 500px; /* Largeur fixe pour chaque slide */
+    height: 200px; /* Hauteur fixe pour chaque slide */
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+}
+
+.gallery-image {
+    width: 200%; /* Prend toute la largeur du conteneur */
+    height: 200%; /* Prend toute la hauteur du conteneur */
+    object-fit: cover; /* Assure que l'image couvre tout l'espace sans déformation */
+    object-position: center; /* Centre l'image dans le conteneur */
+    border-radius: 10px; /* Optionnel: Ajoute des coins arrondis */
+    transition: transform 0.3s ease; /* Optionnel: Ajoute une animation au survol */
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Optionnel: Zoom léger au survol */
+}
+
 .sub-title {
 	color: var(--color-secondary);
 	font-weight: 600;

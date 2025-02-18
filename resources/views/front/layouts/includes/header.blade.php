@@ -1,9 +1,12 @@
+@php
+    use Illuminate\Support\Str;
+@endphp
+
 <header>
     <!-- Start Navigation -->
     <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
 
         <div class="container d-flex justify-content-between align-items-center">
-
 
             <div class="navbar-brand-left">
                 <!-- Start Header Navigation -->
@@ -26,51 +29,47 @@
                     <i class="fa fa-times"></i>
                 </button>
 
-                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp"
+                    style="text-transform: none;">
                     <li class="">
-                        <a href="{{route('index')}}" class="active" >Accueil</a>
+                        <a href="{{route('index')}}" class="active">Accueil</a>
                     </li>
                     <li class="">
-                        <a href="{{route('services')}}" class="" >Services</a>
+                        <a href="{{route('services')}}">Services</a>
                     </li>
-                    {{-- <li class="">
-                        <a href="{{route('produits')}}" class="" >Produits</a>
-                    </li> --}}
                     <li class="dropdown">
-                        <a href="{{ route('produits') }}" class="dropdown-toggle" data-toggle="dropdown" >Produits</a>
+                        <a href="{{ route('produits') }}" class="dropdown-toggle" data-toggle="dropdown">Produits</a>
                         <ul class="dropdown-menu">
                             @foreach(FrontHelper::allProductCategorie() as $productCategorie)
-                                <li><a href="{{ route('produits', $productCategorie) }}">{{ $productCategorie->name }}</a></li>
+                                <li class="normal-case">
+                                    <a href="{{ route('produits', $productCategorie) }}">{{ $productCategorie->name }}</a>
+                                </li>
                             @endforeach
+
+
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="{{ route('projects') }}" class="dropdown-toggle" data-toggle="dropdown" >Projets</a>
-                        <ul class="dropdown-menu">
+                        <a href="{{ route('projects') }}" class="dropdown-toggle" data-toggle="dropdown">Projets</a>
+                        <ul class="dropdown-menu" style="text-transform: none;">
                             @foreach(FrontHelper::allProjectCategorie() as $projectCategorie)
-                                <li><a href="{{ route('projects', $projectCategorie->id) }}">{{ $projectCategorie->name }}</a></li>
+                                <li><a
+                                        href="{{ route('projects', $projectCategorie->id) }}">{{ $projectCategorie->name }}</a>
+                                </li>
                             @endforeach
                         </ul>
                     </li>
-                    {{-- <li class="">
-                        <a href="{{route('projects')}}" class="" >Projets</a>
-                    </li> --}}
-                    {{-- <li class="">
-                        <a href="{{ route('news') }}" class="" >Actualités</a>
-                    </li> --}}
                     <li class="dropdown">
-                        <a href="{{ route('news') }}" class="dropdown-toggle" data-toggle="dropdown" >Actualités</a>
-                        <ul class="dropdown-menu">
+                        <a href="{{ route('news') }}" class="dropdown-toggle" data-toggle="dropdown">Actualités</a>
+                        <ul class="dropdown-menu" style="text-transform: none;">
                             @foreach(FrontHelper::allActualitiegorie() as $actualitiegorie)
-                                <li><a href="{{ route('news', $actualitiegorie->id) }}">{{ $actualitiegorie->name }}</a></li>
+                                <li><a href="{{ route('news', $actualitiegorie->id) }}">{{ $actualitiegorie->name }}</a>
+                                </li>
                             @endforeach
                         </ul>
                     </li>
-                    {{-- <li class="">
-                        <a href="{{ route('blogs') }}" class="" >Blogs</a>
-                    </li> --}}
                     <li class="">
-                        <a href="{{ route('about') }}" class="" >A-propos</a>
+                        <a href="{{ route('about') }}">A-propos</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -83,7 +82,6 @@
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
-
             </div>
 
             <!-- Main Nav -->

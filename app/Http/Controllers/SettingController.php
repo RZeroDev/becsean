@@ -32,9 +32,9 @@ class SettingController extends Controller
             $query->where('name', 'admin');
         })->get();
         // dd($setting);
-        foreach ($admins as $admin) {
+        /* foreach ($admins as $admin) {
             Mail::to($admin->email)->send(new NotificationForAdmin($message));
-        }
+        } */
         toastr()->success('Action effectuée avec succès !');
         return redirect()->back();
     }
@@ -100,9 +100,9 @@ class SettingController extends Controller
         $admins = User::whereHas('roles', function ($query) {
             $query->where('name', 'admin');
         })->get();
-        foreach ($admins as $admin) {
+        /* foreach ($admins as $admin) {
             Mail::to($admin->email)->send(new NotificationForAdmin($message));
-        }
+        } */
         toastr()->success('Action effectuée avec succès !');
         return redirect()->back();
     }

@@ -31,6 +31,7 @@ use App\Models\ActualitiesCategorie;
 // use App\Helpers\FrontHelper;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use \env;
 
 
 class FrontHelper
@@ -43,9 +44,13 @@ class FrontHelper
     public static function getEnvFolder()
     {
         $folder = null;
-        if(!App::environment('local')) {
+
+        if(!env('APP_ENV','local')) {
             $folder = 'public/';
         }
+       /*  if(!App::environment('local')) {
+            $folder = 'public/';
+        } */
         return $folder;
     }
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Home;
 use Illuminate\Http\Request;
-
+use App\Models\Image;
 class HomeController extends Controller
 {
     /**
@@ -12,7 +12,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
+        $galeries=Image::where('service_id',null)
+        ->where('actuality_id',null)
+        ->where('project_id',null)
+        ->where('product_id',null)
+        ->paginate(10);
+        // Passer les données à la vue
+        return view('front.pages.index', compact('galeries'));
     }
 
     /**

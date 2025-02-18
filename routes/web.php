@@ -34,6 +34,7 @@ use App\Http\Controllers\WorkAreaController;
 use App\Models\AboutPolitique;
 use App\Models\DescriptionFooter;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,9 +52,7 @@ Route::get('/linkedin/callback', [LinkedinController::class, 'linkedinCallback']
 Route::get('/linkedin/get-id', [LinkedinController::class, 'getLinkedinId'])->name('linkedin.getPageId');
 // Route::get('/linkedin/share-article', [MainController::class, 'shareLinkedinArticle'])->name('linkedin.share');
 
-Route::get('/', function () {
-    return view('front.pages.index');
-})->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Route::get('/a-propos', [PacomController::class, 'about'])->name('about');
 Route::get('/cgu', [PacomController::class, 'cgu'])->name('cgu');
@@ -92,6 +91,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('galeries', ImageController::class)->parameters([
         'galeries' => 'galerie:id',
     ]);
+    
+
     Route::resource('underServices', UnderServiceController::class)->parameters([
         'underServices' => 'underService:slug',
     ]);

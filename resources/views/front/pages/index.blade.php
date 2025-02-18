@@ -96,79 +96,44 @@
         </div>
     </div>
     <!-- End Testimonial -->
-
-    <!-- Start Gallery
-        ============================================= -->
-    <div class="gallery-style-one-area default-padding">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="site-heading text-center">
-                        <h5 class="sub-title">Notre galerie</h5>
-                        <h2 class="title">Explorez notre univers</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fill">
-            <div class="row">
-                <div class="gallery-style-one-carousel swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="gallery-style-one">
-                                <img src="{{ asset('storage/front/assets/img/projects/1.jpg') }}" alt="Image
-                                    not Found">
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="gallery-style-one">
-                                <img src="{{ asset('storage/front/assets/img/projects/2.jpg') }}" alt="Image
-                                    not Found">
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="gallery-style-one">
-                                <img src="{{ asset('storage/front/assets/img/projects/3.jpg') }}" alt="Image
-                                    not Found">
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="gallery-style-one">
-                                <img src="{{ asset('storage/front/assets/img/projects/4.jpg') }}" alt="Image
-                                    not Found">
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="gallery-style-one">
-                                <img src="{{ asset('storage/front/assets/img/projects/5.jpg') }}" alt="Image
-                                    not Found">
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-
-                    </div>
-
-                    <!-- Pagination -->
-                    <div class="swiper-pagination"></div>
-
+<!-- Start Gallery -->
+<div class="gallery-style-one-area default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="site-heading text-center">
+                    <h5 class="sub-title">Notre galerie</h5>
+                    <h2 class="title">Explorez notre univers</h2>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Gallery  -->
+
+    <div class="container-fill">
+        <div class="row">
+            <div class="gallery-style-one-carousel swiper">
+                <div class="swiper-wrapper">
+                    @if(isset($galeries) && $galeries->isNotEmpty()) <!-- Vérifie si la variable $galeries est définie et contient des éléments -->
+                        @foreach($galeries as $galerie)
+                        <div class="swiper-slide" style="width: 500px; height: 300px; overflow: hidden;">
+    <div class="gallery-style-one" style="width: 100%; height: 100%;">
+        <img src="{{asset(FrontHelper::getEnvFolder() . $galerie->url) }}" alt="Image not Found" class="gallery-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 10px; transition: transform 0.3s ease;">
+    </div>
+</div>
+                        @endforeach
+                    @else
+                        <p>Aucune image disponible dans la galerie.</p>
+                    @endif
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- End Gallery -->
+
 
     <!-- Start Choose Us Area
         ============================================= -->

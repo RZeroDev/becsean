@@ -54,9 +54,9 @@ class TestimonialController extends Controller
 
         $message = "Un témoignage a été ajoutée par " . Auth::user()->firstname . ' ' . Auth::user()->lastname;
 
-        foreach ($admins as $admin) {
+        /* foreach ($admins as $admin) {
             Mail::to($admin->email)->send(new NotificationForAdmin($message));
-        }
+        } */
         toastr()->success('Action effectuée avec succès !');
         return redirect()->route('testimonials.index');
     }
@@ -110,9 +110,9 @@ class TestimonialController extends Controller
 
         $message = "Un témoignage a été modifiée par " . Auth::user()->firstname . ' ' . Auth::user()->lastname;
 
-        foreach ($admins as $admin) {
+       /*  foreach ($admins as $admin) {
             Mail::to($admin->email)->send(new NotificationForAdmin($message));
-        }
+        } */
         toastr()->success('Action effectuée avec succès !');
         return redirect()->route('testimonials.index');
     }
@@ -141,9 +141,9 @@ class TestimonialController extends Controller
 
         $message = "Un témoignage a été supprimée par " . Auth::user()->firstname . ' ' . Auth::user()->lastname;
 
-        foreach ($admins as $admin) {
+        /* foreach ($admins as $admin) {
             Mail::to($admin->email)->send(new NotificationForAdmin($message));
-        }
+        } */
         toastr()->success('Action effectuée avec succès !');
         return redirect()->route('testimonials.index');
     }

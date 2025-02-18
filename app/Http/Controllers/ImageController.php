@@ -13,6 +13,8 @@ class ImageController extends Controller
      */
     public function index()
     {
+        
+
         $galeries=Image::where('service_id',null)
         ->where('actuality_id',null)
         ->where('project_id',null)
