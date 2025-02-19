@@ -42,7 +42,7 @@
                         <ul class="dropdown-menu">
                             @foreach(FrontHelper::allProductCategorie() as $productCategorie)
                                 <li class="normal-case">
-                                    <a href="{{ route('produits', $productCategorie) }}">{{ $productCategorie->name }}</a>
+                                    <a href="{{ route('produits', $productCategorie) }}" style="text-transform: none !important;">{{ $productCategorie->name }}</a>
                                 </li>
                             @endforeach
 
@@ -54,7 +54,7 @@
                         <ul class="dropdown-menu" style="text-transform: none;">
                             @foreach(FrontHelper::allProjectCategorie() as $projectCategorie)
                                 <li><a
-                                        href="{{ route('projects', $projectCategorie->id) }}">{{ $projectCategorie->name }}</a>
+                                        href="{{ route('projects', $projectCategorie->id) }}" style="text-transform: none !important;">{{ $projectCategorie->name }}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -63,7 +63,7 @@
                         <a href="{{ route('news') }}" class="dropdown-toggle" data-toggle="dropdown">Actualités</a>
                         <ul class="dropdown-menu" style="text-transform: none;">
                             @foreach(FrontHelper::allActualitiegorie() as $actualitiegorie)
-                                <li><a href="{{ route('news', $actualitiegorie->id) }}">{{ $actualitiegorie->name }}</a>
+                                <li><a href="{{ route('news', $actualitiegorie->id) }}" style="text-transform: none !important;">{{ $actualitiegorie->name }}</a>
                                 </li>
                             @endforeach
                         </ul>
